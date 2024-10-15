@@ -1,0 +1,5 @@
+pg_dump -h 127.0.0.1 -p 5432 -U root -d root --schema-only --no-owner --no-acl -f schema.sql
+
+celery -A ecommerce worker --beat --scheduler django --loglevel=info
+celery -A ecommerce  inspect registered
+

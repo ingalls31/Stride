@@ -1,0 +1,14 @@
+venv
+.vscode/PythonImportHelper-v2-Completion.json
+data
+static
+__pycache__
+# import
+*.pem
+.env
+*.sql
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+*.rdb
+import
