@@ -8,12 +8,12 @@
             "name": "Python Debugger: Django",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
+            "program": "${workspaceFolder}/backend/manage.py",
             "args": [
                 // "runserver"
                 "runserver_plus",
-                "--cert-file=../ssl/cert.pem",
-                "--key-file=../ssl/key.pem",
+                "--cert-file=backend/ssl/cert.pem",
+                "--key-file=backend/ssl/key.pem",
             ],
             "django": true,
             "autoStartBrowser": false
