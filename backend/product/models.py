@@ -94,12 +94,32 @@ class Agency(TimeBase, Statistics):
     class Meta:
         db_table = "agency"
 
+class Address(TimeBase):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    city = models.CharField(max_length=255)
+    address = models.CharField(max_length=255)
+    region = models.CharField(max_length=255)
+    postal_code = models.CharField(max_length=255)
+    
+    
+    class Meta:
+        db_table = "address"
+        
+class Warehouse(TimeBase):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    name = models.CharField(max_length=255)
+    address = models.ForeignKey(Address, on_delete=models.CASCADE)
+    
+    class Meta:
+        db_table = "warehouse"
+
 class Product(TimeBase, Statistics, ProductInfo, Price):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     agency = models.ForeignKey(Agency, on_delete=models.CASCADE)
     # discount = models.FloatField(default=0)
     view = models.IntegerField(default=0)
+    warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE, null=True, blank=True)
     images = models.ManyToManyField(
         Image, related_name="ProductImage", blank=True
     )
@@ -177,7 +197,7 @@ class Order(TimeBase, PaymentOrder, ShippingAddress):
 
 class Cart(TimeBase):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE, blank=True, null=True)
     quantity = models.IntegerField(default=1)
     
@@ -213,7 +233,7 @@ class Review(TimeBase, ReviewInfo):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     # product = models.ForeignKey(Product, on_delete=models.CASCADE)
     order_product = models.ForeignKey(OrderProduct, on_delete=models.CASCADE, null=True, blank=True)
-    user = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     # images = models.ManyToManyField(
     #     Image, related_name="CommentImage", blank=True
     # )
