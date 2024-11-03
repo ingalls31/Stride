@@ -1,11 +1,24 @@
+from django import db
 from django.db import models
 from django.db.models import Sum
-from product.models import Agency, Order
+from product.models import Agency, Order, Product
 from user.models import TimeBase, Statistics
 from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
 
 # Create your models here.
+
+class PromotionType(models.Model):
+    FLASH_DEAL = 'flash_deal'
+    PRODUCT_DISCOUNT = 'product_discount'
+    PROMOTION_TYPE_CHOICES = [
+        (FLASH_DEAL, 'Flash Deal'),
+        (PRODUCT_DISCOUNT, 'Product Discount')
+    ]
+    type = models.CharField(max_length=255, choices=PROMOTION_TYPE_CHOICES)
+    
+    class Meta:
+        abstract = True
 
 class CampaignTime(models.Model):
     start_time = models.DateTimeField()
@@ -73,10 +86,27 @@ class Campaign(TimeBase, Statistics, CampaignTime, Discount):
     class Meta:
         db_table = "campaign"
         
+class Promotion(TimeBase, Discount, PromotionType):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.IntegerField()
+    
+    class Meta:
+        db_table = "promotion"
+        
 class CampaignOrder(TimeBase):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    promotions = models.ManyToManyField(Promotion, related_name='CampaignPromotion', blank=True)
     
     class Meta:
         db_table = "campaign_order"
+        
+class CampaignPromotion(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
+    promotion = models.ForeignKey(Promotion, on_delete=models.CASCADE)
+    
+    class Meta:
+        db_table = "campaign_promotion"
