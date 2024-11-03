@@ -7,6 +7,28 @@ import uuid
 
 # Create your models here.
 
+class CampaignTime(models.Model):
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
+    
+    class Meta:
+        abstract = True
+        
+class Discount(models.Model):
+    discount = models.IntegerField(
+        default=0,
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(100)
+        ],
+        help_text="Enter a value from 0 to 100 to set the discount percentage."
+    )
+    discount_code = models.CharField(max_length=255, null=True, blank=True)
+    
+    class Meta:
+        abstract = True
+    
+
 class Statistical(Statistics):
     
     def update_total(self):
@@ -34,7 +56,7 @@ class Statistical(Statistics):
     class Meta:
         db_table = "statiscal"
         
-class Campaign(TimeBase, Statistics):
+class Campaign(TimeBase, Statistics, CampaignTime, Discount):
     PENDING = 'pending'
     RUNNING = 'running'
     CLOSE = 'close'
@@ -45,16 +67,6 @@ class Campaign(TimeBase, Statistics):
     ]
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255)
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    discount = models.IntegerField(
-        default=0,
-        validators=[
-            MinValueValidator(0),
-            MaxValueValidator(100)
-        ],
-        help_text="Enter a value from 0 to 100 to set the discount percentage."
-    )
     status = models.CharField(max_length=10, choices=STATUS, default=PENDING)
     
     class Meta:

@@ -14,19 +14,43 @@ class TimeBase(models.Model):
     
     class Meta:
         abstract = True
-
-class Statistics(models.Model):
-    total = models.BigIntegerField(default=0)
+        
+class StatisticComplete(models.Model):
     buyed_total = models.BigIntegerField(default=0)
-    ship_total = models.BigIntegerField(default=0)
-    pending_total = models.BigIntegerField(default=0)
     cancelled_total = models.BigIntegerField(default=0)
     returned_total = models.BigIntegerField(default=0)
+    
+    class Meta:
+        abstract = True
+        
+class StatisticNonComplete(models.Model):
+    pending_total = models.BigIntegerField(default=0)
+    ship_total = models.BigIntegerField(default=0)
+    
+    class Meta:
+        abstract = True
+        
+class StatisticMoney(models.Model):
     revenue_total = models.BigIntegerField(default=0)
     profit_total = models.BigIntegerField(default=0)
     
     class Meta:
-        abstract = True        
+        abstract = True
+        
+class Statistics(StatisticComplete, StatisticNonComplete, StatisticMoney):
+    total = models.BigIntegerField(default=0)
+    
+    class Meta:
+        abstract = True
+
+class CustomerInfo(models.Model):
+    phone_number = models.CharField(max_length=10)
+    address = models.TextField(null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
+    
+    class Meta:
+        abstract = True
+        
 
 class UserManager(BaseUserManager):
     """Define a model manager for User model with no username field."""
@@ -79,13 +103,11 @@ class User(AbstractUser, TimeBase):
         db_table = "user"
     
     
-class Customer(TimeBase, Statistics):
+class Customer(TimeBase, Statistics, CustomerInfo):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="customer")
     avatar = models.ForeignKey(Image, on_delete=models.SET_NULL, null=True, blank=True, related_name="avatar")
-    phone_number = models.CharField(max_length=10)
-    address = models.TextField(null=True, blank=True)
-    date_of_birth = models.DateField(null=True, blank=True)
+
     
     def __str__(self) -> str:
         return f"{self.user.first_name} {self.user.last_name}"

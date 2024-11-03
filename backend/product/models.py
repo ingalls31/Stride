@@ -6,6 +6,60 @@ import uuid
 from django.db.models import Sum
 # Create your models here.
 
+class ProductInfo(models.Model):
+    MALE = 'male'
+    FEMALE = 'female'
+    CATEGORY_CHOICE =  (
+        (MALE, 'Male'),
+        (FEMALE, 'Female'),
+    )
+    name = models.CharField(max_length=255)
+    description = models.TextField(null=True, blank=True)
+    average_rating = models.FloatField(default=0) 
+    category = models.CharField(max_length=10, choices=CATEGORY_CHOICE, default=MALE)
+    
+    class Meta:
+        abstract = True
+
+class Price(models.Model):
+    cost = models.IntegerField(default=0)
+    price = models.IntegerField(default=0)
+    old_price = models.IntegerField(default=0)
+    
+    class Meta:
+        abstract = True
+        
+class PaymentOrder(models.Model): 
+    payment_session = models.CharField(max_length=255, null=True, blank=True)
+    payment_done = models.BooleanField(default=False)
+    
+    class Meta:
+        abstract = True
+        
+class ShippingAddress(models.Model):
+    receiver = models.CharField(max_length=255, null=True, blank=True)
+    phone = models.CharField(max_length=100, null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+    
+    class Meta:
+        abstract = True
+        
+class ReviewInfo(models.Model):
+    RATE_CHOICES = [
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 5),
+    ]
+    comment = models.TextField(null=True, blank=True)
+    reply = models.TextField(null=True, blank=True)
+    rate_point = models.IntegerField(choices=RATE_CHOICES, default=5)
+    
+    class Meta:
+        abstract = True
+    
+    
 
 class Agency(TimeBase, Statistics):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -40,24 +94,12 @@ class Agency(TimeBase, Statistics):
     class Meta:
         db_table = "agency"
 
-class Product(TimeBase, Statistics):
-    MALE = 'male'
-    FEMALE = 'female'
-    CATEGORY_CHOICE =  (
-        (MALE, 'Male'),
-        (FEMALE, 'Female'),
-    )
+class Product(TimeBase, Statistics, ProductInfo, Price):
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255)
-    cost = models.IntegerField(default=0)
-    price = models.IntegerField(default=0)
-    old_price = models.IntegerField(default=0)
     agency = models.ForeignKey(Agency, on_delete=models.CASCADE)
     # discount = models.FloatField(default=0)
     view = models.IntegerField(default=0)
-    description = models.TextField(null=True, blank=True)
-    category = models.CharField(max_length=10, choices=CATEGORY_CHOICE, default=MALE)
-    average_rating = models.FloatField(default=0) 
     images = models.ManyToManyField(
         Image, related_name="ProductImage", blank=True
     )
@@ -106,7 +148,7 @@ class ProductItem(TimeBase, Statistics):
     class Meta:
         db_table = "product_item"
 
-class Order(TimeBase):
+class Order(TimeBase, PaymentOrder, ShippingAddress):
     CREATING = 'creating'
     PENDING = 'pending'
     SHIP = 'ship'
@@ -122,14 +164,10 @@ class Order(TimeBase):
         (PENDING, 'Pending'),
     )
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    receiver = models.CharField(max_length=255, null=True, blank=True)
-    phone = models.CharField(max_length=100, null=True, blank=True)
-    address = models.TextField(null=True, blank=True)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, null=True)
+   
     total_price = models.IntegerField(default=0)
     status = models.CharField(max_length=10, choices=STATUS_CHOICE, default=SHIP)
-    payment_session = models.CharField(max_length=255, null=True, blank=True)
-    payment_done = models.BooleanField(default=False)
     products = models.ManyToManyField(
         ProductItem, related_name="OrderProduct", blank=True
     )
@@ -170,21 +208,12 @@ class ProductImage(models.Model):
     class Meta:
         db_table = "product_image"
     
-class Review(TimeBase):
-    RATE_CHOICES = [
-        (1, 1),
-        (2, 2),
-        (3, 3),
-        (4, 4),
-        (5, 5),
-    ]
+class Review(TimeBase, ReviewInfo):
+    
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     # product = models.ForeignKey(Product, on_delete=models.CASCADE)
     order_product = models.ForeignKey(OrderProduct, on_delete=models.CASCADE, null=True, blank=True)
     user = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    comment = models.TextField(null=True, blank=True)
-    reply = models.TextField(null=True, blank=True)
-    rate_point = models.IntegerField(choices=RATE_CHOICES, default=5)
     # images = models.ManyToManyField(
     #     Image, related_name="CommentImage", blank=True
     # )
