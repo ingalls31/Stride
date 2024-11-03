@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models import Sum
-from product.models import Agency
+from product.models import Agency, Order
 from user.models import TimeBase, Statistics
 from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
@@ -68,6 +68,15 @@ class Campaign(TimeBase, Statistics, CampaignTime, Discount):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255)
     status = models.CharField(max_length=10, choices=STATUS, default=PENDING)
+    orders = models.ManyToManyField(Order, related_name='CampaignOrder', blank=True)
     
     class Meta:
         db_table = "campaign"
+        
+class CampaignOrder(TimeBase):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    
+    class Meta:
+        db_table = "campaign_order"
