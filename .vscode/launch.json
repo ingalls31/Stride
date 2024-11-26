@@ -12,8 +12,8 @@
             "args": [
                 // "runserver"
                 "runserver_plus",
-                "--cert-file=backend/ssl/cert.pem",
-                "--key-file=backend/ssl/key.pem",
+                "--cert-file=ssl/cert.pem",
+                "--key-file=ssl/key.pem",
             ],
             "django": true,
             "autoStartBrowser": false

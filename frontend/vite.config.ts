@@ -9,8 +9,8 @@ export default defineConfig({
   plugins: [react(), visualizer()],
   server: {
     https: {
-      key: fs.readFileSync('ssl/key.pem'),
-      cert: fs.readFileSync('ssl/cert.pem')
+      key: fs.readFileSync('../ssl/key.pem'),
+      cert: fs.readFileSync('../ssl/cert.pem')
     },
     port: 3000
   },
