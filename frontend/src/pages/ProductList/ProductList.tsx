@@ -28,6 +28,9 @@ export default function ProductList() {
   useScrollTop()
   const navigate = useNavigate()
   const queryConfig = useQueryConfig()
+
+  console.log('\u001B[36m 🚀 INFO: 🔥 ProductList 🔥 queryConfig 👇\n \u001B[0m', queryConfig)
+
   const resultSearch = queryConfig.name
   const { isAuthenticated } = useContext(AppContext)
 
@@ -39,13 +42,13 @@ export default function ProductList() {
   })
 
   if (isAuthenticated) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const { data: profileData, refetch } = useQuery({
       queryKey: ['profile'],
       queryFn: userApi.getProfile
     })
     setProfileToLS(profileData?.data.results[0])
   }
-  
 
   // useEffect(() => {
   //   setProfileToLS(profileData?.data.results[0])
@@ -73,7 +76,7 @@ export default function ProductList() {
           'pt-5': resultSearch
         })}
       >
-        <div className='container'>
+        <div className='container max-w-[1700px]'>
           <div className='flex flex-col gap-5 md:flex-row'>
             <div className='md:w-[190px]'>
               <FilterPanel queryConfig={queryConfig} />
@@ -123,12 +126,9 @@ export default function ProductList() {
                     <span className='ml-1 text-orange'>&apos;{resultSearch}&apos;</span>
                   </div>
                 )}
-                <SortBar
-                  queryConfig={queryConfig}
-                  pageSize={data?.data.totalPage as number}
-                />
-                <div className='mb-12 mt-4 grid grid-cols-2 gap-[10px] px-[5px] sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
-                  {data?.data.results?.map(( product: any ) => (
+                <SortBar queryConfig={queryConfig} pageSize={data?.data.totalPage as number} />
+                <div className='mb-12 mt-4 grid grid-cols-2 gap-[10px] px-[5px] sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8'>
+                  {data?.data.results?.map((product: any) => (
                     <Link
                       title={product.name}
                       key={product.id}
@@ -155,10 +155,7 @@ export default function ProductList() {
                           </div>
                         </div>
                         <div className='mb-1 mt-3 flex items-center gap-1'>
-                          <RatingStar 
-                            rating={product.average_rating} 
-
-                          />
+                          <RatingStar rating={product.average_rating} />
                           <span className='text-xs'>
                             {formatSocialNumber(product.buyed_total)} {t('sold')}
                           </span>
@@ -167,10 +164,7 @@ export default function ProductList() {
                     </Link>
                   ))}
                 </div>
-                <Paginate
-                  queryConfig={queryConfig}
-                  pageSize={data?.data.total_page as number}
-                />
+                <Paginate queryConfig={queryConfig} pageSize={data?.data.total_page as number} />
               </div>
             )}
           </div>
