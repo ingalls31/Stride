@@ -73,6 +73,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "Error",
         "importPath": "uu",
         "description": "uu",
@@ -1028,6 +1036,46 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1132,6 +1180,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1301,6 +1397,22 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -1453,6 +1565,15 @@
         "description": "django.db.models.signals",
         "isExtraImport": true,
         "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -1800,6 +1921,14 @@
         "documentation": {}
     },
     {
+        "label": "F",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
         "label": "Sum",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -2074,6 +2203,23 @@
         "documentation": {}
     },
     {
+        "label": "django.utils.html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
         "label": "format_html",
         "importPath": "django.utils.html",
         "description": "django.utils.html",
@@ -2170,6 +2316,15 @@
         "documentation": {}
     },
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "choices",
         "importPath": "random",
         "description": "random",
@@ -2192,6 +2347,14 @@
         "importPath": "stripe",
         "description": "stripe",
         "detail": "stripe",
+        "documentation": {}
+    },
+    {
+        "label": "CANCEL",
+        "importPath": "tkinter.messagebox",
+        "description": "tkinter.messagebox",
+        "isExtraImport": true,
+        "detail": "tkinter.messagebox",
         "documentation": {}
     },
     {
@@ -2260,7 +2423,39 @@
         "documentation": {}
     },
     {
+        "label": "Order",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImage",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
         "label": "Agency",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
         "importPath": "product.models",
         "description": "product.models",
         "isExtraImport": true,
@@ -2308,6 +2503,14 @@
         "documentation": {}
     },
     {
+        "label": "Promotion",
+        "importPath": "statistical.models",
+        "description": "statistical.models",
+        "isExtraImport": true,
+        "detail": "statistical.models",
+        "documentation": {}
+    },
+    {
         "label": "Statistical",
         "importPath": "statistical.models",
         "description": "statistical.models",
@@ -2317,6 +2520,14 @@
     },
     {
         "label": "Campaign",
+        "importPath": "statistical.models",
+        "description": "statistical.models",
+        "isExtraImport": true,
+        "detail": "statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promotion",
         "importPath": "statistical.models",
         "description": "statistical.models",
         "isExtraImport": true,
@@ -2438,6 +2649,15 @@
         "documentation": {}
     },
     {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
         "label": "django",
         "kind": 6,
         "isExtraImport": true,
@@ -2447,7 +2667,23 @@
         "documentation": {}
     },
     {
+        "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
         "importPath": "django",
         "description": "django",
         "isExtraImport": true,
@@ -2543,12 +2779,19 @@
         "documentation": {}
     },
     {
-        "label": "os,",
-        "kind": 6,
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
         "isExtraImport": true,
-        "importPath": "os.",
-        "description": "os.",
-        "detail": "os.",
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "urljoin",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
         "documentation": {}
     },
     {
@@ -2566,54 +2809,6 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "importPath": "flatted",
-        "description": "flatted",
-        "isExtraImport": true,
-        "detail": "flatted",
         "documentation": {}
     },
     {
@@ -2648,7 +2843,7 @@
         "kind": 6,
         "importPath": "backend.ecommerce.pagination",
         "description": "backend.ecommerce.pagination",
-        "peekOfCode": "class StandardPageNumberPagination(PageNumberPagination):\n    page_size = DEFAULT_PAGE_SIZE  # Default page size\n    page_size_query_param = 'page_size'  # Query parameter for page size\n    def get_page_size(self, request):\n        page_size = request.query_params.get(self.page_size_query_param)\n        if page_size is None:\n            return int(self.page_size)\n        return int(page_size)\n    def get_paginated_response(self, data):\n        return Response({",
+        "peekOfCode": "class StandardPageNumberPagination(PageNumberPagination):\n    page_size = DEFAULT_PAGE_SIZE  # Default page size\n    page_size_query_param = \"page_size\"  # Query parameter for page size\n    def get_page_size(self, request):\n        page_size = request.query_params.get(self.page_size_query_param)\n        if page_size is None:\n            return int(self.page_size)\n        return int(page_size)\n    def get_paginated_response(self, data):\n        return Response(",
         "detail": "backend.ecommerce.pagination",
         "documentation": {}
     },
@@ -2657,7 +2852,7 @@
         "kind": 5,
         "importPath": "backend.ecommerce.pagination",
         "description": "backend.ecommerce.pagination",
-        "peekOfCode": "DEFAULT_PAGE_SIZE = 10\nclass StandardPageNumberPagination(PageNumberPagination):\n    page_size = DEFAULT_PAGE_SIZE  # Default page size\n    page_size_query_param = 'page_size'  # Query parameter for page size\n    def get_page_size(self, request):\n        page_size = request.query_params.get(self.page_size_query_param)\n        if page_size is None:\n            return int(self.page_size)\n        return int(page_size)\n    def get_paginated_response(self, data):",
+        "peekOfCode": "DEFAULT_PAGE_SIZE = 32\nclass StandardPageNumberPagination(PageNumberPagination):\n    page_size = DEFAULT_PAGE_SIZE  # Default page size\n    page_size_query_param = \"page_size\"  # Query parameter for page size\n    def get_page_size(self, request):\n        page_size = request.query_params.get(self.page_size_query_param)\n        if page_size is None:\n            return int(self.page_size)\n        return int(page_size)\n    def get_paginated_response(self, data):",
         "detail": "backend.ecommerce.pagination",
         "documentation": {}
     },
@@ -3400,11 +3595,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.product.migrations.0035_remove_order_user_order_customer",
+        "description": "backend.product.migrations.0035_remove_order_user_order_customer",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0012_alter_user_options_alter_customer_table_and_more'),\n        ('product', '0034_order_payment_done'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='user',\n        ),",
+        "detail": "backend.product.migrations.0035_remove_order_user_order_customer",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
+        "description": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0035_remove_order_user_order_customer'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='cart',\n            old_name='user',\n            new_name='customer',\n        ),",
+        "detail": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.product.migrations.0037_address_warehouse_product_warehouse",
+        "description": "backend.product.migrations.0037_address_warehouse_product_warehouse",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0036_rename_user_cart_customer_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Address',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "backend.product.migrations.0037_address_warehouse_product_warehouse",
+        "documentation": {}
+    },
+    {
         "label": "ProductImageInline",
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class ProductImageInline(admin.TabularInline): \n    model = ProductImage\n    fields = ('image', 'image_preview', 'primary')\n    readonly_fields = ('image_preview',)\n    extra = 1  \n    def image_preview(self, obj):\n        if obj.image:\n            return format_html('<img src=\"{}\" width=\"150\" height=\"auto\"/>', f'{settings.HOST}{obj.image.image.url}')\n        return \"\"\n    image_preview.short_description = \"Preview\"",
+        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3413,7 +3635,7 @@
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model = OrderProduct\n    fields = ('productItem', 'image', 'quantity', )\n    readonly_fields = ('image',)\n    extra = 1\n    def image (self, obj):\n        product = obj.productItem.product\n        product_image = ProductImage.objects.filter(product=product, primary=True).first()\n        return format_html('<img src=\"{}\" width=\"150\" height=\"auto\"/>', f'{settings.HOST}{product_image.image.image.url}')\nclass ProductItemInline(admin.TabularInline):",
+        "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model = OrderProduct\n    fields = (\n        \"productItem\",\n        \"image\",\n        \"quantity\",\n    )\n    readonly_fields = (\"image\",)\n    extra = 1\n    def image(self, obj):",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3422,7 +3644,7 @@
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = ('product', 'size', 'total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total', 'updated_at')\n    readonly_fields = ('buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total', 'updated_at')\n    extra = 1\nclass ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        ('Total', {\n            'fields': (('total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total'),),\n            }),",
+        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = (\n        \"product\",\n        \"size\",\n        \"total\",\n        \"buyed_total\",\n        \"ship_total\",\n        \"pending_total\",\n        \"cancelled_total\",",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3431,7 +3653,7 @@
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        ('Total', {\n            'fields': (('total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total'),),\n            }),\n        ('Revenue', {\n            'fields': (('revenue_total', 'profit_total'),),\n            }),\n        ('Product', {'fields': ('name', 'price', 'cost', 'agency', 'old_price', 'view', 'description', 'category', 'average_rating')}),\n        ('TimeBase', {'fields': (('created_at', 'updated_at'),)}),",
+        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3440,7 +3662,7 @@
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        ('Total', {\n            'fields': (('total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total'),),\n            }),\n        ('Revenue', {\n            'fields': (('revenue_total', 'profit_total'),),\n            }),\n        ('Agency', {'fields': ('name', 'description')}),\n        ('TimeBase', {'fields': (('created_at', 'updated_at'),)}),",
+        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3449,7 +3671,25 @@
         "kind": 6,
         "importPath": "backend.product.admin",
         "description": "backend.product.admin",
-        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    inlines = [OrderProductInline]\n    fieldsets = (\n        ('Order', {'fields': ('user', 'total_price', 'status', 'payment_done')}),\n        ('TimeBase', {'fields': (('created_at', 'updated_at'),)}),\n    )\n    readonly_fields = ('created_at', 'updated_at')\n    list_display = ('receiver', 'phone', 'address', 'total_price', 'payment_done', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    sortable_by = ('updated_at','total_price')",
+        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    inlines = [OrderProductInline]\n    fieldsets = (\n        (\"Order\", {\"fields\": (\"customer\", \"total_price\", \"status\", \"payment_done\")}),\n        (\"TimeBase\", {\"fields\": ((\"created_at\", \"updated_at\"),)}),\n    )\n    readonly_fields = (\"created_at\", \"updated_at\")\n    list_display = (\n        \"receiver\",\n        \"phone\",",
+        "detail": "backend.product.admin",
+        "documentation": {}
+    },
+    {
+        "label": "WarehouseAdmin",
+        "kind": 6,
+        "importPath": "backend.product.admin",
+        "description": "backend.product.admin",
+        "peekOfCode": "class WarehouseAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Warehouse Info\",\n            {\n                \"fields\": (\"name\", \"address\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
+        "detail": "backend.product.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AddressAdmin",
+        "kind": 6,
+        "importPath": "backend.product.admin",
+        "description": "backend.product.admin",
+        "peekOfCode": "class AddressAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Address Information\",\n            {\n                \"fields\": (\"city\", \"address\", \"region\", \"postal_code\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
         "detail": "backend.product.admin",
         "documentation": {}
     },
@@ -3490,11 +3730,74 @@
         "documentation": {}
     },
     {
+        "label": "ProductInfo",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class ProductInfo(models.Model):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (\n        (MALE, \"Male\"),\n        (FEMALE, \"Female\"),\n    )\n    name = models.CharField(max_length=255)\n    description = models.TextField(null=True, blank=True)\n    average_rating = models.FloatField(default=0)",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Price",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class Price(models.Model):\n    cost = models.IntegerField(default=0)\n    price = models.IntegerField(default=0)\n    old_price = models.IntegerField(default=0)\n    class Meta:\n        abstract = True\nclass PaymentOrder(models.Model):\n    payment_session = models.CharField(max_length=255, null=True, blank=True)\n    payment_done = models.BooleanField(default=False)\n    class Meta:",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentOrder",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class PaymentOrder(models.Model):\n    payment_session = models.CharField(max_length=255, null=True, blank=True)\n    payment_done = models.BooleanField(default=False)\n    class Meta:\n        abstract = True\nclass ShippingAddress(models.Model):\n    receiver = models.CharField(max_length=255, null=True, blank=True)\n    phone = models.CharField(max_length=100, null=True, blank=True)\n    address = models.TextField(null=True, blank=True)\n    class Meta:",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "ShippingAddress",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class ShippingAddress(models.Model):\n    receiver = models.CharField(max_length=255, null=True, blank=True)\n    phone = models.CharField(max_length=100, null=True, blank=True)\n    address = models.TextField(null=True, blank=True)\n    class Meta:\n        abstract = True\nclass ReviewInfo(models.Model):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewInfo",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class ReviewInfo(models.Model):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),\n        (3, 3),\n        (4, 4),\n        (5, 5),\n    ]\n    comment = models.TextField(null=True, blank=True)\n    reply = models.TextField(null=True, blank=True)",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
         "label": "Agency",
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class Agency(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    description = models.TextField(null=True, blank=True)\n    def __str__(self):\n        return self.name\n    def update_total(self):\n        products = Product.objects \\\n        .filter(agency=self) \\\n        .aggregate(",
+        "peekOfCode": "class Agency(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    description = models.TextField(null=True, blank=True)\n    def __str__(self):\n        return self.name\n    def update_total(self):\n        products = Product.objects.filter(agency=self).aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class Address(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    city = models.CharField(max_length=255)\n    address = models.CharField(max_length=255)\n    region = models.CharField(max_length=255)\n    postal_code = models.CharField(max_length=255)\n    def __str__(self):\n        return f\"{self.city}, {self.address}, {self.region}, {self.postal_code}\"\n    class Meta:\n        db_table = \"address\"",
+        "detail": "backend.product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Warehouse",
+        "kind": 6,
+        "importPath": "backend.product.models",
+        "description": "backend.product.models",
+        "peekOfCode": "class Warehouse(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    address = models.ForeignKey(Address, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"warehouse\"\nclass Product(TimeBase, Statistics, ProductInfo, Price):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    agency = models.ForeignKey(Agency, on_delete=models.CASCADE)\n    # discount = models.FloatField(default=0)",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3503,7 +3806,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class Product(TimeBase, Statistics):\n    MALE = 'male'\n    FEMALE = 'female'\n    CATEGORY_CHOICE =  (\n        (MALE, 'Male'),\n        (FEMALE, 'Female'),\n    )\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    cost = models.IntegerField(default=0)",
+        "peekOfCode": "class Product(TimeBase, Statistics, ProductInfo, Price):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    agency = models.ForeignKey(Agency, on_delete=models.CASCADE)\n    # discount = models.FloatField(default=0)\n    view = models.IntegerField(default=0)\n    warehouse = models.ForeignKey(\n        Warehouse, on_delete=models.CASCADE, null=True, blank=True\n    )\n    images = models.ManyToManyField(Image, related_name=\"ProductImage\", blank=True)\n    # comments = models.ManyToManyField(",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3512,7 +3815,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class ProductItem(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='sizes')\n    size = models.CharField(max_length=255, null=True, blank=True)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        self.product.update_total()\n        self.product.save()\n    class Meta:\n        db_table = \"product_item\"",
+        "peekOfCode": "class ProductItem(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name=\"sizes\")\n    size = models.CharField(max_length=255, null=True, blank=True)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        self.product.update_total()\n        self.product.save()\n    def __str__(self):\n        return f\"{self.product.name}, {self.size}\"",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3521,7 +3824,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class Order(TimeBase):\n    CREATING = 'creating'\n    PENDING = 'pending'\n    SHIP = 'ship'\n    CANCEL = 'cancel'\n    COMPLETE = 'complete'\n    RETURN = 'return'\n    STATUS_CHOICE =  (\n        (CREATING, 'Creating'),\n        (SHIP, 'Ship'),",
+        "peekOfCode": "class Order(TimeBase, PaymentOrder, ShippingAddress):\n    CREATING = \"creating\"\n    PENDING = \"pending\"\n    SHIP = \"ship\"\n    CANCEL = \"cancel\"\n    COMPLETE = \"complete\"\n    RETURN = \"return\"\n    STATUS_CHOICE = (\n        (CREATING, \"Creating\"),\n        (SHIP, \"Ship\"),",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3530,7 +3833,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE, blank=True, null=True)\n    quantity = models.IntegerField(default=1)\n    class Meta:\n        db_table = \"cart\"\n# class CartProduct(models.Model):\n#     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)\n#     productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE)",
+        "peekOfCode": "class Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(\n        ProductItem, on_delete=models.CASCADE, blank=True, null=True\n    )\n    quantity = models.IntegerField(default=1)\n    class Meta:\n        db_table = \"cart\"\n# class CartProduct(models.Model):",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3548,7 +3851,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    image = models.ForeignKey(Image, on_delete=models.CASCADE)\n    primary = models.BooleanField(default=False)\n    class Meta:\n        db_table = \"product_image\"\nclass Review(TimeBase):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),",
+        "peekOfCode": "class ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    image = models.ForeignKey(Image, on_delete=models.CASCADE)\n    primary = models.BooleanField(default=False)\n    class Meta:\n        db_table = \"product_image\"\nclass Review(TimeBase, ReviewInfo):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    # product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    order_product = models.ForeignKey(",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3557,7 +3860,7 @@
         "kind": 6,
         "importPath": "backend.product.models",
         "description": "backend.product.models",
-        "peekOfCode": "class Review(TimeBase):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),\n        (3, 3),\n        (4, 4),\n        (5, 5),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    # product = models.ForeignKey(Product, on_delete=models.CASCADE)",
+        "peekOfCode": "class Review(TimeBase, ReviewInfo):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    # product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    order_product = models.ForeignKey(\n        OrderProduct, on_delete=models.CASCADE, null=True, blank=True\n    )\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    # images = models.ManyToManyField(\n    #     Image, related_name=\"CommentImage\", blank=True\n    # )",
         "detail": "backend.product.models",
         "documentation": {}
     },
@@ -3566,7 +3869,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = ['name']\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = ['id', 'productItem']\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()",
+        "peekOfCode": "class AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = [\"name\"]\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = [\"id\", \"productItem\"]\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3575,7 +3878,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = ['id', 'productItem']\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            'id',",
+        "peekOfCode": "class CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = [\"id\", \"productItem\"]\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            \"id\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3584,7 +3887,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            'id',\n            'product',\n            'quantity',\n        ]   \n    def get_product(self, obj):",
+        "peekOfCode": "class CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            \"id\",\n            \"product\",\n            \"quantity\",\n        ]\n    def get_product(self, obj):",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3593,7 +3896,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = '__all__'\nclass ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            'id',",
+        "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = \"__all__\"\nclass ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3602,7 +3905,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            'id',\n            'name',\n            'price',\n            'old_price',\n            'buyed_total',",
+        "peekOfCode": "class ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"old_price\",\n            \"buyed_total\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3611,7 +3914,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class ProductDetailSerializer(serializers.ModelSerializer):\n    agency = AgencySerializer(read_only=True)\n    image_list = serializers.SerializerMethodField()\n    item = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            'id',\n            'name',\n            'price',",
+        "peekOfCode": "class ProductDetailSerializer(serializers.ModelSerializer):\n    agency = AgencySerializer(read_only=True)\n    image_list = serializers.SerializerMethodField()\n    item = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3620,7 +3923,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'\nclass OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\n            'productItem',\n            'quantity'",
+        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = \"__all__\"\nclass OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\"productItem\", \"quantity\"]\nclass OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3629,7 +3932,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\n            'productItem',\n            'quantity'\n        ]\nclass OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:",
+        "peekOfCode": "class OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\"productItem\", \"quantity\"]\nclass OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\"products\", \"total_price\", \"status\"]\nclass OrderDetailSerializer(serializers.ModelSerializer):",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3638,7 +3941,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\n            'products',\n            'total_price',\n            'status'\n        ]\nclass OrderDetailSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\"products\", \"total_price\", \"status\"]\nclass OrderDetailSerializer(serializers.ModelSerializer):\n    products = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = [",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3647,7 +3950,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class OrderDetailSerializer(serializers.ModelSerializer):\n    products = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = [\n            'id',\n            'receiver',\n            'phone',\n            'address',\n            'total_price',",
+        "peekOfCode": "class OrderDetailSerializer(serializers.ModelSerializer):\n    products = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = [\n            \"id\",\n            \"receiver\",\n            \"phone\",\n            \"address\",\n            \"total_price\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3656,7 +3959,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        fields = '__all__'\nclass ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\n            'user'\n        ]",
+        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        fields = \"__all__\"\nclass ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\"customer\"]\nclass ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3665,7 +3968,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\n            'user'\n        ]\nclass ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:",
+        "peekOfCode": "class ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\"customer\"]\nclass ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:\n        model = Review\n        fields = [",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3674,7 +3977,7 @@
         "kind": 6,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "class ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:\n        model = Review \n        fields = [\n            'id',\n            'product',\n            'comment',\n            'reply',",
+        "peekOfCode": "class ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:\n        model = Review\n        fields = [\n            \"id\",\n            \"product\",\n            \"comment\",\n            \"reply\",",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3683,7 +3986,7 @@
         "kind": 5,
         "importPath": "backend.product.serializers",
         "description": "backend.product.serializers",
-        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your tests here.\nfrom .models import *\nclass AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = ['name']\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart",
+        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your tests here.\nfrom .models import *\nclass AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = [\"name\"]\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart",
         "detail": "backend.product.serializers",
         "documentation": {}
     },
@@ -3692,7 +3995,16 @@
         "kind": 2,
         "importPath": "backend.product.signals",
         "description": "backend.product.signals",
-        "peekOfCode": "def update_product_total(sender, instance, **kwargs):\n    instance.product.update_total()\n    instance.product.save()\n@receiver(pre_save, sender=Order)\ndef update_order_status(sender, instance, **kwargs):\n    try:\n        tz = pytz.timezone(settings.TIME_ZONE)\n        time_now = timezone.now().astimezone(tz)\n        campaigns = Campaign.objects \\\n        .filter(",
+        "peekOfCode": "def update_product_total(sender, instance, **kwargs):\n    instance.product.update_total()\n    instance.product.save()\n@receiver(pre_save, sender=OrderProduct)\ndef update_promotion_quantity(sender, instance, **kwargs):\n    promotion = Promotion.objects.get(\n        product=instance.productItem.product, quantity__gt=0\n    )\n    if (\n        promotion",
+        "detail": "backend.product.signals",
+        "documentation": {}
+    },
+    {
+        "label": "update_promotion_quantity",
+        "kind": 2,
+        "importPath": "backend.product.signals",
+        "description": "backend.product.signals",
+        "peekOfCode": "def update_promotion_quantity(sender, instance, **kwargs):\n    promotion = Promotion.objects.get(\n        product=instance.productItem.product, quantity__gt=0\n    )\n    if (\n        promotion\n        and instance.order.status == Order.PENDING\n        and instance.quantity < promotion.quantity\n    ):\n        promotion.quantity -= instance.quantity",
         "detail": "backend.product.signals",
         "documentation": {}
     },
@@ -3701,7 +4013,7 @@
         "kind": 2,
         "importPath": "backend.product.signals",
         "description": "backend.product.signals",
-        "peekOfCode": "def update_order_status(sender, instance, **kwargs):\n    try:\n        tz = pytz.timezone(settings.TIME_ZONE)\n        time_now = timezone.now().astimezone(tz)\n        campaigns = Campaign.objects \\\n        .filter(\n            start_time__lte=time_now, \n            end_time__gte=time_now,\n            status=Campaign.RUNNING\n        )",
+        "peekOfCode": "def update_order_status(sender, instance, **kwargs):\n    try:\n        tz = pytz.timezone(settings.TIME_ZONE)\n        time_now = timezone.now().astimezone(tz)\n        campaigns = Campaign.objects.filter(\n            start_time__lte=time_now, end_time__gte=time_now, status=Campaign.RUNNING\n        )\n        old_instance = Order.objects.get(id=instance.id)\n        user = instance.user\n        if old_instance and old_instance.status != instance.status:",
         "detail": "backend.product.signals",
         "documentation": {}
     },
@@ -3737,7 +4049,7 @@
         "kind": 2,
         "importPath": "backend.product.signals",
         "description": "backend.product.signals",
-        "peekOfCode": "def update_rating(sender, instance, **kwargs):\n    product = instance.order_product.productItem.product\n    product_rating = Review.objects \\\n        .filter(\n            order_product__productItem__product = product\n        ) \\\n        .aggregate(\n            sum_rate = Sum('rate_point'),\n            count_review = Count('id')\n        )",
+        "peekOfCode": "def update_rating(sender, instance, **kwargs):\n    product = instance.order_product.productItem.product\n    product_rating = Review.objects.filter(\n        order_product__productItem__product=product\n    ).aggregate(sum_rate=Sum(\"rate_point\"), count_review=Count(\"id\"))\n    product.average_rating = (\n        product_rating[\"sum_rate\"] // product_rating[\"count_review\"]\n    )\n    product.save()\n    print(\"[ End update rating ]\")",
         "detail": "backend.product.signals",
         "documentation": {}
     },
@@ -3746,7 +4058,7 @@
         "kind": 2,
         "importPath": "backend.product.signals",
         "description": "backend.product.signals",
-        "peekOfCode": "def update_campaign(sender, instance, **kwargs):\n    tz = pytz.timezone(settings.TIME_ZONE)\n    time_now = timezone.now().astimezone(tz)\n    campaign = Campaign.objects \\\n        .filter(\n            start_time__lte=time_now, \n            end_time__gte=time_now,\n            status=Campaign.RUNNING\n        ) \\\n        .aggregate(",
+        "peekOfCode": "def update_campaign(sender, instance, **kwargs):\n    tz = pytz.timezone(settings.TIME_ZONE)\n    time_now = timezone.now().astimezone(tz)\n    campaign = Campaign.objects.filter(\n        start_time__lte=time_now, end_time__gte=time_now, status=Campaign.RUNNING\n    ).aggregate(sum_discount=Sum(\"discount\"))\n    sum_discount = campaign[\"sum_discount\"] if campaign[\"sum_discount\"] else 0\n    products = Product.objects.all()\n    for product in products:\n        product.price = product.old_price * (100 - sum_discount) // 100",
         "detail": "backend.product.signals",
         "documentation": {}
     },
@@ -3755,7 +4067,16 @@
         "kind": 2,
         "importPath": "backend.product.signals",
         "description": "backend.product.signals",
-        "peekOfCode": "def schedule_task(campaign):\n    print(\"[ Start schedule ]\")\n    PeriodicTask.objects.filter(name__endswith=campaign.id).delete()\n    start_schedule, _ = CrontabSchedule.objects.get_or_create(\n        minute=campaign.start_time.minute,\n        hour=campaign.start_time.hour,\n        day_of_month=campaign.start_time.day,\n        month_of_year=campaign.start_time.month,\n        day_of_week='*',\n        timezone=str(campaign.start_time.tzinfo)",
+        "peekOfCode": "def schedule_task(campaign):\n    print(\"[ Start schedule ]\")\n    PeriodicTask.objects.filter(name__endswith=campaign.id).delete()\n    start_schedule, _ = CrontabSchedule.objects.get_or_create(\n        minute=campaign.start_time.minute,\n        hour=campaign.start_time.hour,\n        day_of_month=campaign.start_time.day,\n        month_of_year=campaign.start_time.month,\n        day_of_week=\"*\",\n        timezone=str(campaign.start_time.tzinfo),",
+        "detail": "backend.product.signals",
+        "documentation": {}
+    },
+    {
+        "label": "update_product_price",
+        "kind": 2,
+        "importPath": "backend.product.signals",
+        "description": "backend.product.signals",
+        "peekOfCode": "def update_product_price(sender, instance, created, **kwargs):\n    if created:\n        instance.product.price = (\n            instance.product.old_price * (100 - instance.discount) // 100\n        )\n        instance.product.save()\n    elif instance.quantity == 0:\n        instance.product.price = instance.product.old_price\n        instance.product.save()",
         "detail": "backend.product.signals",
         "documentation": {}
     },
@@ -3764,7 +4085,7 @@
         "kind": 5,
         "importPath": "backend.product.urls",
         "description": "backend.product.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r\"products\", ProductViewSet, basename=\"products\")\nrouter.register(r\"agency\", AgencyViewSet, basename=\"agency\")\nrouter.register(r\"cart\", CartViewSet, basename=\"cart\")\nrouter.register(r\"order\", OrderViewSet, basename=\"order\")\nrouter.register(r\"rating\", ReviewViewSet, basename=\"rating\")\n# router.register(r\"comment\", CommentViewSet, basename=\"comment\")\nurlpatterns = [\n    path(\"\", include(router.urls))\n]",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r\"products\", ProductViewSet, basename=\"products\")\nrouter.register(r\"agency\", AgencyViewSet, basename=\"agency\")\nrouter.register(r\"cart\", CartViewSet, basename=\"cart\")\nrouter.register(r\"order\", OrderViewSet, basename=\"order\")\nrouter.register(r\"rating\", ReviewViewSet, basename=\"rating\")\n# router.register(r\"comment\", CommentViewSet, basename=\"comment\")\nurlpatterns = [path(\"\", include(router.urls))]",
         "detail": "backend.product.urls",
         "documentation": {}
     },
@@ -3773,7 +4094,7 @@
         "kind": 5,
         "importPath": "backend.product.urls",
         "description": "backend.product.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", include(router.urls))\n]",
+        "peekOfCode": "urlpatterns = [path(\"\", include(router.urls))]",
         "detail": "backend.product.urls",
         "documentation": {}
     },
@@ -3782,7 +4103,7 @@
         "kind": 6,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "class ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = ['created_at', 'buyed_total', 'price', 'view']\n    ordering = ['-buyed_total']\n    def get_permissions(self):\n        match self.action:",
+        "peekOfCode": "class ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = [\"created_at\", \"buyed_total\", \"price\", \"view\"]\n    ordering = [\"-buyed_total\"]\n    def get_permissions(self):\n        match self.action:",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3791,7 +4112,7 @@
         "kind": 6,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "class AgencyViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = AgencySerializer\n    queryset = Agency.objects.all()\n    def get_permissions(self):\n        match self.action:\n            case 'list':\n                self.permission_classes = []\n            case _:\n                self.permission_classes = [IsStaffOrAdmin]",
+        "peekOfCode": "class AgencyViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = AgencySerializer\n    queryset = Agency.objects.all()\n    def get_permissions(self):\n        match self.action:\n            case \"list\":\n                self.permission_classes = []\n            case _:\n                self.permission_classes = [IsStaffOrAdmin]",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3800,7 +4121,7 @@
         "kind": 6,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "class CartViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    permission_classes = [IsActiveUser]\n    serializer_class = CartSerializer\n    # queryset = Cart.objects.all()\n    def get_serializer_class(self):\n        match self.action:\n            case 'list':\n                return CartListSerializer\n            case 'create':",
+        "peekOfCode": "class CartViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    permission_classes = [IsActiveUser]\n    serializer_class = CartSerializer\n    # queryset = Cart.objects.all()\n    def get_serializer_class(self):\n        match self.action:\n            case \"list\":\n                return CartListSerializer\n            case \"create\":",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3809,7 +4130,7 @@
         "kind": 6,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "class OrderViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = OrderSerializer\n    permission_classes = [IsActiveUser]\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = OrderFilter\n    ordering_fields = ['updated_at']\n    ordering = ['-updated_at']\n    def get_serializer_class(self):\n        match self.action:",
+        "peekOfCode": "class OrderViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = OrderSerializer\n    permission_classes = [IsActiveUser]\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = OrderFilter\n    ordering_fields = [\"updated_at\"]\n    ordering = [\"-updated_at\"]\n    def get_serializer_class(self):\n        match self.action:",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3818,7 +4139,7 @@
         "kind": 6,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "class ReviewViewSet(ModelViewSet):\n    serializer_class = ReviewSerializer\n    permission_classes = []\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ReviewFilter\n    queryset = Review.objects.all()\n    ordering = ['-created_at']\n    def get_serializer_class(self):\n        match self.action:\n            case 'create':",
+        "peekOfCode": "class ReviewViewSet(ModelViewSet):\n    serializer_class = ReviewSerializer\n    permission_classes = []\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ReviewFilter\n    queryset = Review.objects.all()\n    ordering = [\"-created_at\"]\n    def get_serializer_class(self):\n        match self.action:\n            case \"create\":",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3827,7 +4148,7 @@
         "kind": 5,
         "importPath": "backend.product.views",
         "description": "backend.product.views",
-        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your views here.\nclass ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = ['created_at', 'buyed_total', 'price', 'view']\n    ordering = ['-buyed_total']",
+        "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your views here.\nclass ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = [\"created_at\", \"buyed_total\", \"price\", \"view\"]\n    ordering = [\"-buyed_total\"]",
         "detail": "backend.product.views",
         "documentation": {}
     },
@@ -3877,11 +4198,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.statistical.migrations.0006_campaign_discount_code",
+        "description": "backend.statistical.migrations.0006_campaign_discount_code",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('statistical', '0005_alter_campaign_discount'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='campaign',\n            name='discount_code',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "backend.statistical.migrations.0006_campaign_discount_code",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.statistical.migrations.0007_campaign_orders_campaignorder",
+        "description": "backend.statistical.migrations.0007_campaign_orders_campaignorder",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0035_remove_order_user_order_customer'),\n        ('statistical', '0006_campaign_discount_code'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='campaign',\n            name='orders',\n            field=models.ManyToManyField(blank=True, related_name='CampaignOrder', to='product.order'),",
+        "detail": "backend.statistical.migrations.0007_campaign_orders_campaignorder",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.statistical.migrations.0008_promotion_campaignpromotion_campaignorder_promotions",
+        "description": "backend.statistical.migrations.0008_promotion_campaignpromotion_campaignorder_promotions",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0037_address_warehouse_product_warehouse'),\n        ('statistical', '0007_campaign_orders_campaignorder'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Promotion',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
+        "detail": "backend.statistical.migrations.0008_promotion_campaignpromotion_campaignorder_promotions",
+        "documentation": {}
+    },
+    {
         "label": "StatisticalAdmin",
         "kind": 6,
         "importPath": "backend.statistical.admin",
         "description": "backend.statistical.admin",
-        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    fieldsets = (\n        ('Total', {\n            'fields': (('total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total'),),\n            }),\n        ('Revenue', {\n            'fields': (('revenue_total', 'profit_total'),),\n            }),\n    )\n    readonly_fields = ('total', 'buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total')",
+        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
         "detail": "backend.statistical.admin",
         "documentation": {}
     },
@@ -3890,7 +4238,16 @@
         "kind": 6,
         "importPath": "backend.statistical.admin",
         "description": "backend.statistical.admin",
-        "peekOfCode": "class CampaignAdmin(admin.ModelAdmin):\n    fieldsets = (\n        ('Total', {\n            'fields': (('buyed_total', 'ship_total', 'pending_total', 'cancelled_total', 'returned_total'),),\n            }),\n        ('Revenue', {\n            'fields': (('revenue_total', 'profit_total'),),\n            }),\n        ('Campaign', {\n            'fields': ('name', ('start_time', 'end_time',), 'discount', 'status',),",
+        "peekOfCode": "class CampaignAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"buyed_total\",\n                        \"ship_total\",\n                        \"pending_total\",",
+        "detail": "backend.statistical.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PromotionAdmin",
+        "kind": 6,
+        "importPath": "backend.statistical.admin",
+        "description": "backend.statistical.admin",
+        "peekOfCode": "class PromotionAdmin(admin.ModelAdmin):\n    fields = (\"product\", \"quantity\", \"discount\")\n    # fieldsets = (\n    #     (\n    #         \"Promotion Info\",\n    #         {\n    #             \"fields\": (\"product\", \"quantity\"),\n    #         },\n    #     ),\n    #     (",
         "detail": "backend.statistical.admin",
         "documentation": {}
     },
@@ -3904,11 +4261,38 @@
         "documentation": {}
     },
     {
+        "label": "PromotionType",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class PromotionType(models.Model):\n    FLASH_DEAL = \"flash_deal\"\n    PRODUCT_DISCOUNT = \"product_discount\"\n    PROMOTION_TYPE_CHOICES = [\n        (FLASH_DEAL, \"Flash Deal\"),\n        (PRODUCT_DISCOUNT, \"Product Discount\"),\n    ]\n    type = models.CharField(\n        max_length=255, choices=PROMOTION_TYPE_CHOICES, default=PRODUCT_DISCOUNT\n    )",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "CampaignTime",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class CampaignTime(models.Model):\n    start_time = models.DateTimeField()\n    end_time = models.DateTimeField()\n    class Meta:\n        abstract = True\nclass Discount(models.Model):\n    discount = models.IntegerField(\n        default=0,\n        validators=[MinValueValidator(0), MaxValueValidator(100)],\n        help_text=\"Enter a value from 0 to 100 to set the discount percentage.\",",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "Discount",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class Discount(models.Model):\n    discount = models.IntegerField(\n        default=0,\n        validators=[MinValueValidator(0), MaxValueValidator(100)],\n        help_text=\"Enter a value from 0 to 100 to set the discount percentage.\",\n    )\n    discount_code = models.CharField(\n        max_length=6,\n        default=lambda: \"\".join(\n            random.choices(string.ascii_uppercase + string.digits, k=6)",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
         "label": "Statistical",
         "kind": 6,
         "importPath": "backend.statistical.models",
         "description": "backend.statistical.models",
-        "peekOfCode": "class Statistical(Statistics):\n    def update_total(self):\n        agencies = Agency.objects\\\n        .all() \\\n        .aggregate(\n            sum_total=Sum('total'),\n            sum_buyed_total=Sum('buyed_total'),\n            sum_ship_total=Sum('ship_total'),\n            sum_pending_total=Sum('pending_total'),\n            sum_cancelled_total=Sum('cancelled_total'),",
+        "peekOfCode": "class Statistical(Statistics):\n    def update_total(self):\n        agencies = Agency.objects.all().aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),\n            sum_ship_total=Sum(\"ship_total\"),\n            sum_pending_total=Sum(\"pending_total\"),\n            sum_cancelled_total=Sum(\"cancelled_total\"),\n            sum_returned_total=Sum(\"returned_total\"),\n            sum_revenue_total=Sum(\"revenue_total\"),",
         "detail": "backend.statistical.models",
         "documentation": {}
     },
@@ -3917,7 +4301,34 @@
         "kind": 6,
         "importPath": "backend.statistical.models",
         "description": "backend.statistical.models",
-        "peekOfCode": "class Campaign(TimeBase, Statistics):\n    PENDING = 'pending'\n    RUNNING = 'running'\n    CLOSE = 'close'\n    STATUS = [\n        (PENDING, 'pending'),\n        (RUNNING, 'running'),\n        (CLOSE, 'close'),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "peekOfCode": "class Campaign(TimeBase, Statistics, CampaignTime, Discount):\n    PENDING = \"pending\"\n    RUNNING = \"running\"\n    CLOSE = \"close\"\n    STATUS = [\n        (PENDING, \"pending\"),\n        (RUNNING, \"running\"),\n        (CLOSE, \"close\"),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promotion",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class Promotion(TimeBase, Discount, PromotionType):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    quantity = models.IntegerField()\n    def __str__(self):\n        return self.product.name + \" - \" + str(self.discount)\n    class Meta:\n        db_table = \"promotion\"\nclass CampaignOrder(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "CampaignOrder",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class CampaignOrder(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)\n    order = models.ForeignKey(Order, on_delete=models.CASCADE)\n    promotions = models.ManyToManyField(\n        Promotion, related_name=\"CampaignPromotion\", blank=True\n    )\n    class Meta:\n        db_table = \"campaign_order\"\nclass CampaignPromotion(models.Model):",
+        "detail": "backend.statistical.models",
+        "documentation": {}
+    },
+    {
+        "label": "CampaignPromotion",
+        "kind": 6,
+        "importPath": "backend.statistical.models",
+        "description": "backend.statistical.models",
+        "peekOfCode": "class CampaignPromotion(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)\n    promotion = models.ForeignKey(Promotion, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"campaign_promotion\"",
         "detail": "backend.statistical.models",
         "documentation": {}
     },
@@ -4039,6 +4450,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.user.migrations.0013_notificationcontent_notification",
+        "description": "backend.user.migrations.0013_notificationcontent_notification",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0012_alter_user_options_alter_customer_table_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='NotificationContent',\n            fields=[\n                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),\n                ('content', models.TextField()),",
+        "detail": "backend.user.migrations.0013_notificationcontent_notification",
+        "documentation": {}
+    },
+    {
         "label": "UserAdminForm",
         "kind": 6,
         "importPath": "backend.user.admin",
@@ -4079,7 +4499,34 @@
         "kind": 6,
         "importPath": "backend.user.models",
         "description": "backend.user.models",
-        "peekOfCode": "class TimeBase(models.Model):\n    updated_at = models.DateTimeField(auto_now=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        abstract = True\nclass Statistics(models.Model):\n    total = models.BigIntegerField(default=0)\n    buyed_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    pending_total = models.BigIntegerField(default=0)",
+        "peekOfCode": "class TimeBase(models.Model):\n    updated_at = models.DateTimeField(auto_now=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        abstract = True\nclass StatisticComplete(models.Model):\n    buyed_total = models.BigIntegerField(default=0)\n    cancelled_total = models.BigIntegerField(default=0)\n    returned_total = models.BigIntegerField(default=0)\n    class Meta:",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticComplete",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class StatisticComplete(models.Model):\n    buyed_total = models.BigIntegerField(default=0)\n    cancelled_total = models.BigIntegerField(default=0)\n    returned_total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True\nclass StatisticNonComplete(models.Model):\n    pending_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    class Meta:",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticNonComplete",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class StatisticNonComplete(models.Model):\n    pending_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True\nclass StatisticMoney(models.Model):\n    revenue_total = models.BigIntegerField(default=0)\n    profit_total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticMoney",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class StatisticMoney(models.Model):\n    revenue_total = models.BigIntegerField(default=0)\n    profit_total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True\nclass Statistics(StatisticComplete, StatisticNonComplete, StatisticMoney):\n    total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True\nclass CustomerInfo(models.Model):",
         "detail": "backend.user.models",
         "documentation": {}
     },
@@ -4088,7 +4535,16 @@
         "kind": 6,
         "importPath": "backend.user.models",
         "description": "backend.user.models",
-        "peekOfCode": "class Statistics(models.Model):\n    total = models.BigIntegerField(default=0)\n    buyed_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    pending_total = models.BigIntegerField(default=0)\n    cancelled_total = models.BigIntegerField(default=0)\n    returned_total = models.BigIntegerField(default=0)\n    revenue_total = models.BigIntegerField(default=0)\n    profit_total = models.BigIntegerField(default=0)\n    class Meta:",
+        "peekOfCode": "class Statistics(StatisticComplete, StatisticNonComplete, StatisticMoney):\n    total = models.BigIntegerField(default=0)\n    class Meta:\n        abstract = True\nclass CustomerInfo(models.Model):\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    class Meta:\n        abstract = True",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerInfo",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class CustomerInfo(models.Model):\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    class Meta:\n        abstract = True\nclass UserManager(BaseUserManager):\n    \"\"\"Define a model manager for User model with no username field.\"\"\"\n    use_in_migrations = True\n    def _create_user(self, email, password, **extra_fields):",
         "detail": "backend.user.models",
         "documentation": {}
     },
@@ -4115,7 +4571,25 @@
         "kind": 6,
         "importPath": "backend.user.models",
         "description": "backend.user.models",
-        "peekOfCode": "class Customer(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"customer\")\n    avatar = models.ForeignKey(Image, on_delete=models.SET_NULL, null=True, blank=True, related_name=\"avatar\")\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:",
+        "peekOfCode": "class Customer(TimeBase, Statistics, CustomerInfo):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"customer\")\n    avatar = models.ForeignKey(Image, on_delete=models.SET_NULL, null=True, blank=True, related_name=\"avatar\")\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:\n        db_table = \"customer\"\nclass NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationContent",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    content = models.TextField()\n    class Meta:\n        db_table = \"notification_content\"\nclass Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(NotificationContent, on_delete=models.SET_NULL, null=True, blank=True)",
+        "detail": "backend.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "kind": 6,
+        "importPath": "backend.user.models",
+        "description": "backend.user.models",
+        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(NotificationContent, on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:\n        db_table = \"notification\"",
         "detail": "backend.user.models",
         "documentation": {}
     },
@@ -4201,12 +4675,21 @@
         "documentation": {}
     },
     {
-        "label": "clean",
-        "kind": 2,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "def clean(price):\n    price = price.replace(',', '')\n    return int(price)\nsizes = ['36', '37', '38', '39', '40', '41', '42', '43', '44']\nproducts = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],",
-        "detail": "backend.import",
+        "label": "urls",
+        "kind": 5,
+        "importPath": "backend.crawl",
+        "description": "backend.crawl",
+        "peekOfCode": "urls = [\"https://zunezx.com/san-pham.html\", \"https://zunezx.com/san-pham.html?page=2\"]\nproduct_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")",
+        "detail": "backend.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "product_urls",
+        "kind": 5,
+        "importPath": "backend.crawl",
+        "description": "backend.crawl",
+        "peekOfCode": "product_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")\n        # Tìm tất cả các thẻ <a> có chứa <img> với class 'img-responsive main-img main'",
+        "detail": "backend.crawl",
         "documentation": {}
     },
     {
@@ -4214,16 +4697,7 @@
         "kind": 5,
         "importPath": "backend.import",
         "description": "backend.import",
-        "peekOfCode": "path = 'import/images'\njson_path = 'import/data.json'\nagencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "json_path",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "json_path = 'import/data.json'\nagencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯",
+        "peekOfCode": "path = \"zune\"\nagencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯",
         "detail": "backend.import",
         "documentation": {}
     },
@@ -4232,7 +4706,7 @@
         "kind": 5,
         "importPath": "backend.import",
         "description": "backend.import",
-        "peekOfCode": "agencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦",
+        "peekOfCode": "agencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦",
         "detail": "backend.import",
         "documentation": {}
     },
@@ -4241,7 +4715,7 @@
         "kind": 5,
         "importPath": "backend.import",
         "description": "backend.import",
-        "peekOfCode": "description = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦\nSẵn sàng giao hàng ngay khi nhận được đơn, tiết kiệm thời gian cho bạn. ⏰",
+        "peekOfCode": "description = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦\nSẵn sàng giao hàng ngay khi nhận được đơn, tiết kiệm thời gian cho bạn. ⏰",
         "detail": "backend.import",
         "documentation": {}
     },
@@ -4250,25 +4724,16 @@
         "kind": 5,
         "importPath": "backend.import",
         "description": "backend.import",
-        "peekOfCode": "sizes = ['36', '37', '38', '39', '40', '41', '42', '43', '44']\nproducts = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),",
+        "peekOfCode": "sizes = [\"S\", \"M\", \"L\", \"XL\", \"2XL\", \"3XL\"]\n# Tạo danh sách Agency (chọn ngẫu nhiên từ danh sách agencies)\nagency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [",
         "detail": "backend.import",
         "documentation": {}
     },
     {
-        "label": "products",
+        "label": "agency_objects",
         "kind": 5,
         "importPath": "backend.import",
         "description": "backend.import",
-        "peekOfCode": "products = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),\n        description = description,",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "products_images",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "products_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),\n        description = description,\n        agency = agency,",
+        "peekOfCode": "agency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [\n        f for f in os.listdir(image_folder) if f.endswith((\".jpg\", \".jpeg\", \".png\"))\n    ]",
         "detail": "backend.import",
         "documentation": {}
     },
@@ -4279,519 +4744,6 @@
         "description": "backend.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "backend.manage",
-        "documentation": {}
-    },
-    {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['o']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['one']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['two']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['three']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['a']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['test']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['array']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "str",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "oo",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flat-cache@3.2.0.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['o']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['one']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['two']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['three']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['a']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['test']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['array']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "str",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "oo",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.flatted@3.3.1.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['o']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['one']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['two']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['three']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['a']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['test']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['array']",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o2",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "str",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "oo",
-        "kind": 5,
-        "importPath": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "description": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
-        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "frontend.node_modules..pnpm.node_modules.flatted.python.test",
         "documentation": {}
     }
 ]

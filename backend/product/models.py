@@ -95,6 +95,7 @@ class Agency(TimeBase, Statistics):
 
     class Meta:
         db_table = "agency"
+        app_label = "product"
 
 
 class Address(TimeBase):
@@ -103,6 +104,9 @@ class Address(TimeBase):
     address = models.CharField(max_length=255)
     region = models.CharField(max_length=255)
     postal_code = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.city}, {self.address}, {self.region}, {self.postal_code}"
 
     class Meta:
         db_table = "address"
@@ -133,6 +137,9 @@ class Product(TimeBase, Statistics, ProductInfo, Price):
     # ratings = models.ManyToManyField(
     #     Customer, related_name="Rating", blank=True
     # )
+
+    def __str__(self):
+        return self.name
 
     def update_total(self):
         products = ProductItem.objects.filter(product=self).aggregate(
@@ -168,6 +175,9 @@ class ProductItem(TimeBase, Statistics):
         self.product.update_total()
         self.product.save()
 
+    def __str__(self):
+        return f"{self.product.name}, {self.size}"
+
     class Meta:
         db_table = "product_item"
 
@@ -195,6 +205,9 @@ class Order(TimeBase, PaymentOrder, ShippingAddress):
     products = models.ManyToManyField(
         ProductItem, related_name="OrderProduct", blank=True
     )
+
+    def __str__(self):
+        return f"{self.customer.user.first_name} {self.customer.user.last_name} ({self.address})"
 
     class Meta:
         db_table = "order"

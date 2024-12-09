@@ -195,7 +195,7 @@ export default function Cart() {
       }
 
       buyPurchaseMutation.mutate(body)
-
+      deletePurchaseMutation.mutate(checkedPurchase.map((purchase) => purchase.id))
     }
   }
 
@@ -283,11 +283,7 @@ export default function Cart() {
                                 onDecrease={(value) => handleQuantity(index, value, value >= 1)}
                                 onType={(value) => handleType(index, value)}
                                 onFocusOut={(value) =>
-                                  handleOnFocusOut(
-                                    index,
-                                    value,
-                                    value !== purchasesInCart[index].quantity
-                                  )
+                                  handleOnFocusOut(index, value, value !== purchasesInCart[index].quantity)
                                 }
                                 disabled={purchase.disabled}
                               />

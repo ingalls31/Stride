@@ -98,7 +98,7 @@ class CartViewSet(ModelViewSet):
     def get_queryset(self):
         try:
             print("self.request.customer", self.request.customer)
-            return Cart.objects.filter(user=self.request.customer)
+            return Cart.objects.filter(customer=self.request.customer)
         except:
             return []
 
@@ -107,7 +107,9 @@ class CartViewSet(ModelViewSet):
         productItem = ProductItem.objects.get(id=productItemId)
 
         try:
-            Cart.objects.get_or_create(user=request.customer, productItem=productItem)
+            Cart.objects.get_or_create(
+                customer=request.customer, productItem=productItem
+            )
             return Response(
                 {
                     "success": True,
@@ -147,12 +149,13 @@ class OrderViewSet(ModelViewSet):
 
     def get_queryset(self):
         try:
-            return Order.objects.filter(user=self.request.customer)
+            return Order.objects.filter(customer=self.request.customer)
         except:
             return None
 
     def retrieve(self, request, *args, **kwargs):
         order = Order.objects.get(id=kwargs.get("pk"))
+        print(order.payment_session)
         if order.payment_session != None:
             session = stripe.checkout.Session.retrieve(order.payment_session)
             if session.status == "complete":
@@ -171,7 +174,7 @@ class OrderViewSet(ModelViewSet):
             status_order = request.data.get("status")
 
             order = Order.objects.create(
-                user=customer,
+                customer=customer,
                 receiver=receiver,
                 phone=phone,
                 address=address,
@@ -254,6 +257,7 @@ class OrderViewSet(ModelViewSet):
                 success_url=f"https://localhost:3000/order/{order.id}",
                 cancel_url=f"https://localhost:3000/order/{order.id}",
             )
+            print(session.id)
             order = Order.objects.get(id=kwargs.get("pk"))
             order.payment_session = session.id
             order.save()
@@ -285,13 +289,13 @@ class ReviewViewSet(ModelViewSet):
             order_product = OrderProduct.objects.get(
                 id=request.data.get("order_product")
             )
-            user = request.customer
+            customer = request.customer
             comment = request.data.get("comment")
             rate_point = request.data.get("rate_point")
 
             Review.objects.create(
                 order_product=order_product,
-                user=user,
+                customer=customer,
                 rate_point=rate_point,
                 comment=comment,
             )
