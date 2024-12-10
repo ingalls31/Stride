@@ -1,3 +1,4 @@
+import django.dispatch
 from random import choices
 from django.db import models
 from user.models import TimeBase, Statistics, Customer
@@ -7,59 +8,57 @@ from django.db.models import Sum
 # Create your models here.
 
 
-class ProductInfo(models.Model):
-    MALE = "male"
-    FEMALE = "female"
-    CATEGORY_CHOICE = (
-        (MALE, "Male"),
-        (FEMALE, "Female"),
-    )
-    name = models.CharField(max_length=255)
-    description = models.TextField(null=True, blank=True)
-    average_rating = models.FloatField(default=0)
-    category = models.CharField(max_length=10, choices=CATEGORY_CHOICE, default=MALE)
+class ProductInfo:    
+    def __init__(self, name, description, average_rating, category):
+        self.name = name
+        self.description = description
+        self.average_rating = average_rating
+        self.category = category
 
-    class Meta:
-        abstract = True
+    def __str__(self):
+        return self.name
+    
 
 
-class Price(models.Model):
-    cost = models.IntegerField(default=0)
-    price = models.IntegerField(default=0)
-    old_price = models.IntegerField(default=0)
+class Price:
+    def __init__(self, cost, price, old_price):
+        self.cost = cost
+        self.price = price
+        self.old_price = old_price
 
-    class Meta:
-        abstract = True
-
-
-class PaymentOrder(models.Model):
-    payment_session = models.CharField(max_length=255, null=True, blank=True)
-    payment_done = models.BooleanField(default=False)
-
-    class Meta:
-        abstract = True
+    def __str__(self):
+        return f"{self.cost}, {self.price}, {self.old_price}"
 
 
-class ShippingAddress(models.Model):
-    receiver = models.CharField(max_length=255, null=True, blank=True)
-    phone = models.CharField(max_length=100, null=True, blank=True)
-    address = models.TextField(null=True, blank=True)
+class PaymentOrder:
+    def __init__(self, payment_session, payment_done):
+        self.payment_session = payment_session
+        self.payment_done = payment_done
 
-    class Meta:
-        abstract = True
+    def __str__(self):
+        return f"{self.payment_session}, {self.payment_done}"
 
 
-class ReviewInfo(models.Model):
-    RATE_CHOICES = [
-        (1, 1),
-        (2, 2),
-        (3, 3),
-        (4, 4),
-        (5, 5),
-    ]
-    comment = models.TextField(null=True, blank=True)
-    reply = models.TextField(null=True, blank=True)
-    rate_point = models.IntegerField(choices=RATE_CHOICES, default=5)
+
+class ShippingAddress:
+    def __init__(self, receiver, phone, address):
+        self.receiver = receiver
+        self.phone = phone
+        self.address = address
+
+    def __str__(self):
+        return f"{self.receiver}, {self.phone}, {self.address}"
+        
+
+
+class ReviewInfo:
+    def __init__(self, comment, reply, rate_point):
+        self.comment = comment
+        self.reply = reply
+        self.rate_point = rate_point
+
+    def __str__(self):
+        return f"{self.comment}, {self.reply}, {self.rate_point}"
 
     class Meta:
         abstract = True
@@ -121,7 +120,13 @@ class Warehouse(TimeBase):
         db_table = "warehouse"
 
 
-class Product(TimeBase, Statistics, ProductInfo, Price):
+class Product(TimeBase, Statistics):
+    MALE = "male"
+    FEMALE = "female"
+    CATEGORY_CHOICE = (
+        (MALE, "Male"),
+        (FEMALE, "Female"),
+    )
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     agency = models.ForeignKey(Agency, on_delete=models.CASCADE)
     # discount = models.FloatField(default=0)
@@ -130,13 +135,24 @@ class Product(TimeBase, Statistics, ProductInfo, Price):
         Warehouse, on_delete=models.CASCADE, null=True, blank=True
     )
     images = models.ManyToManyField(Image, related_name="ProductImage", blank=True)
-    # comments = models.ManyToManyField(
-    #     Customer, related_name="Comment", blank=True
-    # )
+    
+    name = models.CharField(max_length=255)
+    description = models.TextField(null=True, blank=True)
+    average_rating = models.FloatField(default=0)
+    category = models.CharField(max_length=10, choices=CATEGORY_CHOICE, default=MALE)
+    
+    cost = models.IntegerField(default=0)
+    price = models.IntegerField(default=0)
+    old_price = models.IntegerField(default=0)
+    
+    @property
+    def product_info(self):
+        return ProductInfo(self.name, self.description, self.average_rating, self.category)
+    
+    @property
+    def price_info(self):
+        return Price(self.cost, self.price, self.old_price)
 
-    # ratings = models.ManyToManyField(
-    #     Customer, related_name="Rating", blank=True
-    # )
 
     def __str__(self):
         return self.name
@@ -182,7 +198,7 @@ class ProductItem(TimeBase, Statistics):
         db_table = "product_item"
 
 
-class Order(TimeBase, PaymentOrder, ShippingAddress):
+class Order(TimeBase, ShippingAddress):
     CREATING = "creating"
     PENDING = "pending"
     SHIP = "ship"
@@ -206,6 +222,21 @@ class Order(TimeBase, PaymentOrder, ShippingAddress):
         ProductItem, related_name="OrderProduct", blank=True
     )
 
+    payment_session = models.CharField(max_length=255, null=True, blank=True)
+    payment_done = models.BooleanField(default=False)
+    
+    receiver = models.CharField(max_length=255, null=True, blank=True)
+    phone = models.CharField(max_length=100, null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+    
+    @property
+    def payment_info(self):
+        return PaymentOrder(self.payment_session, self.payment_done)
+    
+    @property
+    def shipping_info(self):
+        return ShippingAddress(self.receiver, self.phone, self.address)
+
     def __str__(self):
         return f"{self.customer.user.first_name} {self.customer.user.last_name} ({self.address})"
 
@@ -224,11 +255,6 @@ class Cart(TimeBase):
     class Meta:
         db_table = "cart"
 
-
-# class CartProduct(models.Model):
-#     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
-#     productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
-#     quantity = models.IntegerField(default=1)
 
 
 class OrderProduct(models.Model):
@@ -253,15 +279,26 @@ class ProductImage(models.Model):
 
 
 class Review(TimeBase, ReviewInfo):
+    RATE_CHOICES = [
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 5),
+    ]
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # product = models.ForeignKey(Product, on_delete=models.CASCADE)
     order_product = models.ForeignKey(
         OrderProduct, on_delete=models.CASCADE, null=True, blank=True
     )
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    # images = models.ManyToManyField(
-    #     Image, related_name="CommentImage", blank=True
-    # )
+    comment = models.TextField(null=True, blank=True)
+    reply = models.TextField(null=True, blank=True)
+    rate_point = models.IntegerField(choices=RATE_CHOICES, default=5)
+    
+    @property
+    def review_info(self):
+        return ReviewInfo(self.comment, self.reply, self.rate_point)
+    
 
     class Meta:
         db_table = "review"

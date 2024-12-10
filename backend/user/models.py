@@ -16,41 +16,81 @@ class TimeBase(models.Model):
     class Meta:
         abstract = True
         
-class StatisticComplete(models.Model):
+class StatisticComplete:
+    def __init__(self, buyed_total, cancelled_total, returned_total):
+        self.buyed_total = buyed_total
+        self.cancelled_total = cancelled_total
+        self.returned_total = returned_total
+        
+    def __str__(self):
+        return f"{self.buyed_total}, {self.cancelled_total}, {self.returned_total}"
+    
+    def get_total(self):
+        return self.buyed_total + self.cancelled_total + self.returned_total
+    
+    
+class StatisticNonComplete:
+    def __init__(self, pending_total, ship_total):
+        self.pending_total = pending_total
+        self.ship_total = ship_total
+        
+    def __str__(self):
+        return f"{self.pending_total}, {self.ship_total}"
+    
+    def get_total(self):
+        return self.pending_total + self.ship_total
+        
+class StatisticMoney:
+    def __init__(self, revenue_total, profit_total):
+        self.revenue_total = revenue_total
+        self.profit_total = profit_total
+        
+    def __str__(self):
+        return f"{self.revenue_total}, {self.profit_total}"
+    
+    def get_total(self):
+        return self.revenue_total + self.profit_total
+    
+    class Meta:
+        abstract = True
+        
+class Statistics(models.Model):
+    total = models.BigIntegerField(default=0)
+    
     buyed_total = models.BigIntegerField(default=0)
     cancelled_total = models.BigIntegerField(default=0)
     returned_total = models.BigIntegerField(default=0)
     
-    class Meta:
-        abstract = True
-        
-class StatisticNonComplete(models.Model):
     pending_total = models.BigIntegerField(default=0)
     ship_total = models.BigIntegerField(default=0)
     
-    class Meta:
-        abstract = True
-        
-class StatisticMoney(models.Model):
     revenue_total = models.BigIntegerField(default=0)
     profit_total = models.BigIntegerField(default=0)
     
-    class Meta:
-        abstract = True
-        
-class Statistics(StatisticComplete, StatisticNonComplete, StatisticMoney):
-    total = models.BigIntegerField(default=0)
+    @property
+    def statistic_complete(self):
+        return StatisticComplete(self.buyed_total, self.cancelled_total, self.returned_total)
+    
+    @property
+    def statistic_non_complete(self):
+        return StatisticNonComplete(self.pending_total, self.ship_total) 
+    
+    @property
+    def statistic_money(self):
+        return StatisticMoney(self.revenue_total, self.profit_total)
     
     class Meta:
         abstract = True
 
-class CustomerInfo(models.Model):
-    phone_number = models.CharField(max_length=10)
-    address = models.TextField(null=True, blank=True)
-    date_of_birth = models.DateField(null=True, blank=True)
+class CustomerInfo:
+    def __init__(self, phone_number, address, date_of_birth):
+        self.phone_number = phone_number
+        self.address = address
+        self.date_of_birth = date_of_birth
+        
+    def __str__(self):
+        return f"{self.phone_number}, {self.address}, {self.date_of_birth}"
     
-    class Meta:
-        abstract = True
         
 
 class UserManager(BaseUserManager):
@@ -104,10 +144,18 @@ class User(AbstractUser, TimeBase):
         db_table = "user"
     
     
-class Customer(TimeBase, Statistics, CustomerInfo):
+class Customer(TimeBase, Statistics):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="customer")
     avatar = models.ForeignKey(Image, on_delete=models.SET_NULL, null=True, blank=True, related_name="avatar")
+    
+    phone_number = models.CharField(max_length=10)
+    address = models.TextField(null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
+    
+    @property
+    def customer_info(self):
+        return CustomerInfo(self.phone_number, self.address, self.date_of_birth)
 
     
     def __str__(self) -> str:
