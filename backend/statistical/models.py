@@ -4,7 +4,7 @@ import string
 import django
 from django.db import models
 from django.db.models import Sum
-from product.models import Agency, Order, Product
+from inventory.models import Agency, Order, Product
 from user.models import TimeBase, Statistics
 from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid

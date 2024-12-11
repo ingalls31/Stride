@@ -8,4 +8,4 @@ class ProductConfig(AppConfig):
     name = 'product'
     
     def ready(self) -> None:
-        import product.signals
+        import inventory.signals

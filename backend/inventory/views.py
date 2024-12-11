@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import *
 import stripe
 from ecommerce.pagination import StandardPageNumberPagination
-from product.filters import OrderFilter, ProductFilter, ReviewFilter
+from inventory.filters import OrderFilter, ProductFilter, ReviewFilter
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.decorators import action

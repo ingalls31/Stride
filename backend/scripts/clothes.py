@@ -8,7 +8,7 @@ django.setup()
 
 from django.core.files import File
 from ecommerce import settings
-from product.models import Agency, Product, ProductImage, ProductItem
+from inventory.models import Agency, Product, ProductImage, ProductItem
 from image.models import Image
 
 # Cấu hình Django

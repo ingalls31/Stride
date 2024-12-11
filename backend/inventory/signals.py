@@ -11,11 +11,11 @@ from django.db import transaction, IntegrityError
 from django.utils import timezone
 import pytz
 from ecommerce import settings
-from product.models import Agency, Order, OrderProduct, Product, ProductItem, Review
+from inventory.models import Agency, Order, OrderProduct, Product, ProductItem, Review
 from statistical.models import Campaign, Promotion, Statistical
 from django_celery_beat.models import PeriodicTask, CrontabSchedule
 from django.db.models import F
-from product.models import Order
+from inventory.models import Order
 
 
 @receiver(post_save, sender=ProductItem)

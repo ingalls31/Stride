@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.http import HttpRequest
 
 import django.utils.html
-from product.models import ProductImage
+from inventory.models import ProductImage
 from statistical.models import Campaign, Promotion, Statistical
 from django.utils.html import format_html
 
