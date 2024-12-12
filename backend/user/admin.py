@@ -1,71 +1,132 @@
 from django.contrib import admin
 
 from ecommerce import settings
-from . import models
 from django.utils.html import format_html
 from django import forms
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.contrib.auth.models import Permission
 from django.contrib.auth.models import Group
 from social_django.models import Association, Nonce, UserSocialAuth
-from .models import *
+from .models import Customer, NotificationContent, Statistical, User
 
 admin.site.unregister((Group, Association, Nonce, UserSocialAuth))
+
 
 class UserAdminForm(forms.ModelForm):
     user_permissions = forms.ModelMultipleChoiceField(
         queryset=Permission.objects.all(),
         widget=FilteredSelectMultiple("Permissions", is_stacked=False),
-        required=False
+        required=False,
     )
 
     class Meta:
         model = User
-        fields = '__all__'
-  
+        fields = "__all__"
+
+
 class CustomerInline(admin.StackedInline):
     model = Customer
     can_delete = False
-    verbose_name_plural = 'customer'
-    fk_name = 'user'
+    verbose_name_plural = "customer"
+    fk_name = "user"
 
-    list_display = ('user', 'phone_number', 'address', 'date_of_birth')
+    list_display = ("user", "phone_number", "address", "date_of_birth")
     fieldsets = (
-        ('Statistics', {'fields': (('buyed_total', 'ship_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total'),)}),
-        ('Information', {'fields': (
-            ('user',),
-            ('avatar',),
-            ('image',),
-            ('phone_number',),
-            ('address',),
-            ('date_of_birth',),
-        )}),
+        (
+            "Statistics",
+            {
+                "fields": (
+                    (
+                        "buyed_total",
+                        "ship_total",
+                        "cancelled_total",
+                        "returned_total",
+                        "revenue_total",
+                        "profit_total",
+                    ),
+                )
+            },
+        ),
+        (
+            "Information",
+            {
+                "fields": (
+                    ("user",),
+                    ("avatar",),
+                    ("image",),
+                    ("phone_number",),
+                    ("address",),
+                    ("date_of_birth",),
+                )
+            },
+        ),
         # ('TimeBase', {'fields': (('created_at', 'updated_at'),)}),
     )
-    readonly_fields = ('created_at', 'updated_at','pending_total', 'buyed_total', 'ship_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total', 'image')
+    readonly_fields = (
+        "created_at",
+        "updated_at",
+        "pending_total",
+        "buyed_total",
+        "ship_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+        "image",
+    )
 
     def image(self, obj):
         if obj.avatar:
-            return format_html('<img src="{}" width="150" height="auto"/>', f'{settings.HOST}{obj.avatar.image.url}')
-        return ''  
-    
-    
+            return format_html(
+                '<img src="{}" width="150" height="auto"/>',
+                f"{settings.HOST}{obj.avatar.image.url}",
+            )
+        return ""
+
+
 class UserAdmin(admin.ModelAdmin):
     form = UserAdminForm
-    inlines = [CustomerInline, ]
-    list_display = ('email', 'first_name', 'last_name','is_staff', 'is_superuser', 'pending_total', 'buyed_total', 'ship_total', 'cancelled_total', 'returned_total', 'revenue_total', 'profit_total')
+    inlines = [
+        CustomerInline,
+    ]
+    list_display = (
+        "email",
+        "first_name",
+        "last_name",
+        "is_staff",
+        "is_superuser",
+        "pending_total",
+        "buyed_total",
+        "ship_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
     fieldsets = (
-        ('Account', {'fields': (
-            ('email',),
-            ('first_name', 'last_name',),
-            ('is_active', 'is_staff', 'is_superuser',),
-            ('user_permissions', ),
-        )}),
+        (
+            "Account",
+            {
+                "fields": (
+                    ("email",),
+                    (
+                        "first_name",
+                        "last_name",
+                    ),
+                    (
+                        "is_active",
+                        "is_staff",
+                        "is_superuser",
+                    ),
+                    ("user_permissions",),
+                )
+            },
+        ),
         # ('TimeBase', {'fields': (('created_at', 'updated_at'),)}),
     )
-    readonly_fields = ('created_at', 'updated_at')
-    search_fields = ('email', 'first_name', 'last_name')
-    
+    readonly_fields = ("created_at", "updated_at")
+    search_fields = ("email", "first_name", "last_name")
+
     def buyed_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.buyed_total
@@ -73,28 +134,191 @@ class UserAdmin(admin.ModelAdmin):
     def ship_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.ship_total
-    
+
     def pending_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.pending_total
-    
+
     def cancelled_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.cancelled_total
-    
+
     def returned_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.returned_total
-    
+
     def revenue_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.revenue_total
-    
+
     def profit_total(self, obj):
         customer = Customer.objects.get(user=obj)
         return customer.profit_total
-    
-    
-    
-    
+
+
+class StatisticalAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (
+            "Total",
+            {
+                "fields": (
+                    (
+                        "total",
+                        "buyed_total",
+                        "ship_total",
+                        "pending_total",
+                        "cancelled_total",
+                        "returned_total",
+                    ),
+                ),
+            },
+        ),
+        (
+            "Revenue",
+            {
+                "fields": (("revenue_total", "profit_total"),),
+            },
+        ),
+    )
+    readonly_fields = (
+        "total",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+    list_display = (
+        "total",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+
+class StatisticalAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (
+            "Total",
+            {
+                "fields": (
+                    (
+                        "total",
+                        "buyed_total",
+                        "ship_total",
+                        "pending_total",
+                        "cancelled_total",
+                        "returned_total",
+                    ),
+                ),
+            },
+        ),
+        (
+            "Revenue",
+            {
+                "fields": (("revenue_total", "profit_total"),),
+            },
+        ),
+    )
+    readonly_fields = (
+        "total",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+    list_display = (
+        "total",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+
+class NotificationAdmin(admin.ModelAdmin):
+    list_display = ("customer", "content_display", "is_seen", "created_at")
+    list_filter = ("is_seen", "created_at")
+    search_fields = (
+        "customer__user__email",
+        "customer__user__first_name",
+        "customer__user__last_name",
+        "content__content",
+    )
+    readonly_fields = ("created_at", "updated_at")
+
+    fieldsets = (
+        (
+            "Notification Information",
+            {
+                "fields": (
+                    "customer",
+                    "content_text",
+                    "is_seen",
+                )
+            },
+        ),
+        ("Timestamps", {"fields": (("created_at", "updated_at"),)}),
+    )
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        if obj and obj.content:
+            form.base_fields["content_text"].initial = obj.content.content
+        return form
+
+    def save_model(self, request, obj, form, change):
+        content_text = form.cleaned_data.get("content_text")
+        if content_text:
+            if obj.content:
+                obj.content.content = content_text
+                obj.content.save()
+            else:
+                content = NotificationContent.objects.create(content=content_text)
+                obj.content = content
+        super().save_model(request, obj, form, change)
+
+    def content_display(self, obj):
+        return obj.content.content if obj.content else "-"
+
+    content_display.short_description = "Content"
+
+    def formfield_for_dbfield(self, db_field, **kwargs):
+        formfield = super().formfield_for_dbfield(db_field, **kwargs)
+        if db_field.name == "content_text":
+            formfield.widget = forms.Textarea(attrs={"rows": 4})
+        return formfield
+
+
 admin.site.register(User, UserAdmin)
+admin.site.register(Statistical, StatisticalAdmin)

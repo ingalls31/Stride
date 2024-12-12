@@ -7,6 +7,7 @@ from .base import ProductInfo, Price
 from .agency import Agency
 from .warehouse import Warehouse
 
+
 class Product(TimeBase, Statistics):
     MALE = "male"
     FEMALE = "female"
@@ -17,22 +18,26 @@ class Product(TimeBase, Statistics):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     agency = models.ForeignKey(Agency, on_delete=models.CASCADE)
     view = models.IntegerField(default=0)
-    warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE, null=True, blank=True)
+    warehouse = models.ForeignKey(
+        Warehouse, on_delete=models.CASCADE, null=True, blank=True
+    )
     images = models.ManyToManyField(Image, related_name="ProductImage", blank=True)
-    
+
     name = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
     average_rating = models.FloatField(default=0)
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICE, default=MALE)
-    
+
     cost = models.IntegerField(default=0)
     price = models.IntegerField(default=0)
     old_price = models.IntegerField(default=0)
-    
+
     @property
     def product_info(self):
-        return ProductInfo(self.name, self.description, self.average_rating, self.category)
-    
+        return ProductInfo(
+            self.name, self.description, self.average_rating, self.category
+        )
+
     @property
     def price_info(self):
         return Price(self.cost, self.price, self.old_price)
@@ -63,6 +68,7 @@ class Product(TimeBase, Statistics):
     class Meta:
         db_table = "product"
 
+
 class ProductItem(TimeBase, Statistics):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="sizes")
@@ -79,13 +85,15 @@ class ProductItem(TimeBase, Statistics):
     class Meta:
         db_table = "product_item"
 
+
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     image = models.ForeignKey(Image, on_delete=models.CASCADE)
     primary = models.BooleanField(default=False)
 
     class Meta:
-        db_table = "product_image" 
+        db_table = "product_image"
+
 
 class Shoes(Product):
     SNEAKER = "sneaker"
@@ -93,22 +101,23 @@ class Shoes(Product):
     SANDALS = "sandals"
     SLIPPERS = "slippers"
     FORMAL = "formal"
-    
+
     SHOES_CATEGORY_CHOICE = (
         (SNEAKER, "Sneaker"),
-        (BOOTS, "Boots"), 
+        (BOOTS, "Boots"),
         (SANDALS, "Sandals"),
         (SLIPPERS, "Slippers"),
-        (FORMAL, "Formal")
+        (FORMAL, "Formal"),
     )
-    
+
     class Meta:
         proxy = True
-        
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._meta.get_field('category').choices = self.SHOES_CATEGORY_CHOICE
-        self._meta.get_field('category').default = self.SNEAKER
+        self._meta.get_field("category").choices = self.SHOES_CATEGORY_CHOICE
+        self._meta.get_field("category").default = self.SNEAKER
+
 
 class Clothes(Product):
     SHIRT = "Shirt"
@@ -116,19 +125,19 @@ class Clothes(Product):
     DRESS = "Dress"
     JACKET = "Jacket"
     SWEATER = "Sweater"
-    
+
     CLOTHES_CATEGORY_CHOICE = (
         (SHIRT, "Shirt"),
         (PANTS, "Pants"),
-        (DRESS, "Dress"), 
+        (DRESS, "Dress"),
         (JACKET, "Jacket"),
-        (SWEATER, "Sweater")
+        (SWEATER, "Sweater"),
     )
 
     class Meta:
         proxy = True
-        
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._meta.get_field('category').choices = self.CLOTHES_CATEGORY_CHOICE
-        self._meta.get_field('category').default = self.SHIRT 
+        self._meta.get_field("category").choices = self.CLOTHES_CATEGORY_CHOICE
+        self._meta.get_field("category").default = self.SHIRT

@@ -12,7 +12,8 @@
 # import pytz
 # from ecommerce import settings
 # from inventory.models import Agency, Order, OrderProduct, Product, ProductItem, Review
-# from statistical.models import Campaign, Promotion, Statistical
+# from statistical.models import Statistical
+# from .models import Campaign, Promotion
 # from django_celery_beat.models import PeriodicTask, CrontabSchedule
 # from django.db.models import F
 # from inventory.models import Order
