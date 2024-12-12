@@ -2,7 +2,6 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from user.models import TimeBase, Statistics
-from .product import Product
 
 class Agency(TimeBase, Statistics):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -13,6 +12,9 @@ class Agency(TimeBase, Statistics):
         return self.name
 
     def update_total(self):
+        # Import Product here to avoid circular import
+        from .product import Product
+        
         products = Product.objects.filter(agency=self).aggregate(
             sum_total=Sum("total"),
             sum_buyed_total=Sum("buyed_total"),
@@ -34,4 +36,3 @@ class Agency(TimeBase, Statistics):
 
     class Meta:
         db_table = "agency"
-        app_label = "product" 

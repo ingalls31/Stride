@@ -7,14 +7,14 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0013_remove_cart_products_delete_cartproduct'),
+        ('inventory', '0013_remove_cart_products_delete_cartproduct'),
     ]
 
     operations = [
         migrations.AddField(
             model_name='cart',
             name='productItem',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.productitem'),
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='inventory.productitem'),
         ),
         migrations.AddField(
             model_name='cart',

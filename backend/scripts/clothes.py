@@ -7,11 +7,11 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ecommerce.settings")
 django.setup()
 
 from django.core.files import File
-from ecommerce import settings
+# from ecommerce import settings
 from inventory.models import Agency, Product, ProductImage, ProductItem
+from inventory.models.product import Clothes
 from image.models import Image
 
-# Cấu hình Django
 
 # Đường dẫn thư mục chứa sản phẩm và các ảnh
 path = "zune"
@@ -65,7 +65,7 @@ for subdir in os.listdir(path):
         price = random.randint(100000, 200000)
         old_price = random.randint(price, 200000)
         cost = random.randint(100000, price)
-        product = Product(
+        product = Clothes(
             name=subdir.replace("_", " "),  # Tên sản phẩm là tên thư mục con
             price=price,
             old_price=old_price,
@@ -73,6 +73,7 @@ for subdir in os.listdir(path):
             description=description,
             agency=agency,
             view=random.randint(100, 10000),
+            category=random.choice(Clothes.CLOTHES_CATEGORY_CHOICE)[1],
         )
         product.save()
 

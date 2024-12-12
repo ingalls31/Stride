@@ -8,7 +8,7 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0036_rename_user_cart_customer_and_more'),
+        ('inventory', '0036_rename_user_cart_customer_and_more'),
     ]
 
     operations = [
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('name', models.CharField(max_length=255)),
-                ('address', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.address')),
+                ('address', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.address')),
             ],
             options={
                 'db_table': 'warehouse',
@@ -43,6 +43,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='warehouse',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.warehouse'),
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='inventory.warehouse'),
         ),
     ]

@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0029_rename_rating_review'),
+        ('inventory', '0029_rename_rating_review'),
     ]
 
     operations = [

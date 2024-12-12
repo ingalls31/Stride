@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0003_customer_total'),
-        ('product', '0005_productitem'),
+        ('inventory', '0005_productitem'),
     ]
 
     operations = [
@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('total_price', models.IntegerField(default=0)),
                 ('status', models.CharField(choices=[('ship', 'Ship'), ('cancel', 'Cancel'), ('complete', 'Complete'), ('return', 'Return')], default='ship', max_length=10)),
-                ('products', models.ManyToManyField(blank=True, related_name='OrderProduct', to='product.product')),
+                ('products', models.ManyToManyField(blank=True, related_name='OrderProduct', to='inventory.product')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.customer')),
             ],
             options={
@@ -33,8 +33,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField(default=1)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.order')),
-                ('productItem', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.productitem')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.order')),
+                ('productItem', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.productitem')),
             ],
         ),
     ]

@@ -81,6 +81,22 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "Error",
         "importPath": "uu",
         "description": "uu",
@@ -123,6 +139,62 @@
     },
     {
         "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "TimeBase",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Statistics",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "TimeBase",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "TimeBase",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Statistics",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "TimeBase",
         "importPath": "user.models",
         "description": "user.models",
         "isExtraImport": true,
@@ -289,6 +361,38 @@
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -1084,6 +1188,38 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "transaction",
         "importPath": "django.db",
         "description": "django.db",
@@ -1478,6 +1614,22 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "image.models",
+        "description": "image.models",
+        "isExtraImport": true,
+        "detail": "image.models",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "image.models",
+        "description": "image.models",
+        "isExtraImport": true,
+        "detail": "image.models",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -1793,6 +1945,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "ecommerce",
+        "description": "ecommerce",
+        "isExtraImport": true,
+        "detail": "ecommerce",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -1890,6 +2050,22 @@
     },
     {
         "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
         "importPath": "django.db.models",
         "description": "django.db.models",
         "isExtraImport": true,
@@ -2162,6 +2338,55 @@
         "documentation": {}
     },
     {
+        "label": "django.utils.html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -2208,39 +2433,6 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "django.utils.html",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.utils.html",
-        "description": "django.utils.html",
-        "detail": "django.utils.html",
-        "documentation": {}
-    },
-    {
-        "label": "format_html",
-        "importPath": "django.utils.html",
-        "description": "django.utils.html",
-        "isExtraImport": true,
-        "detail": "django.utils.html",
-        "documentation": {}
-    },
-    {
-        "label": "format_html",
-        "importPath": "django.utils.html",
-        "description": "django.utils.html",
-        "isExtraImport": true,
-        "detail": "django.utils.html",
-        "documentation": {}
-    },
-    {
-        "label": "format_html",
-        "importPath": "django.utils.html",
-        "description": "django.utils.html",
-        "isExtraImport": true,
-        "detail": "django.utils.html",
         "documentation": {}
     },
     {
@@ -2393,122 +2585,122 @@
     },
     {
         "label": "Agency",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Order",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "OrderProduct",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Product",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "ProductItem",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Review",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Order",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
-        "documentation": {}
-    },
-    {
-        "label": "ProductImage",
-        "importPath": "product.models",
-        "description": "product.models",
-        "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Agency",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "importPath": "product.models",
-        "description": "product.models",
-        "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "Product",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
-        "documentation": {}
-    },
-    {
-        "label": "Agency",
-        "importPath": "product.models",
-        "description": "product.models",
-        "isExtraImport": true,
-        "detail": "product.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "product.models",
-        "description": "product.models",
-        "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "ProductImage",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
         "label": "ProductItem",
-        "importPath": "product.models",
-        "description": "product.models",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
         "isExtraImport": true,
-        "detail": "product.models",
+        "detail": "inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImage",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
+        "isExtraImport": true,
+        "detail": "inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Agency",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
+        "isExtraImport": true,
+        "detail": "inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
+        "isExtraImport": true,
+        "detail": "inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "inventory.models",
+        "description": "inventory.models",
+        "isExtraImport": true,
+        "detail": "inventory.models",
         "documentation": {}
     },
     {
@@ -2585,26 +2777,26 @@
     },
     {
         "label": "OrderFilter",
-        "importPath": "product.filters",
-        "description": "product.filters",
+        "importPath": "inventory.filters",
+        "description": "inventory.filters",
         "isExtraImport": true,
-        "detail": "product.filters",
+        "detail": "inventory.filters",
         "documentation": {}
     },
     {
         "label": "ProductFilter",
-        "importPath": "product.filters",
-        "description": "product.filters",
+        "importPath": "inventory.filters",
+        "description": "inventory.filters",
         "isExtraImport": true,
-        "detail": "product.filters",
+        "detail": "inventory.filters",
         "documentation": {}
     },
     {
         "label": "ReviewFilter",
-        "importPath": "product.filters",
-        "description": "product.filters",
+        "importPath": "inventory.filters",
+        "description": "inventory.filters",
         "isExtraImport": true,
-        "detail": "product.filters",
+        "detail": "inventory.filters",
         "documentation": {}
     },
     {
@@ -2641,6 +2833,104 @@
         "documentation": {}
     },
     {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "django.core.files",
+        "description": "django.core.files",
+        "isExtraImport": true,
+        "detail": "django.core.files",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "django.core.files",
+        "description": "django.core.files",
+        "isExtraImport": true,
+        "detail": "django.core.files",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "urljoin",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "Agency",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImage",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductItem",
+        "importPath": "product.models",
+        "description": "product.models",
+        "isExtraImport": true,
+        "detail": "product.models",
+        "documentation": {}
+    },
+    {
         "label": "django.core.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -2672,31 +2962,6 @@
         "importPath": "string",
         "description": "string",
         "detail": "string",
-        "documentation": {}
-    },
-    {
-        "label": "django",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django",
-        "description": "django",
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
         "documentation": {}
     },
     {
@@ -2785,30 +3050,6 @@
         "description": "django.contrib.auth.base_user",
         "isExtraImport": true,
         "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "BeautifulSoup",
-        "importPath": "bs4",
-        "description": "bs4",
-        "isExtraImport": true,
-        "detail": "bs4",
-        "documentation": {}
-    },
-    {
-        "label": "urljoin",
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
-        "isExtraImport": true,
-        "detail": "urllib.parse",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "django.core.files",
-        "description": "django.core.files",
-        "isExtraImport": true,
-        "detail": "django.core.files",
         "documentation": {}
     },
     {
@@ -3346,867 +3587,1218 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "AgencyAdmin",
         "kind": 6,
-        "importPath": "backend.product.migrations.0001_initial",
-        "description": "backend.product.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Agency',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
-        "detail": "backend.product.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0002_product_images_productimage",
-        "description": "backend.product.migrations.0002_product_images_productimage",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('image', '0002_alter_image_image'),\n        ('product', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='images',\n            field=models.ManyToManyField(blank=True, related_name='ProductImage', to='image.image'),",
-        "detail": "backend.product.migrations.0002_product_images_productimage",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
-        "description": "backend.product.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('image', '0002_alter_image_image'),\n        ('product', '0002_product_images_productimage'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Comment',\n            fields=[",
-        "detail": "backend.product.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0004_product_ratings_alter_comment_user_and_more",
-        "description": "backend.product.migrations.0004_product_ratings_alter_comment_user_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0003_comment_remove_product_rating_product_average_rating_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='ratings',\n            field=models.ManyToManyField(blank=True, related_name='Rating', to='user.customer'),",
-        "detail": "backend.product.migrations.0004_product_ratings_alter_comment_user_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0005_productitem",
-        "description": "backend.product.migrations.0005_productitem",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0004_product_ratings_alter_comment_user_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ProductItem',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
-        "detail": "backend.product.migrations.0005_productitem",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0006_order_orderproduct",
-        "description": "backend.product.migrations.0006_order_orderproduct",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0005_productitem'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
-        "detail": "backend.product.migrations.0006_order_orderproduct",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0007_cart_cartproduct",
-        "description": "backend.product.migrations.0007_cart_cartproduct",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0006_order_orderproduct'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cart',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
-        "detail": "backend.product.migrations.0007_cart_cartproduct",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0008_productimage_primary",
-        "description": "backend.product.migrations.0008_productimage_primary",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0007_cart_cartproduct'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='productimage',\n            name='primary',\n            field=models.BooleanField(default=False),\n        ),",
-        "detail": "backend.product.migrations.0008_productimage_primary",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0009_remove_agency_selected_total_and_more",
-        "description": "backend.product.migrations.0009_remove_agency_selected_total_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0008_productimage_primary'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='agency',\n            name='selected_total',\n        ),\n        migrations.RemoveField(",
-        "detail": "backend.product.migrations.0009_remove_agency_selected_total_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0010_rename_money_total_agency_profit_total_and_more",
-        "description": "backend.product.migrations.0010_rename_money_total_agency_profit_total_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0009_remove_agency_selected_total_and_more'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='agency',\n            old_name='money_total',\n            new_name='profit_total',\n        ),",
-        "detail": "backend.product.migrations.0010_rename_money_total_agency_profit_total_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0011_alter_order_status",
-        "description": "backend.product.migrations.0011_alter_order_status",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0010_rename_money_total_agency_profit_total_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='status',\n            field=models.CharField(choices=[('ship', 'Ship'), ('cancel', 'Cancel'), ('complete', 'Complete'), ('return', 'Return'), ('pending', 'Pending')], default='ship', max_length=10),\n        ),",
-        "detail": "backend.product.migrations.0011_alter_order_status",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0012_remove_product_discount_product_old_price",
-        "description": "backend.product.migrations.0012_remove_product_discount_product_old_price",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0011_alter_order_status'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='discount',\n        ),\n        migrations.AddField(",
-        "detail": "backend.product.migrations.0012_remove_product_discount_product_old_price",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0013_remove_cart_products_delete_cartproduct",
-        "description": "backend.product.migrations.0013_remove_cart_products_delete_cartproduct",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0012_remove_product_discount_product_old_price'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='cart',\n            name='products',\n        ),\n        migrations.DeleteModel(",
-        "detail": "backend.product.migrations.0013_remove_cart_products_delete_cartproduct",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0014_cart_productitem_cart_quantity",
-        "description": "backend.product.migrations.0014_cart_productitem_cart_quantity",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0013_remove_cart_products_delete_cartproduct'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='cart',\n            name='productItem',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.productitem'),\n        ),",
-        "detail": "backend.product.migrations.0014_cart_productitem_cart_quantity",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0015_alter_order_status",
-        "description": "backend.product.migrations.0015_alter_order_status",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0014_cart_productitem_cart_quantity'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='status',\n            field=models.CharField(choices=[('creating', 'Creating'), ('ship', 'Ship'), ('cancel', 'Cancel'), ('complete', 'Complete'), ('return', 'Return'), ('pending', 'Pending')], default='ship', max_length=10),\n        ),",
-        "detail": "backend.product.migrations.0015_alter_order_status",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0016_order_address_order_phone_order_receiver",
-        "description": "backend.product.migrations.0016_order_address_order_phone_order_receiver",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0015_alter_order_status'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='address',\n            field=models.TextField(blank=True, null=True),\n        ),",
-        "detail": "backend.product.migrations.0016_order_address_order_phone_order_receiver",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0017_alter_order_products",
-        "description": "backend.product.migrations.0017_alter_order_products",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0016_order_address_order_phone_order_receiver'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='products',\n            field=models.ManyToManyField(blank=True, related_name='OrderProduct', to='product.productitem'),\n        ),",
-        "detail": "backend.product.migrations.0017_alter_order_products",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0018_agency_pending_total_product_pending_total_and_more",
-        "description": "backend.product.migrations.0018_agency_pending_total_product_pending_total_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0017_alter_order_products'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='agency',\n            name='pending_total',\n            field=models.IntegerField(default=0),\n        ),",
-        "detail": "backend.product.migrations.0018_agency_pending_total_product_pending_total_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0019_alter_agency_buyed_total_and_more",
-        "description": "backend.product.migrations.0019_alter_agency_buyed_total_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0018_agency_pending_total_product_pending_total_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='agency',\n            name='buyed_total',\n            field=models.BigIntegerField(default=0),\n        ),",
-        "detail": "backend.product.migrations.0019_alter_agency_buyed_total_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0020_delete_commentimage",
-        "description": "backend.product.migrations.0020_delete_commentimage",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0019_alter_agency_buyed_total_and_more'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='CommentImage',\n        ),\n    ]",
-        "detail": "backend.product.migrations.0020_delete_commentimage",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0021_remove_comment_images_remove_comment_product_and_more",
-        "description": "backend.product.migrations.0021_remove_comment_images_remove_comment_product_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0020_delete_commentimage'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='comment',\n            name='images',\n        ),\n        migrations.RemoveField(",
-        "detail": "backend.product.migrations.0021_remove_comment_images_remove_comment_product_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
-        "description": "backend.product.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0021_remove_comment_images_remove_comment_product_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='comments',\n        ),\n        migrations.RemoveField(",
-        "detail": "backend.product.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0023_rating_rate_point",
-        "description": "backend.product.migrations.0023_rating_rate_point",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0022_remove_product_comments_remove_product_ratings_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='rating',\n            name='rate_point',\n            field=models.IntegerField(choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)], default=5),\n        ),",
-        "detail": "backend.product.migrations.0023_rating_rate_point",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0024_delete_rating",
-        "description": "backend.product.migrations.0024_delete_rating",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0023_rating_rate_point'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Rating',\n        ),\n    ]",
-        "detail": "backend.product.migrations.0024_delete_rating",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0025_delete_comment",
-        "description": "backend.product.migrations.0025_delete_comment",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0024_delete_rating'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Comment',\n        ),\n    ]",
-        "detail": "backend.product.migrations.0025_delete_comment",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0026_rating",
-        "description": "backend.product.migrations.0026_rating",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0011_alter_customer_buyed_total_and_more'),\n        ('product', '0025_delete_comment'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Rating',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
-        "detail": "backend.product.migrations.0026_rating",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0027_alter_rating_content",
-        "description": "backend.product.migrations.0027_alter_rating_content",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0026_rating'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='rating',\n            name='content',\n            field=models.TextField(blank=True, null=True),\n        ),",
-        "detail": "backend.product.migrations.0027_alter_rating_content",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0028_rename_content_rating_comment",
-        "description": "backend.product.migrations.0028_rename_content_rating_comment",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0027_alter_rating_content'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='rating',\n            old_name='content',\n            new_name='comment',\n        ),",
-        "detail": "backend.product.migrations.0028_rename_content_rating_comment",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0029_rename_rating_review",
-        "description": "backend.product.migrations.0029_rename_rating_review",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0011_alter_customer_buyed_total_and_more'),\n        ('product', '0028_rename_content_rating_comment'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='Rating',\n            new_name='Review',\n        ),",
-        "detail": "backend.product.migrations.0029_rename_rating_review",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0030_alter_review_table",
-        "description": "backend.product.migrations.0030_alter_review_table",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0029_rename_rating_review'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='review',\n            table='review',\n        ),\n    ]",
-        "detail": "backend.product.migrations.0030_alter_review_table",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0031_alter_agency_table_alter_cart_table_and_more",
-        "description": "backend.product.migrations.0031_alter_agency_table_alter_cart_table_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0030_alter_review_table'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='agency',\n            table='agency',\n        ),\n        migrations.AlterModelTable(",
-        "detail": "backend.product.migrations.0031_alter_agency_table_alter_cart_table_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0032_review_reply",
-        "description": "backend.product.migrations.0032_review_reply",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0031_alter_agency_table_alter_cart_table_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='review',\n            name='reply',\n            field=models.TextField(blank=True, null=True),\n        ),",
-        "detail": "backend.product.migrations.0032_review_reply",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0033_order_payment_session",
-        "description": "backend.product.migrations.0033_order_payment_session",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0032_review_reply'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='payment_session',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
-        "detail": "backend.product.migrations.0033_order_payment_session",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0034_order_payment_done",
-        "description": "backend.product.migrations.0034_order_payment_done",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0033_order_payment_session'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='payment_done',\n            field=models.BooleanField(default=False),\n        ),",
-        "detail": "backend.product.migrations.0034_order_payment_done",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0035_remove_order_user_order_customer",
-        "description": "backend.product.migrations.0035_remove_order_user_order_customer",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0012_alter_user_options_alter_customer_table_and_more'),\n        ('product', '0034_order_payment_done'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='user',\n        ),",
-        "detail": "backend.product.migrations.0035_remove_order_user_order_customer",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
-        "description": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0035_remove_order_user_order_customer'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='cart',\n            old_name='user',\n            new_name='customer',\n        ),",
-        "detail": "backend.product.migrations.0036_rename_user_cart_customer_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "backend.product.migrations.0037_address_warehouse_product_warehouse",
-        "description": "backend.product.migrations.0037_address_warehouse_product_warehouse",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0036_rename_user_cart_customer_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Address',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
-        "detail": "backend.product.migrations.0037_address_warehouse_product_warehouse",
-        "documentation": {}
-    },
-    {
-        "label": "ProductImageInline",
-        "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
-        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
-        "detail": "backend.product.admin",
+        "importPath": "backend.inventory.admin.agency_admin",
+        "description": "backend.inventory.admin.agency_admin",
+        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "backend.inventory.admin.agency_admin",
         "documentation": {}
     },
     {
         "label": "OrderProductInline",
         "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
+        "importPath": "backend.inventory.admin.order_admin",
+        "description": "backend.inventory.admin.order_admin",
         "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model = OrderProduct\n    fields = (\n        \"productItem\",\n        \"image\",\n        \"quantity\",\n    )\n    readonly_fields = (\"image\",)\n    extra = 1\n    def image(self, obj):",
-        "detail": "backend.product.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ProductItemInline",
-        "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
-        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = (\n        \"product\",\n        \"size\",\n        \"total\",\n        \"buyed_total\",\n        \"ship_total\",\n        \"pending_total\",\n        \"cancelled_total\",",
-        "detail": "backend.product.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ProductAdmin",
-        "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
-        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
-        "detail": "backend.product.admin",
-        "documentation": {}
-    },
-    {
-        "label": "AgencyAdmin",
-        "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
-        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
-        "detail": "backend.product.admin",
+        "detail": "backend.inventory.admin.order_admin",
         "documentation": {}
     },
     {
         "label": "OrderAdmin",
         "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
+        "importPath": "backend.inventory.admin.order_admin",
+        "description": "backend.inventory.admin.order_admin",
         "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    inlines = [OrderProductInline]\n    fieldsets = (\n        (\"Order\", {\"fields\": (\"customer\", \"total_price\", \"status\", \"payment_done\")}),\n        (\"TimeBase\", {\"fields\": ((\"created_at\", \"updated_at\"),)}),\n    )\n    readonly_fields = (\"created_at\", \"updated_at\")\n    list_display = (\n        \"receiver\",\n        \"phone\",",
-        "detail": "backend.product.admin",
+        "detail": "backend.inventory.admin.order_admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImageInline",
+        "kind": 6,
+        "importPath": "backend.inventory.admin.product_admin",
+        "description": "backend.inventory.admin.product_admin",
+        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
+        "detail": "backend.inventory.admin.product_admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductItemInline",
+        "kind": 6,
+        "importPath": "backend.inventory.admin.product_admin",
+        "description": "backend.inventory.admin.product_admin",
+        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = (\n        \"product\",\n        \"size\",\n        \"total\",\n        \"buyed_total\",\n        \"ship_total\",\n        \"pending_total\",\n        \"cancelled_total\",",
+        "detail": "backend.inventory.admin.product_admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin.product_admin",
+        "description": "backend.inventory.admin.product_admin",
+        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "backend.inventory.admin.product_admin",
         "documentation": {}
     },
     {
         "label": "WarehouseAdmin",
         "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
+        "importPath": "backend.inventory.admin.warehouse_admin",
+        "description": "backend.inventory.admin.warehouse_admin",
         "peekOfCode": "class WarehouseAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Warehouse Info\",\n            {\n                \"fields\": (\"name\", \"address\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
-        "detail": "backend.product.admin",
+        "detail": "backend.inventory.admin.warehouse_admin",
         "documentation": {}
     },
     {
         "label": "AddressAdmin",
         "kind": 6,
-        "importPath": "backend.product.admin",
-        "description": "backend.product.admin",
+        "importPath": "backend.inventory.admin.warehouse_admin",
+        "description": "backend.inventory.admin.warehouse_admin",
         "peekOfCode": "class AddressAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Address Information\",\n            {\n                \"fields\": (\"city\", \"address\", \"region\", \"postal_code\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
-        "detail": "backend.product.admin",
+        "detail": "backend.inventory.admin.warehouse_admin",
         "documentation": {}
     },
     {
-        "label": "ProductConfig",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.apps",
-        "description": "backend.product.apps",
-        "peekOfCode": "class ProductConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'product'\n    def ready(self) -> None:\n        import product.signals",
-        "detail": "backend.product.apps",
+        "importPath": "backend.inventory.migrations.0001_initial",
+        "description": "backend.inventory.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Agency',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "backend.inventory.migrations.0001_initial",
         "documentation": {}
     },
     {
-        "label": "ProductFilter",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.filters",
-        "description": "backend.product.filters",
-        "peekOfCode": "class ProductFilter(filters.FilterSet):\n    name = filters.CharFilter(field_name='name', lookup_expr='icontains')\n    min_price = filters.NumberFilter(field_name=\"price\", lookup_expr='gte')\n    max_price = filters.NumberFilter(field_name=\"price\", lookup_expr='lte')\n    average_rating = filters.NumberFilter(field_name=\"average_rating\", lookup_expr='gte')\n    agency = filters.CharFilter(field_name=\"agency__name\", lookup_expr='icontains')\n    class Meta:\n        model = Product\n        fields = ['name', 'price', 'average_rating', 'agency']\nclass OrderFilter(filters.FilterSet):",
-        "detail": "backend.product.filters",
+        "importPath": "backend.inventory.migrations.0002_product_images_productimage",
+        "description": "backend.inventory.migrations.0002_product_images_productimage",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('image', '0002_alter_image_image'),\n        ('product', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='images',\n            field=models.ManyToManyField(blank=True, related_name='ProductImage', to='image.image'),",
+        "detail": "backend.inventory.migrations.0002_product_images_productimage",
         "documentation": {}
     },
     {
-        "label": "OrderFilter",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.filters",
-        "description": "backend.product.filters",
-        "peekOfCode": "class OrderFilter(filters.FilterSet):\n    class Meta:\n        model = Order\n        fields = ['status']\nclass ReviewFilter(filters.FilterSet):\n    product = filters.CharFilter(field_name=\"order_product__productItem__product__id\", lookup_expr='icontains')\n    class Meta:\n        model = Review\n        fields = ['product']",
-        "detail": "backend.product.filters",
+        "importPath": "backend.inventory.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
+        "description": "backend.inventory.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('image', '0002_alter_image_image'),\n        ('product', '0002_product_images_productimage'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Comment',\n            fields=[",
+        "detail": "backend.inventory.migrations.0003_comment_remove_product_rating_product_average_rating_and_more",
         "documentation": {}
     },
     {
-        "label": "ReviewFilter",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.filters",
-        "description": "backend.product.filters",
-        "peekOfCode": "class ReviewFilter(filters.FilterSet):\n    product = filters.CharFilter(field_name=\"order_product__productItem__product__id\", lookup_expr='icontains')\n    class Meta:\n        model = Review\n        fields = ['product']",
-        "detail": "backend.product.filters",
+        "importPath": "backend.inventory.migrations.0004_product_ratings_alter_comment_user_and_more",
+        "description": "backend.inventory.migrations.0004_product_ratings_alter_comment_user_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0003_comment_remove_product_rating_product_average_rating_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='ratings',\n            field=models.ManyToManyField(blank=True, related_name='Rating', to='user.customer'),",
+        "detail": "backend.inventory.migrations.0004_product_ratings_alter_comment_user_and_more",
         "documentation": {}
     },
     {
-        "label": "ProductInfo",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class ProductInfo:    \n    def __init__(self, name, description, average_rating, category):\n        self.name = name\n        self.description = description\n        self.average_rating = average_rating\n        self.category = category\n    def __str__(self):\n        return self.name\nclass Price:\n    def __init__(self, cost, price, old_price):",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.migrations.0005_productitem",
+        "description": "backend.inventory.migrations.0005_productitem",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0004_product_ratings_alter_comment_user_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ProductItem',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "backend.inventory.migrations.0005_productitem",
         "documentation": {}
     },
     {
-        "label": "Price",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class Price:\n    def __init__(self, cost, price, old_price):\n        self.cost = cost\n        self.price = price\n        self.old_price = old_price\n    def __str__(self):\n        return f\"{self.cost}, {self.price}, {self.old_price}\"\nclass PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.migrations.0006_order_orderproduct",
+        "description": "backend.inventory.migrations.0006_order_orderproduct",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0005_productitem'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
+        "detail": "backend.inventory.migrations.0006_order_orderproduct",
         "documentation": {}
     },
     {
-        "label": "PaymentOrder",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session\n        self.payment_done = payment_done\n    def __str__(self):\n        return f\"{self.payment_session}, {self.payment_done}\"\nclass ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.migrations.0007_cart_cartproduct",
+        "description": "backend.inventory.migrations.0007_cart_cartproduct",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_customer_total'),\n        ('product', '0006_order_orderproduct'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cart',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
+        "detail": "backend.inventory.migrations.0007_cart_cartproduct",
         "documentation": {}
     },
     {
-        "label": "ShippingAddress",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone\n        self.address = address\n    def __str__(self):\n        return f\"{self.receiver}, {self.phone}, {self.address}\"\nclass ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.migrations.0008_productimage_primary",
+        "description": "backend.inventory.migrations.0008_productimage_primary",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0007_cart_cartproduct'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='productimage',\n            name='primary',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "backend.inventory.migrations.0008_productimage_primary",
         "documentation": {}
     },
     {
-        "label": "ReviewInfo",
+        "label": "Migration",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment\n        self.reply = reply\n        self.rate_point = rate_point\n    def __str__(self):\n        return f\"{self.comment}, {self.reply}, {self.rate_point}\"\n    class Meta:\n        abstract = True\nclass Agency(TimeBase, Statistics):",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.migrations.0009_remove_agency_selected_total_and_more",
+        "description": "backend.inventory.migrations.0009_remove_agency_selected_total_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0008_productimage_primary'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='agency',\n            name='selected_total',\n        ),\n        migrations.RemoveField(",
+        "detail": "backend.inventory.migrations.0009_remove_agency_selected_total_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0010_rename_money_total_agency_profit_total_and_more",
+        "description": "backend.inventory.migrations.0010_rename_money_total_agency_profit_total_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0009_remove_agency_selected_total_and_more'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='agency',\n            old_name='money_total',\n            new_name='profit_total',\n        ),",
+        "detail": "backend.inventory.migrations.0010_rename_money_total_agency_profit_total_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0011_alter_order_status",
+        "description": "backend.inventory.migrations.0011_alter_order_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0010_rename_money_total_agency_profit_total_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='status',\n            field=models.CharField(choices=[('ship', 'Ship'), ('cancel', 'Cancel'), ('complete', 'Complete'), ('return', 'Return'), ('pending', 'Pending')], default='ship', max_length=10),\n        ),",
+        "detail": "backend.inventory.migrations.0011_alter_order_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0012_remove_product_discount_product_old_price",
+        "description": "backend.inventory.migrations.0012_remove_product_discount_product_old_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0011_alter_order_status'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='discount',\n        ),\n        migrations.AddField(",
+        "detail": "backend.inventory.migrations.0012_remove_product_discount_product_old_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0013_remove_cart_products_delete_cartproduct",
+        "description": "backend.inventory.migrations.0013_remove_cart_products_delete_cartproduct",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0012_remove_product_discount_product_old_price'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='cart',\n            name='products',\n        ),\n        migrations.DeleteModel(",
+        "detail": "backend.inventory.migrations.0013_remove_cart_products_delete_cartproduct",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0014_cart_productitem_cart_quantity",
+        "description": "backend.inventory.migrations.0014_cart_productitem_cart_quantity",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0013_remove_cart_products_delete_cartproduct'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='cart',\n            name='productItem',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.productitem'),\n        ),",
+        "detail": "backend.inventory.migrations.0014_cart_productitem_cart_quantity",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0015_alter_order_status",
+        "description": "backend.inventory.migrations.0015_alter_order_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0014_cart_productitem_cart_quantity'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='status',\n            field=models.CharField(choices=[('creating', 'Creating'), ('ship', 'Ship'), ('cancel', 'Cancel'), ('complete', 'Complete'), ('return', 'Return'), ('pending', 'Pending')], default='ship', max_length=10),\n        ),",
+        "detail": "backend.inventory.migrations.0015_alter_order_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0016_order_address_order_phone_order_receiver",
+        "description": "backend.inventory.migrations.0016_order_address_order_phone_order_receiver",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0015_alter_order_status'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='address',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "backend.inventory.migrations.0016_order_address_order_phone_order_receiver",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0017_alter_order_products",
+        "description": "backend.inventory.migrations.0017_alter_order_products",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0016_order_address_order_phone_order_receiver'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='products',\n            field=models.ManyToManyField(blank=True, related_name='OrderProduct', to='product.productitem'),\n        ),",
+        "detail": "backend.inventory.migrations.0017_alter_order_products",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0018_agency_pending_total_product_pending_total_and_more",
+        "description": "backend.inventory.migrations.0018_agency_pending_total_product_pending_total_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0017_alter_order_products'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='agency',\n            name='pending_total',\n            field=models.IntegerField(default=0),\n        ),",
+        "detail": "backend.inventory.migrations.0018_agency_pending_total_product_pending_total_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0019_alter_agency_buyed_total_and_more",
+        "description": "backend.inventory.migrations.0019_alter_agency_buyed_total_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0018_agency_pending_total_product_pending_total_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='agency',\n            name='buyed_total',\n            field=models.BigIntegerField(default=0),\n        ),",
+        "detail": "backend.inventory.migrations.0019_alter_agency_buyed_total_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0020_delete_commentimage",
+        "description": "backend.inventory.migrations.0020_delete_commentimage",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0019_alter_agency_buyed_total_and_more'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='CommentImage',\n        ),\n    ]",
+        "detail": "backend.inventory.migrations.0020_delete_commentimage",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0021_remove_comment_images_remove_comment_product_and_more",
+        "description": "backend.inventory.migrations.0021_remove_comment_images_remove_comment_product_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0020_delete_commentimage'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='comment',\n            name='images',\n        ),\n        migrations.RemoveField(",
+        "detail": "backend.inventory.migrations.0021_remove_comment_images_remove_comment_product_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
+        "description": "backend.inventory.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0021_remove_comment_images_remove_comment_product_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='comments',\n        ),\n        migrations.RemoveField(",
+        "detail": "backend.inventory.migrations.0022_remove_product_comments_remove_product_ratings_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0023_rating_rate_point",
+        "description": "backend.inventory.migrations.0023_rating_rate_point",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0022_remove_product_comments_remove_product_ratings_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='rating',\n            name='rate_point',\n            field=models.IntegerField(choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)], default=5),\n        ),",
+        "detail": "backend.inventory.migrations.0023_rating_rate_point",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0024_delete_rating",
+        "description": "backend.inventory.migrations.0024_delete_rating",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0023_rating_rate_point'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Rating',\n        ),\n    ]",
+        "detail": "backend.inventory.migrations.0024_delete_rating",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0025_delete_comment",
+        "description": "backend.inventory.migrations.0025_delete_comment",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0024_delete_rating'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Comment',\n        ),\n    ]",
+        "detail": "backend.inventory.migrations.0025_delete_comment",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0026_rating",
+        "description": "backend.inventory.migrations.0026_rating",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0011_alter_customer_buyed_total_and_more'),\n        ('product', '0025_delete_comment'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Rating',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),",
+        "detail": "backend.inventory.migrations.0026_rating",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0027_alter_rating_content",
+        "description": "backend.inventory.migrations.0027_alter_rating_content",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0026_rating'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='rating',\n            name='content',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "backend.inventory.migrations.0027_alter_rating_content",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0028_rename_content_rating_comment",
+        "description": "backend.inventory.migrations.0028_rename_content_rating_comment",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0027_alter_rating_content'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='rating',\n            old_name='content',\n            new_name='comment',\n        ),",
+        "detail": "backend.inventory.migrations.0028_rename_content_rating_comment",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0029_rename_rating_review",
+        "description": "backend.inventory.migrations.0029_rename_rating_review",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0011_alter_customer_buyed_total_and_more'),\n        ('product', '0028_rename_content_rating_comment'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='Rating',\n            new_name='Review',\n        ),",
+        "detail": "backend.inventory.migrations.0029_rename_rating_review",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0030_alter_review_table",
+        "description": "backend.inventory.migrations.0030_alter_review_table",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0029_rename_rating_review'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='review',\n            table='review',\n        ),\n    ]",
+        "detail": "backend.inventory.migrations.0030_alter_review_table",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0031_alter_agency_table_alter_cart_table_and_more",
+        "description": "backend.inventory.migrations.0031_alter_agency_table_alter_cart_table_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0030_alter_review_table'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='agency',\n            table='agency',\n        ),\n        migrations.AlterModelTable(",
+        "detail": "backend.inventory.migrations.0031_alter_agency_table_alter_cart_table_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0032_review_reply",
+        "description": "backend.inventory.migrations.0032_review_reply",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0031_alter_agency_table_alter_cart_table_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='review',\n            name='reply',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "backend.inventory.migrations.0032_review_reply",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0033_order_payment_session",
+        "description": "backend.inventory.migrations.0033_order_payment_session",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0032_review_reply'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='payment_session',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "backend.inventory.migrations.0033_order_payment_session",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0034_order_payment_done",
+        "description": "backend.inventory.migrations.0034_order_payment_done",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0033_order_payment_session'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='payment_done',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "backend.inventory.migrations.0034_order_payment_done",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0035_remove_order_user_order_customer",
+        "description": "backend.inventory.migrations.0035_remove_order_user_order_customer",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0012_alter_user_options_alter_customer_table_and_more'),\n        ('product', '0034_order_payment_done'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='user',\n        ),",
+        "detail": "backend.inventory.migrations.0035_remove_order_user_order_customer",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0036_rename_user_cart_customer_and_more",
+        "description": "backend.inventory.migrations.0036_rename_user_cart_customer_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0035_remove_order_user_order_customer'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='cart',\n            old_name='user',\n            new_name='customer',\n        ),",
+        "detail": "backend.inventory.migrations.0036_rename_user_cart_customer_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.inventory.migrations.0037_address_warehouse_product_warehouse",
+        "description": "backend.inventory.migrations.0037_address_warehouse_product_warehouse",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('product', '0036_rename_user_cart_customer_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Address',\n            fields=[\n                ('updated_at', models.DateTimeField(auto_now=True)),\n                ('created_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "backend.inventory.migrations.0037_address_warehouse_product_warehouse",
         "documentation": {}
     },
     {
         "label": "Agency",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
+        "importPath": "backend.inventory.models.agency",
+        "description": "backend.inventory.models.agency",
         "peekOfCode": "class Agency(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    description = models.TextField(null=True, blank=True)\n    def __str__(self):\n        return self.name\n    def update_total(self):\n        products = Product.objects.filter(agency=self).aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),",
-        "detail": "backend.product.models",
+        "detail": "backend.inventory.models.agency",
         "documentation": {}
     },
     {
-        "label": "Address",
+        "label": "ProductInfo",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class Address(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    city = models.CharField(max_length=255)\n    address = models.CharField(max_length=255)\n    region = models.CharField(max_length=255)\n    postal_code = models.CharField(max_length=255)\n    def __str__(self):\n        return f\"{self.city}, {self.address}, {self.region}, {self.postal_code}\"\n    class Meta:\n        db_table = \"address\"",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.models.base",
+        "description": "backend.inventory.models.base",
+        "peekOfCode": "class ProductInfo:    \n    def __init__(self, name, description, average_rating, category):\n        self.name = name\n        self.description = description\n        self.average_rating = average_rating\n        self.category = category\n    def __str__(self):\n        return self.name\nclass Price:\n    def __init__(self, cost, price, old_price):",
+        "detail": "backend.inventory.models.base",
         "documentation": {}
     },
     {
-        "label": "Warehouse",
+        "label": "Price",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class Warehouse(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    address = models.ForeignKey(Address, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"warehouse\"\nclass Product(TimeBase, Statistics):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.models.base",
+        "description": "backend.inventory.models.base",
+        "peekOfCode": "class Price:\n    def __init__(self, cost, price, old_price):\n        self.cost = cost\n        self.price = price\n        self.old_price = old_price\n    def __str__(self):\n        return f\"{self.cost}, {self.price}, {self.old_price}\"\nclass PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session",
+        "detail": "backend.inventory.models.base",
         "documentation": {}
     },
     {
-        "label": "Product",
+        "label": "PaymentOrder",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class Product(TimeBase, Statistics):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (\n        (MALE, \"Male\"),\n        (FEMALE, \"Female\"),\n    )\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    agency = models.ForeignKey(Agency, on_delete=models.CASCADE)\n    # discount = models.FloatField(default=0)",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.models.base",
+        "description": "backend.inventory.models.base",
+        "peekOfCode": "class PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session\n        self.payment_done = payment_done\n    def __str__(self):\n        return f\"{self.payment_session}, {self.payment_done}\"\nclass ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone",
+        "detail": "backend.inventory.models.base",
         "documentation": {}
     },
     {
-        "label": "ProductItem",
+        "label": "ShippingAddress",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class ProductItem(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name=\"sizes\")\n    size = models.CharField(max_length=255, null=True, blank=True)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        self.product.update_total()\n        self.product.save()\n    def __str__(self):\n        return f\"{self.product.name}, {self.size}\"",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.models.base",
+        "description": "backend.inventory.models.base",
+        "peekOfCode": "class ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone\n        self.address = address\n    def __str__(self):\n        return f\"{self.receiver}, {self.phone}, {self.address}\"\nclass ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment",
+        "detail": "backend.inventory.models.base",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewInfo",
+        "kind": 6,
+        "importPath": "backend.inventory.models.base",
+        "description": "backend.inventory.models.base",
+        "peekOfCode": "class ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment\n        self.reply = reply\n        self.rate_point = rate_point\n    def __str__(self):\n        return f\"{self.comment}, {self.reply}, {self.rate_point}\"",
+        "detail": "backend.inventory.models.base",
         "documentation": {}
     },
     {
         "label": "Order",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
+        "importPath": "backend.inventory.models.order",
+        "description": "backend.inventory.models.order",
         "peekOfCode": "class Order(TimeBase, ShippingAddress):\n    CREATING = \"creating\"\n    PENDING = \"pending\"\n    SHIP = \"ship\"\n    CANCEL = \"cancel\"\n    COMPLETE = \"complete\"\n    RETURN = \"return\"\n    STATUS_CHOICE = (\n        (CREATING, \"Creating\"),\n        (SHIP, \"Ship\"),",
-        "detail": "backend.product.models",
-        "documentation": {}
-    },
-    {
-        "label": "Cart",
-        "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(\n        ProductItem, on_delete=models.CASCADE, blank=True, null=True\n    )\n    quantity = models.IntegerField(default=1)\n    class Meta:\n        db_table = \"cart\"\nclass OrderProduct(models.Model):",
-        "detail": "backend.product.models",
+        "detail": "backend.inventory.models.order",
         "documentation": {}
     },
     {
         "label": "OrderProduct",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
-        "peekOfCode": "class OrderProduct(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE)\n    quantity = models.IntegerField(default=1)\n    def __str__(self) -> str:\n        return f\"{self.productItem.product.name}, {self.productItem.size}\"\n    class Meta:\n        db_table = \"order_product\"\nclass ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)",
-        "detail": "backend.product.models",
+        "importPath": "backend.inventory.models.order",
+        "description": "backend.inventory.models.order",
+        "peekOfCode": "class OrderProduct(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE)\n    quantity = models.IntegerField(default=1)\n    def __str__(self) -> str:\n        return f\"{self.productItem.product.name}, {self.productItem.size}\"\n    class Meta:\n        db_table = \"order_product\"\nclass Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "detail": "backend.inventory.models.order",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "kind": 6,
+        "importPath": "backend.inventory.models.order",
+        "description": "backend.inventory.models.order",
+        "peekOfCode": "class Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE, blank=True, null=True)\n    quantity = models.IntegerField(default=1)\n    class Meta:\n        db_table = \"cart\"",
+        "detail": "backend.inventory.models.order",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "backend.inventory.models.product",
+        "description": "backend.inventory.models.product",
+        "peekOfCode": "class Product(TimeBase, Statistics):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (\n        (MALE, \"Male\"),\n        (FEMALE, \"Female\"),\n    )\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    agency = models.ForeignKey(Agency, on_delete=models.CASCADE)\n    view = models.IntegerField(default=0)",
+        "detail": "backend.inventory.models.product",
+        "documentation": {}
+    },
+    {
+        "label": "ProductItem",
+        "kind": 6,
+        "importPath": "backend.inventory.models.product",
+        "description": "backend.inventory.models.product",
+        "peekOfCode": "class ProductItem(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name=\"sizes\")\n    size = models.CharField(max_length=255, null=True, blank=True)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        self.product.update_total()\n        self.product.save()\n    def __str__(self):\n        return f\"{self.product.name}, {self.size}\"",
+        "detail": "backend.inventory.models.product",
         "documentation": {}
     },
     {
         "label": "ProductImage",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
+        "importPath": "backend.inventory.models.product",
+        "description": "backend.inventory.models.product",
+        "peekOfCode": "class ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    image = models.ForeignKey(Image, on_delete=models.CASCADE)\n    primary = models.BooleanField(default=False)\n    class Meta:\n        db_table = \"product_image\" \nclass Shoes(Product):\n    SNEAKER = \"sneaker\"\n    BOOTS = \"boots\"\n    SANDALS = \"sandals\"",
+        "detail": "backend.inventory.models.product",
+        "documentation": {}
+    },
+    {
+        "label": "Shoes",
+        "kind": 6,
+        "importPath": "backend.inventory.models.product",
+        "description": "backend.inventory.models.product",
+        "peekOfCode": "class Shoes(Product):\n    SNEAKER = \"sneaker\"\n    BOOTS = \"boots\"\n    SANDALS = \"sandals\"\n    SLIPPERS = \"slippers\"\n    FORMAL = \"formal\"\n    SHOES_CATEGORY_CHOICE = (\n        (SNEAKER, \"Sneaker\"),\n        (BOOTS, \"Boots\"), \n        (SANDALS, \"Sandals\"),",
+        "detail": "backend.inventory.models.product",
+        "documentation": {}
+    },
+    {
+        "label": "Clothes",
+        "kind": 6,
+        "importPath": "backend.inventory.models.product",
+        "description": "backend.inventory.models.product",
+        "peekOfCode": "class Clothes(Product):\n    SHIRT = \"shirt\"\n    PANTS = \"pants\"\n    DRESS = \"dress\"\n    JACKET = \"jacket\"\n    SWEATER = \"sweater\"\n    CLOTHES_CATEGORY_CHOICE = (\n        (SHIRT, \"Shirt\"),\n        (PANTS, \"Pants\"),\n        (DRESS, \"Dress\"), ",
+        "detail": "backend.inventory.models.product",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "kind": 6,
+        "importPath": "backend.inventory.models.warehouse",
+        "description": "backend.inventory.models.warehouse",
+        "peekOfCode": "class Address(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    city = models.CharField(max_length=255)\n    address = models.CharField(max_length=255)\n    region = models.CharField(max_length=255)\n    postal_code = models.CharField(max_length=255)\n    def __str__(self):\n        return f\"{self.city}, {self.address}, {self.region}, {self.postal_code}\"\n    class Meta:\n        db_table = \"address\"",
+        "detail": "backend.inventory.models.warehouse",
+        "documentation": {}
+    },
+    {
+        "label": "Warehouse",
+        "kind": 6,
+        "importPath": "backend.inventory.models.warehouse",
+        "description": "backend.inventory.models.warehouse",
+        "peekOfCode": "class Warehouse(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    address = models.ForeignKey(Address, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"warehouse\"",
+        "detail": "backend.inventory.models.warehouse",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImageInline",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProductInline",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model = OrderProduct\n    fields = (\n        \"productItem\",\n        \"image\",\n        \"quantity\",\n    )\n    readonly_fields = (\"image\",)\n    extra = 1\n    def image(self, obj):",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductItemInline",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = (\n        \"product\",\n        \"size\",\n        \"total\",\n        \"buyed_total\",\n        \"ship_total\",\n        \"pending_total\",\n        \"cancelled_total\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AgencyAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    inlines = [OrderProductInline]\n    fieldsets = (\n        (\"Order\", {\"fields\": (\"customer\", \"total_price\", \"status\", \"payment_done\")}),\n        (\"TimeBase\", {\"fields\": ((\"created_at\", \"updated_at\"),)}),\n    )\n    readonly_fields = (\"created_at\", \"updated_at\")\n    list_display = (\n        \"receiver\",\n        \"phone\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "WarehouseAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class WarehouseAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Warehouse Info\",\n            {\n                \"fields\": (\"name\", \"address\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AddressAdmin",
+        "kind": 6,
+        "importPath": "backend.inventory.admin",
+        "description": "backend.inventory.admin",
+        "peekOfCode": "class AddressAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Address Information\",\n            {\n                \"fields\": (\"city\", \"address\", \"region\", \"postal_code\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
+        "detail": "backend.inventory.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductConfig",
+        "kind": 6,
+        "importPath": "backend.inventory.apps",
+        "description": "backend.inventory.apps",
+        "peekOfCode": "class ProductConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'product'\n    def ready(self) -> None:\n        import inventory.signals",
+        "detail": "backend.inventory.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ProductFilter",
+        "kind": 6,
+        "importPath": "backend.inventory.filters",
+        "description": "backend.inventory.filters",
+        "peekOfCode": "class ProductFilter(filters.FilterSet):\n    name = filters.CharFilter(field_name='name', lookup_expr='icontains')\n    min_price = filters.NumberFilter(field_name=\"price\", lookup_expr='gte')\n    max_price = filters.NumberFilter(field_name=\"price\", lookup_expr='lte')\n    average_rating = filters.NumberFilter(field_name=\"average_rating\", lookup_expr='gte')\n    agency = filters.CharFilter(field_name=\"agency__name\", lookup_expr='icontains')\n    class Meta:\n        model = Product\n        fields = ['name', 'price', 'average_rating', 'agency']\nclass OrderFilter(filters.FilterSet):",
+        "detail": "backend.inventory.filters",
+        "documentation": {}
+    },
+    {
+        "label": "OrderFilter",
+        "kind": 6,
+        "importPath": "backend.inventory.filters",
+        "description": "backend.inventory.filters",
+        "peekOfCode": "class OrderFilter(filters.FilterSet):\n    class Meta:\n        model = Order\n        fields = ['status']\nclass ReviewFilter(filters.FilterSet):\n    product = filters.CharFilter(field_name=\"order_product__productItem__product__id\", lookup_expr='icontains')\n    class Meta:\n        model = Review\n        fields = ['product']",
+        "detail": "backend.inventory.filters",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewFilter",
+        "kind": 6,
+        "importPath": "backend.inventory.filters",
+        "description": "backend.inventory.filters",
+        "peekOfCode": "class ReviewFilter(filters.FilterSet):\n    product = filters.CharFilter(field_name=\"order_product__productItem__product__id\", lookup_expr='icontains')\n    class Meta:\n        model = Review\n        fields = ['product']",
+        "detail": "backend.inventory.filters",
+        "documentation": {}
+    },
+    {
+        "label": "ProductInfo",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class ProductInfo:    \n    def __init__(self, name, description, average_rating, category):\n        self.name = name\n        self.description = description\n        self.average_rating = average_rating\n        self.category = category\n    def __str__(self):\n        return self.name\nclass Price:\n    def __init__(self, cost, price, old_price):",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Price",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Price:\n    def __init__(self, cost, price, old_price):\n        self.cost = cost\n        self.price = price\n        self.old_price = old_price\n    def __str__(self):\n        return f\"{self.cost}, {self.price}, {self.old_price}\"\nclass PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentOrder",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class PaymentOrder:\n    def __init__(self, payment_session, payment_done):\n        self.payment_session = payment_session\n        self.payment_done = payment_done\n    def __str__(self):\n        return f\"{self.payment_session}, {self.payment_done}\"\nclass ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "ShippingAddress",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class ShippingAddress:\n    def __init__(self, receiver, phone, address):\n        self.receiver = receiver\n        self.phone = phone\n        self.address = address\n    def __str__(self):\n        return f\"{self.receiver}, {self.phone}, {self.address}\"\nclass ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewInfo",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class ReviewInfo:\n    def __init__(self, comment, reply, rate_point):\n        self.comment = comment\n        self.reply = reply\n        self.rate_point = rate_point\n    def __str__(self):\n        return f\"{self.comment}, {self.reply}, {self.rate_point}\"\n    class Meta:\n        abstract = True\nclass Agency(TimeBase, Statistics):",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Agency",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Agency(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    description = models.TextField(null=True, blank=True)\n    def __str__(self):\n        return self.name\n    def update_total(self):\n        products = Product.objects.filter(agency=self).aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Address(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    city = models.CharField(max_length=255)\n    address = models.CharField(max_length=255)\n    region = models.CharField(max_length=255)\n    postal_code = models.CharField(max_length=255)\n    def __str__(self):\n        return f\"{self.city}, {self.address}, {self.region}, {self.postal_code}\"\n    class Meta:\n        db_table = \"address\"",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Warehouse",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Warehouse(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    address = models.ForeignKey(Address, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"warehouse\"\nclass Product(TimeBase, Statistics):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Product(TimeBase, Statistics):\n    MALE = \"male\"\n    FEMALE = \"female\"\n    CATEGORY_CHOICE = (\n        (MALE, \"Male\"),\n        (FEMALE, \"Female\"),\n    )\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    agency = models.ForeignKey(Agency, on_delete=models.CASCADE)\n    # discount = models.FloatField(default=0)",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductItem",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class ProductItem(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name=\"sizes\")\n    size = models.CharField(max_length=255, null=True, blank=True)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        self.product.update_total()\n        self.product.save()\n    def __str__(self):\n        return f\"{self.product.name}, {self.size}\"",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Order(TimeBase, ShippingAddress):\n    CREATING = \"creating\"\n    PENDING = \"pending\"\n    SHIP = \"ship\"\n    CANCEL = \"cancel\"\n    COMPLETE = \"complete\"\n    RETURN = \"return\"\n    STATUS_CHOICE = (\n        (CREATING, \"Creating\"),\n        (SHIP, \"Ship\"),",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class Cart(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(\n        ProductItem, on_delete=models.CASCADE, blank=True, null=True\n    )\n    quantity = models.IntegerField(default=1)\n    class Meta:\n        db_table = \"cart\"\nclass OrderProduct(models.Model):",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProduct",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
+        "peekOfCode": "class OrderProduct(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE)\n    productItem = models.ForeignKey(ProductItem, on_delete=models.CASCADE)\n    quantity = models.IntegerField(default=1)\n    def __str__(self) -> str:\n        return f\"{self.productItem.product.name}, {self.productItem.size}\"\n    class Meta:\n        db_table = \"order_product\"\nclass ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)",
+        "detail": "backend.inventory.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductImage",
+        "kind": 6,
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
         "peekOfCode": "class ProductImage(models.Model):\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    image = models.ForeignKey(Image, on_delete=models.CASCADE)\n    primary = models.BooleanField(default=False)\n    class Meta:\n        db_table = \"product_image\"\nclass Review(TimeBase, ReviewInfo):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),",
-        "detail": "backend.product.models",
+        "detail": "backend.inventory.models",
         "documentation": {}
     },
     {
         "label": "Review",
         "kind": 6,
-        "importPath": "backend.product.models",
-        "description": "backend.product.models",
+        "importPath": "backend.inventory.models",
+        "description": "backend.inventory.models",
         "peekOfCode": "class Review(TimeBase, ReviewInfo):\n    RATE_CHOICES = [\n        (1, 1),\n        (2, 2),\n        (3, 3),\n        (4, 4),\n        (5, 5),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    order_product = models.ForeignKey(",
-        "detail": "backend.product.models",
+        "detail": "backend.inventory.models",
         "documentation": {}
     },
     {
         "label": "AgencySerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = [\"name\"]\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = [\"id\", \"productItem\"]\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "CartPostSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = [\"id\", \"productItem\"]\nclass CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            \"id\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "CartListSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class CartListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    class Meta:\n        model = Cart\n        fields = [\n            \"id\",\n            \"product\",\n            \"quantity\",\n        ]\n    def get_product(self, obj):",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "CartSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = \"__all__\"\nclass ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "ProductListSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class ProductListSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"old_price\",\n            \"buyed_total\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "ProductDetailSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class ProductDetailSerializer(serializers.ModelSerializer):\n    agency = AgencySerializer(read_only=True)\n    image_list = serializers.SerializerMethodField()\n    item = serializers.SerializerMethodField()\n    class Meta:\n        model = Product\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "OrderSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = \"__all__\"\nclass OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\"productItem\", \"quantity\"]\nclass OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "OrderProductSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class OrderProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderProduct\n        fields = [\"productItem\", \"quantity\"]\nclass OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\"products\", \"total_price\", \"status\"]\nclass OrderDetailSerializer(serializers.ModelSerializer):",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "OrderCreateSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    products = OrderProductSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\"products\", \"total_price\", \"status\"]\nclass OrderDetailSerializer(serializers.ModelSerializer):\n    products = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = [",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "OrderDetailSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class OrderDetailSerializer(serializers.ModelSerializer):\n    products = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = [\n            \"id\",\n            \"receiver\",\n            \"phone\",\n            \"address\",\n            \"total_price\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "ReviewSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        fields = \"__all__\"\nclass ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\"customer\"]\nclass ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "ReviewCreateSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class ReviewCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        exclude = [\"customer\"]\nclass ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:\n        model = Review\n        fields = [",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "ReviewListSerializer",
         "kind": 6,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "class ReviewListSerializer(serializers.ModelSerializer):\n    product = serializers.SerializerMethodField()\n    replied = serializers.SerializerMethodField()\n    class Meta:\n        model = Review\n        fields = [\n            \"id\",\n            \"product\",\n            \"comment\",\n            \"reply\",",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "stripe.api_key",
         "kind": 5,
-        "importPath": "backend.product.serializers",
-        "description": "backend.product.serializers",
+        "importPath": "backend.inventory.serializers",
+        "description": "backend.inventory.serializers",
         "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your tests here.\nfrom .models import *\nclass AgencySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Agency\n        fields = [\"name\"]\nclass CartPostSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart",
-        "detail": "backend.product.serializers",
+        "detail": "backend.inventory.serializers",
         "documentation": {}
     },
     {
         "label": "update_product_total",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_product_total(sender, instance, **kwargs):\n    instance.product.update_total()\n    instance.product.save()\n@receiver(pre_save, sender=OrderProduct)\ndef update_promotion_quantity(sender, instance, **kwargs):\n    promotion = Promotion.objects.get(\n        product=instance.productItem.product, quantity__gt=0\n    )\n    if (\n        promotion",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_promotion_quantity",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_promotion_quantity(sender, instance, **kwargs):\n    promotion = Promotion.objects.get(\n        product=instance.productItem.product, quantity__gt=0\n    )\n    if (\n        promotion\n        and instance.order.status == Order.PENDING\n        and instance.quantity < promotion.quantity\n    ):\n        promotion.quantity -= instance.quantity",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_order_status",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_order_status(sender, instance, **kwargs):\n    try:\n        tz = pytz.timezone(settings.TIME_ZONE)\n        time_now = timezone.now().astimezone(tz)\n        campaigns = Campaign.objects.filter(\n            start_time__lte=time_now, end_time__gte=time_now, status=Campaign.RUNNING\n        )\n        old_instance = Order.objects.get(id=instance.id)\n        user = instance.user\n        if old_instance and old_instance.status != instance.status:",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_statistical",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_statistical(sender, instance, **kwargs):\n    statistical = Statistical.objects.first()\n    try:\n        with transaction.atomic():\n            statistical.update_total()\n            statistical.save()\n    except IntegrityError:\n        print(\"An error occurred while updating the agency.\")\n@receiver(post_save, sender=Product)\ndef update_agency(sender, instance, **kwargs):",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_agency",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_agency(sender, instance, **kwargs):\n    agency = instance.agency\n    try:\n        with transaction.atomic():\n            agency.update_total()\n            agency.save()\n    except IntegrityError:\n        print(\"An error occurred while updating the agency.\")\n@receiver(post_save, sender=ProductItem)\ndef update_product(sender, instance, **kwargs):",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_product",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_product(sender, instance, **kwargs):\n    product = instance.product\n    try:\n        with transaction.atomic():\n            product.update_total()\n            product.save()\n    except IntegrityError:\n        print(\"An error occurred while updating the agency.\")\n@receiver(post_save, sender=Review)\ndef update_rating(sender, instance, **kwargs):",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_rating",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_rating(sender, instance, **kwargs):\n    product = instance.order_product.productItem.product\n    product_rating = Review.objects.filter(\n        order_product__productItem__product=product\n    ).aggregate(sum_rate=Sum(\"rate_point\"), count_review=Count(\"id\"))\n    product.average_rating = (\n        product_rating[\"sum_rate\"] // product_rating[\"count_review\"]\n    )\n    product.save()\n    print(\"[ End update rating ]\")",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_campaign",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_campaign(sender, instance, **kwargs):\n    tz = pytz.timezone(settings.TIME_ZONE)\n    time_now = timezone.now().astimezone(tz)\n    campaign = Campaign.objects.filter(\n        start_time__lte=time_now, end_time__gte=time_now, status=Campaign.RUNNING\n    ).aggregate(sum_discount=Sum(\"discount\"))\n    sum_discount = campaign[\"sum_discount\"] if campaign[\"sum_discount\"] else 0\n    products = Product.objects.all()\n    for product in products:\n        product.price = product.old_price * (100 - sum_discount) // 100",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "schedule_task",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def schedule_task(campaign):\n    print(\"[ Start schedule ]\")\n    PeriodicTask.objects.filter(name__endswith=campaign.id).delete()\n    start_schedule, _ = CrontabSchedule.objects.get_or_create(\n        minute=campaign.start_time.minute,\n        hour=campaign.start_time.hour,\n        day_of_month=campaign.start_time.day,\n        month_of_year=campaign.start_time.month,\n        day_of_week=\"*\",\n        timezone=str(campaign.start_time.tzinfo),",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "update_product_price",
         "kind": 2,
-        "importPath": "backend.product.signals",
-        "description": "backend.product.signals",
+        "importPath": "backend.inventory.signals",
+        "description": "backend.inventory.signals",
         "peekOfCode": "def update_product_price(sender, instance, created, **kwargs):\n    if created:\n        instance.product.price = (\n            instance.product.old_price * (100 - instance.discount) // 100\n        )\n        instance.product.save()\n    elif instance.quantity == 0:\n        instance.product.price = instance.product.old_price\n        instance.product.save()",
-        "detail": "backend.product.signals",
+        "detail": "backend.inventory.signals",
         "documentation": {}
     },
     {
         "label": "router",
         "kind": 5,
-        "importPath": "backend.product.urls",
-        "description": "backend.product.urls",
+        "importPath": "backend.inventory.urls",
+        "description": "backend.inventory.urls",
         "peekOfCode": "router = DefaultRouter()\nrouter.register(r\"products\", ProductViewSet, basename=\"products\")\nrouter.register(r\"agency\", AgencyViewSet, basename=\"agency\")\nrouter.register(r\"cart\", CartViewSet, basename=\"cart\")\nrouter.register(r\"order\", OrderViewSet, basename=\"order\")\nrouter.register(r\"rating\", ReviewViewSet, basename=\"rating\")\n# router.register(r\"comment\", CommentViewSet, basename=\"comment\")\nurlpatterns = [path(\"\", include(router.urls))]",
-        "detail": "backend.product.urls",
+        "detail": "backend.inventory.urls",
         "documentation": {}
     },
     {
         "label": "urlpatterns",
         "kind": 5,
-        "importPath": "backend.product.urls",
-        "description": "backend.product.urls",
+        "importPath": "backend.inventory.urls",
+        "description": "backend.inventory.urls",
         "peekOfCode": "urlpatterns = [path(\"\", include(router.urls))]",
-        "detail": "backend.product.urls",
+        "detail": "backend.inventory.urls",
         "documentation": {}
     },
     {
         "label": "ProductViewSet",
         "kind": 6,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "class ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = [\"created_at\", \"buyed_total\", \"price\", \"view\"]\n    ordering = [\"-buyed_total\"]\n    def get_permissions(self):\n        match self.action:",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
         "documentation": {}
     },
     {
         "label": "AgencyViewSet",
         "kind": 6,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "class AgencyViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = AgencySerializer\n    queryset = Agency.objects.all()\n    def get_permissions(self):\n        match self.action:\n            case \"list\":\n                self.permission_classes = []\n            case _:\n                self.permission_classes = [IsStaffOrAdmin]",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
         "documentation": {}
     },
     {
         "label": "CartViewSet",
         "kind": 6,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "class CartViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    permission_classes = [IsActiveUser]\n    serializer_class = CartSerializer\n    # queryset = Cart.objects.all()\n    def get_serializer_class(self):\n        match self.action:\n            case \"list\":\n                return CartListSerializer\n            case \"create\":",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
         "documentation": {}
     },
     {
         "label": "OrderViewSet",
         "kind": 6,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "class OrderViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = OrderSerializer\n    permission_classes = [IsActiveUser]\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = OrderFilter\n    ordering_fields = [\"updated_at\"]\n    ordering = [\"-updated_at\"]\n    def get_serializer_class(self):\n        match self.action:",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
         "documentation": {}
     },
     {
         "label": "ReviewViewSet",
         "kind": 6,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "class ReviewViewSet(ModelViewSet):\n    serializer_class = ReviewSerializer\n    permission_classes = []\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ReviewFilter\n    queryset = Review.objects.all()\n    ordering = [\"-created_at\"]\n    def get_serializer_class(self):\n        match self.action:\n            case \"create\":",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
         "documentation": {}
     },
     {
         "label": "stripe.api_key",
         "kind": 5,
-        "importPath": "backend.product.views",
-        "description": "backend.product.views",
+        "importPath": "backend.inventory.views",
+        "description": "backend.inventory.views",
         "peekOfCode": "stripe.api_key = settings.STRIPE_SECRET\n# Create your views here.\nclass ProductViewSet(ModelViewSet):\n    pagination_class = StandardPageNumberPagination\n    serializer_class = ProductListSerializer\n    filter_backends = (DjangoFilterBackend, OrderingFilter)\n    filterset_class = ProductFilter\n    queryset = Product.objects.all()\n    ordering_fields = [\"created_at\", \"buyed_total\", \"price\", \"view\"]\n    ordering = [\"-buyed_total\"]",
-        "detail": "backend.product.views",
+        "detail": "backend.inventory.views",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "backend.scripts.clothes",
+        "description": "backend.scripts.clothes",
+        "peekOfCode": "path = \"zune\"\nagencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯",
+        "detail": "backend.scripts.clothes",
+        "documentation": {}
+    },
+    {
+        "label": "agencies",
+        "kind": 5,
+        "importPath": "backend.scripts.clothes",
+        "description": "backend.scripts.clothes",
+        "peekOfCode": "agencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦",
+        "detail": "backend.scripts.clothes",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "backend.scripts.clothes",
+        "description": "backend.scripts.clothes",
+        "peekOfCode": "description = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦\nSẵn sàng giao hàng ngay khi nhận được đơn, tiết kiệm thời gian cho bạn. ⏰",
+        "detail": "backend.scripts.clothes",
+        "documentation": {}
+    },
+    {
+        "label": "sizes",
+        "kind": 5,
+        "importPath": "backend.scripts.clothes",
+        "description": "backend.scripts.clothes",
+        "peekOfCode": "sizes = [\"S\", \"M\", \"L\", \"XL\", \"2XL\", \"3XL\"]\n# Tạo danh sách Agency (chọn ngẫu nhiên từ danh sách agencies)\nagency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [",
+        "detail": "backend.scripts.clothes",
+        "documentation": {}
+    },
+    {
+        "label": "agency_objects",
+        "kind": 5,
+        "importPath": "backend.scripts.clothes",
+        "description": "backend.scripts.clothes",
+        "peekOfCode": "agency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [\n        f for f in os.listdir(image_folder) if f.endswith((\".jpg\", \".jpeg\", \".png\"))\n    ]",
+        "detail": "backend.scripts.clothes",
+        "documentation": {}
+    },
+    {
+        "label": "urls",
+        "kind": 5,
+        "importPath": "backend.scripts.crawl",
+        "description": "backend.scripts.crawl",
+        "peekOfCode": "urls = [\"https://zunezx.com/san-pham.html\", \"https://zunezx.com/san-pham.html?page=2\"]\nproduct_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")",
+        "detail": "backend.scripts.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "product_urls",
+        "kind": 5,
+        "importPath": "backend.scripts.crawl",
+        "description": "backend.scripts.crawl",
+        "peekOfCode": "product_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")\n        # Tìm tất cả các thẻ <a> có chứa <img> với class 'img-responsive main-img main'",
+        "detail": "backend.scripts.crawl",
+        "documentation": {}
+    },
+    {
+        "label": "clean",
+        "kind": 2,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "def clean(price):\n    price = price.replace(',', '')\n    return int(price)\nsizes = ['36', '37', '38', '39', '40', '41', '42', '43', '44']\nproducts = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "path = 'import/images'\njson_path = 'import/data.json'\nagencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "json_path",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "json_path = 'import/data.json'\nagencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "agencies",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "agencies = []\ndescription = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "description = \"\"\"👟👞👠🥿👡 Giày dép phong cách và đa dạng 👡🥿👠👞👟\nNam nữ unisex, mỗi đôi đều mang một câu chuyện riêng! 🌟\nChất liệu và form unisex, phù hợp cho cả nam và nữ. 💫\n▪️Size: Freesize, phù hợp với dưới 65kg\n▪️Màu sắc: Đa dạng, từ trắng đến đen, tạo sự lựa chọn cho bạn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải đảm bảo chất lượng, đem lại sự thoải mái cho đôi chân của bạn. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦\nSẵn sàng giao hàng ngay khi nhận được đơn, tiết kiệm thời gian cho bạn. ⏰",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "sizes",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "sizes = ['36', '37', '38', '39', '40', '41', '42', '43', '44']\nproducts = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "products = []    \nproducts_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),\n        description = description,",
+        "detail": "backend.scripts.shoes",
+        "documentation": {}
+    },
+    {
+        "label": "products_images",
+        "kind": 5,
+        "importPath": "backend.scripts.shoes",
+        "description": "backend.scripts.shoes",
+        "peekOfCode": "products_images = []\nfor item in data:\n    agency = Agency.objects.get(name=item['brand'])\n    product = Product(\n        name = item['name'],\n        price = clean(item['price_sale']),\n        old_price = clean(item['price_original']),\n        cost = int(int(clean(item['price_sale'])) * 0.8),\n        description = description,\n        agency = agency,",
+        "detail": "backend.scripts.shoes",
         "documentation": {}
     },
     {
@@ -4729,69 +5321,6 @@
         "description": "backend.user.views",
         "peekOfCode": "class CustomerViewSet(ModelViewSet):\n    serializer_class = CustomerSerializer\n    pagination_class = StandardPageNumberPagination\n    filter_backends = [filters.SearchFilter]\n    search_fields = [\n        \"user__first_name\",\n        \"user__last_name\",\n        \"user__email\",\n        \"user__active\",\n    ]",
         "detail": "backend.user.views",
-        "documentation": {}
-    },
-    {
-        "label": "urls",
-        "kind": 5,
-        "importPath": "backend.crawl",
-        "description": "backend.crawl",
-        "peekOfCode": "urls = [\"https://zunezx.com/san-pham.html\", \"https://zunezx.com/san-pham.html?page=2\"]\nproduct_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")",
-        "detail": "backend.crawl",
-        "documentation": {}
-    },
-    {
-        "label": "product_urls",
-        "kind": 5,
-        "importPath": "backend.crawl",
-        "description": "backend.crawl",
-        "peekOfCode": "product_urls = []\n# Tạo thư mục 'zune' nếu chưa tồn tại\nos.makedirs(\"zune\", exist_ok=True)\n# Duyệt qua từng URL để lấy link sản phẩm\nfor url in urls:\n    response = requests.get(url)\n    # Kiểm tra mã trạng thái HTTP để chắc chắn rằng yêu cầu thành công\n    if response.status_code == 200:\n        soup = BeautifulSoup(response.text, \"html.parser\")\n        # Tìm tất cả các thẻ <a> có chứa <img> với class 'img-responsive main-img main'",
-        "detail": "backend.crawl",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "path = \"zune\"\nagencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "agencies",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "agencies = [\"LuxeFit\", \"VeraMode\", \"NoirWear\"]\ndescription = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "description",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "description = \"\"\"👗👚👕🧥👖 Quần áo phong cách và đa dạng 👖🧥👕👚👗\nDành cho cả nam và nữ, mỗi bộ trang phục đều mang đến sự tự tin và phong cách riêng! 🌟\nChất liệu và thiết kế unisex, phù hợp với mọi đối tượng. 💫\n▪️Size: Freesize, phù hợp với nhiều vóc dáng khác nhau\n▪️Màu sắc: Đa dạng, từ basic đến nổi bật, giúp bạn dễ dàng lựa chọn. 🌈\nCAM KẾT:\nSản phẩm 100% giống mô tả, đảm bảo sự hài lòng của khách hàng. ✅\nChất liệu vải mềm mại, thoải mái, giúp bạn tự do di chuyển cả ngày dài. 💯\nKiểm tra và đóng gói cẩn thận trước khi giao hàng, đảm bảo sản phẩm không bị hỏng hoặc bẩn khi nhận hàng. 📦\nSẵn sàng giao hàng ngay khi nhận được đơn, tiết kiệm thời gian cho bạn. ⏰",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "sizes",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "sizes = [\"S\", \"M\", \"L\", \"XL\", \"2XL\", \"3XL\"]\n# Tạo danh sách Agency (chọn ngẫu nhiên từ danh sách agencies)\nagency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [",
-        "detail": "backend.import",
-        "documentation": {}
-    },
-    {
-        "label": "agency_objects",
-        "kind": 5,
-        "importPath": "backend.import",
-        "description": "backend.import",
-        "peekOfCode": "agency_objects = [Agency(name=agency) for agency in agencies]\nAgency.objects.bulk_create(agency_objects)\n# Duyệt qua các thư mục con trong thư mục zune\nfor subdir in os.listdir(path):\n    subdir_path = os.path.join(path, subdir)\n    product_images = []\n    image_folder = subdir_path  # Thư mục chứa ảnh sản phẩm\n    image_files = [\n        f for f in os.listdir(image_folder) if f.endswith((\".jpg\", \".jpeg\", \".png\"))\n    ]",
-        "detail": "backend.import",
         "documentation": {}
     },
     {

@@ -8,7 +8,7 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0004_product_ratings_alter_comment_user_and_more'),
+        ('inventory', '0004_product_ratings_alter_comment_user_and_more'),
     ]
 
     operations = [
@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('money_total', models.IntegerField(default=0)),
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('size', models.CharField(blank=True, max_length=255, null=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='sizes', to='product.product')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='sizes', to='inventory.product')),
             ],
             options={
                 'abstract': False,

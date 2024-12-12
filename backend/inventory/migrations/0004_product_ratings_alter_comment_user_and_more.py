@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0003_customer_total'),
-        ('product', '0003_comment_remove_product_rating_product_average_rating_and_more'),
+        ('inventory', '0003_comment_remove_product_rating_product_average_rating_and_more'),
     ]
 
     operations = [
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.product')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.product')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.customer')),
             ],
             options={

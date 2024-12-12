@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0018_agency_pending_total_product_pending_total_and_more'),
+        ('inventory', '0018_agency_pending_total_product_pending_total_and_more'),
     ]
 
     operations = [

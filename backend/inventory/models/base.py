@@ -1,3 +1,6 @@
+from django.utils import timezone
+
+
 
 class ProductInfo:    
     def __init__(self, name, description, average_rating, category):
@@ -44,3 +47,30 @@ class ReviewInfo:
     def __str__(self):
         return f"{self.comment}, {self.reply}, {self.rate_point}"
 
+class PromotionType:
+    def __init__(self, type):
+        self.type = type
+        
+    def get_type(self):
+        return self.type
+    
+
+class CampaignTime:
+    def __init__(self, start_time, end_time):
+        self.start_time = start_time
+        self.end_time = end_time
+        
+    def get_time(self):
+        return self.start_time, self.end_time
+    
+    def check_time(self):
+        return self.start_time < timezone.now() and self.end_time > timezone.now()
+
+
+class Discount:
+    def __init__(self, discount, discount_code):
+        self.discount = discount
+        self.discount_code = discount_code
+        
+    def get_discount(self):
+        return self.discount, self.discount_code

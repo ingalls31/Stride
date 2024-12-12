@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ('image', '0002_alter_image_image'),
-        ('product', '0002_product_images_productimage'),
+        ('inventory', '0002_product_images_productimage'),
     ]
 
     operations = [
@@ -46,14 +46,14 @@ class Migration(migrations.Migration):
             name='CommentImage',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('comment', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.comment')),
+                ('comment', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.comment')),
                 ('image', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='image.image')),
             ],
         ),
         migrations.AddField(
             model_name='comment',
             name='product',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.product'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.product'),
         ),
         migrations.AddField(
             model_name='comment',

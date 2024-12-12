@@ -4,12 +4,20 @@ from rest_framework import serializers
 import stripe
 
 from ecommerce import settings
-from .models import *
+from .models import (
+    Agency,
+    Cart,
+    Order,
+    Product,
+    ProductItem,
+    ProductImage,
+    Review,
+    OrderProduct,
+)
 
 stripe.api_key = settings.STRIPE_SECRET
 
 # Create your tests here.
-from .models import *
 
 
 class AgencySerializer(serializers.ModelSerializer):

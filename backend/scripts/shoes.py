@@ -4,8 +4,11 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings')
 django.setup()
 from django.core.files import File
 from ecommerce import settings
-from product.models import Agency, Product, ProductImage, ProductItem
+from inventory.models.agency import Agency
+from inventory.models.product import Shoes
 from image.models import Image
+from inventory.models.product import ProductItem
+from inventory.models.product import ProductImage
 
 
 path = 'import/images'
@@ -52,7 +55,7 @@ products = []
 products_images = []
 for item in data:
     agency = Agency.objects.get(name=item['brand'])
-    product = Product(
+    product = Shoes(
         name = item['name'],
         price = clean(item['price_sale']),
         old_price = clean(item['price_original']),
@@ -60,6 +63,7 @@ for item in data:
         description = description,
         agency = agency,
         view = random.randint(100, 10000),
+        category = random.choice(Shoes.SHOES_CATEGORY_CHOICE)[1],
     )
     product.save()
     

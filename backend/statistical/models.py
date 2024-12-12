@@ -6,40 +6,9 @@ from django.db import models
 from django.db.models import Sum
 from inventory.models import Agency, Order, Product
 from user.models import TimeBase, Statistics
-from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
 
 # Create your models here.
-
-
-class PromotionType:
-    def __init__(self, type):
-        self.type = type
-        
-    def get_type(self):
-        return self.type
-    
-
-class CampaignTime:
-    def __init__(self, start_time, end_time):
-        self.start_time = start_time
-        self.end_time = end_time
-        
-    def get_time(self):
-        return self.start_time, self.end_time
-    
-    def check_time(self):
-        return self.start_time < timezone.now() and self.end_time > timezone.now()
-
-
-class Discount:
-    def __init__(self, discount, discount_code):
-        self.discount = discount
-        self.discount_code = discount_code
-        
-    def get_discount(self):
-        return self.discount, self.discount_code
-    
 
 
 class Statistical(Statistics):
@@ -65,94 +34,3 @@ class Statistical(Statistics):
 
     class Meta:
         db_table = "statiscal"
-
-
-class Campaign(TimeBase, Statistics, Discount):
-    PENDING = "pending"
-    RUNNING = "running"
-    CLOSE = "close"
-    STATUS = [
-        (PENDING, "pending"),
-        (RUNNING, "running"),
-        (CLOSE, "close"),
-    ]
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255)
-    status = models.CharField(max_length=10, choices=STATUS, default=PENDING)
-    orders = models.ManyToManyField(Order, related_name="CampaignOrder", blank=True)
-    
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    
-    discount = models.IntegerField(
-        default=0,
-        validators=[MinValueValidator(0), MaxValueValidator(100)],
-        help_text="Enter a value from 0 to 100 to set the discount percentage.",
-    )
-    discount_code = models.CharField(
-        max_length=6,
-        default=lambda: "".join(
-            random.choices(string.ascii_uppercase + string.digits, k=6)
-        ),
-        null=True,
-        blank=True,
-    )
-    
-    @property
-    def campaign_time(self):
-        return CampaignTime(self.start_time, self.end_time)
-    
-    @property
-    def discount_info(self):
-        return Discount(self.discount, self.discount_code)
-
-
-    class Meta:
-        db_table = "campaign"
-
-
-class Promotion(TimeBase, Discount, PromotionType):
-    FLASH_DEAL = "flash_deal"
-    PRODUCT_DISCOUNT = "product_discount"
-    PROMOTION_TYPE_CHOICES = [
-        (FLASH_DEAL, "Flash Deal"),
-        (PRODUCT_DISCOUNT, "Product Discount"),
-    ]
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.IntegerField()
-    
-    type = models.CharField(
-        max_length=255, choices=PROMOTION_TYPE_CHOICES, default=PRODUCT_DISCOUNT
-    )
-    
-    @property
-    def promotion_type(self):
-        return PromotionType(self.type)
-
-    def __str__(self):
-        return self.product.name + " - " + str(self.discount)
-
-    class Meta:
-        db_table = "promotion"
-
-
-class CampaignOrder(TimeBase):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
-    order = models.ForeignKey(Order, on_delete=models.CASCADE)
-    promotions = models.ManyToManyField(
-        Promotion, related_name="CampaignPromotion", blank=True
-    )
-
-    class Meta:
-        db_table = "campaign_order"
-
-
-class CampaignPromotion(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
-    promotion = models.ForeignKey(Promotion, on_delete=models.CASCADE)
-
-    class Meta:
-        db_table = "campaign_promotion"

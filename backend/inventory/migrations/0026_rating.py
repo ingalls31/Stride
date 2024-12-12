@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0011_alter_customer_buyed_total_and_more'),
-        ('product', '0025_delete_comment'),
+        ('inventory', '0025_delete_comment'),
     ]
 
     operations = [
@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('content', models.TextField()),
                 ('rate_point', models.IntegerField(choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)], default=5)),
-                ('order_product', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.orderproduct')),
+                ('order_product', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='inventory.orderproduct')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.customer')),
             ],
             options={

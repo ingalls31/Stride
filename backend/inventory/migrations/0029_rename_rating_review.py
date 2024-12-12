@@ -7,7 +7,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0011_alter_customer_buyed_total_and_more'),
-        ('product', '0028_rename_content_rating_comment'),
+        ('inventory', '0028_rename_content_rating_comment'),
     ]
 
     operations = [

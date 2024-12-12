@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     #application
     'user',
     'image',
-    'product',
+    'inventory',
     'statistical'
 ]
 

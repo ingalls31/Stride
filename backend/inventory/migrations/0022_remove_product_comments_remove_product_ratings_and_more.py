@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('product', '0021_remove_comment_images_remove_comment_product_and_more'),
+        ('inventory', '0021_remove_comment_images_remove_comment_product_and_more'),
     ]
 
     operations = [
@@ -19,13 +19,13 @@ class Migration(migrations.Migration):
             model_name='product',
             name='ratings',
         ),
-        migrations.RemoveField(
-            model_name='rating',
-            name='product',
-        ),
+        # migrations.RemoveField(
+        #     model_name='rating',
+        #     name='product',
+        # ),
         migrations.AddField(
             model_name='rating',
             name='order_product',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='product.orderproduct'),
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='inventory.orderproduct'),
         ),
     ]

@@ -23,7 +23,7 @@ class Product(TimeBase, Statistics):
     name = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
     average_rating = models.FloatField(default=0)
-    category = models.CharField(max_length=10, choices=CATEGORY_CHOICE, default=MALE)
+    category = models.CharField(max_length=255, choices=CATEGORY_CHOICE, default=MALE)
     
     cost = models.IntegerField(default=0)
     price = models.IntegerField(default=0)
@@ -103,7 +103,7 @@ class Shoes(Product):
     )
     
     class Meta:
-        abstract = True
+        proxy = True
         
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -111,11 +111,11 @@ class Shoes(Product):
         self._meta.get_field('category').default = self.SNEAKER
 
 class Clothes(Product):
-    SHIRT = "shirt"
-    PANTS = "pants"
-    DRESS = "dress"
-    JACKET = "jacket"
-    SWEATER = "sweater"
+    SHIRT = "Shirt"
+    PANTS = "Pants"
+    DRESS = "Dress"
+    JACKET = "Jacket"
+    SWEATER = "Sweater"
     
     CLOTHES_CATEGORY_CHOICE = (
         (SHIRT, "Shirt"),
@@ -126,7 +126,7 @@ class Clothes(Product):
     )
 
     class Meta:
-        abstract = True
+        proxy = True
         
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

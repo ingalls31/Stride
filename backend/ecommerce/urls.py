@@ -44,7 +44,7 @@ api_patterns = [
     path('token/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
     path('', include('user.urls')),
     path('', include('image.urls')),
-    path('', include('product.urls')),
+    path('', include('inventory.urls')),
 ]
 
 urlpatterns = [

@@ -7,13 +7,23 @@ from ecommerce import settings
 from ecommerce.settings import AUTH_PASSWORD_VALIDATORS
 from . import models
 from django_celery_beat.models import (
-    PeriodicTask,
     CrontabSchedule,
     IntervalSchedule,
     SolarSchedule,
     ClockedSchedule,
 )
-from .models import *
+from .models import (
+    Product,
+    Agency,
+    Order,
+    ProductItem,
+    ProductImage,
+    OrderProduct,
+    Campaign,
+    Promotion,
+    Address,
+    Warehouse,
+)
 # Register your models here.
 
 admin.site.unregister(ClockedSchedule)
@@ -299,8 +309,110 @@ class AddressAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 
+class CampaignAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (
+            "Total",
+            {
+                "fields": (
+                    (
+                        "buyed_total",
+                        "ship_total",
+                        "pending_total",
+                        "cancelled_total",
+                        "returned_total",
+                    ),
+                ),
+            },
+        ),
+        (
+            "Revenue",
+            {
+                "fields": (("revenue_total", "profit_total"),),
+            },
+        ),
+        (
+            "Campaign",
+            {
+                "fields": (
+                    "name",
+                    (
+                        "start_time",
+                        "end_time",
+                    ),
+                    "discount",
+                    "status",
+                ),
+            },
+        ),
+    )
+    readonly_fields = (
+        "total",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+    list_display = (
+        "name",
+        "start_time",
+        "end_time",
+        "discount",
+        "buyed_total",
+        "ship_total",
+        "pending_total",
+        "cancelled_total",
+        "returned_total",
+        "revenue_total",
+        "profit_total",
+    )
+
+
+class PromotionAdmin(admin.ModelAdmin):
+    fields = ("product", "quantity", "discount")
+    fieldsets = (
+        (
+            "Promotion Info",
+            {
+                "fields": ("product", "quantity"),
+            },
+        ),
+        (
+            "TimeBase",
+            {
+                "fields": (("created_at", "updated_at"),),
+            },
+        ),
+    )
+    readonly_fields = ("created_at", "updated_at")
+    list_display = ("product", "quantity", "created_at", "updated_at")
+    list_filter = ("product",)
+    search_fields = ("product__name",)
+    list_per_page = 30
+
+    def image_preview(self, obj):
+        if obj.product:
+            product_image = ProductImage.objects.filter(
+                product=obj.product, primary=True
+            ).first()
+            if product_image:
+                return format_html(
+                    '<img src="{}" width="150" height="auto"/>',
+                    f"{settings.HOST}{product_image.image.image.url}",
+                )
+        return ""
+
+    image_preview.short_description = "Product Image Preview"
+    readonly_fields = ("image_preview",)
+
+
 admin.site.register(Address, AddressAdmin)
 admin.site.register(Warehouse, WarehouseAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Agency, AgencyAdmin)
 admin.site.register(Order, OrderAdmin)
+admin.site.register(Promotion, PromotionAdmin)
+admin.site.register(Campaign, CampaignAdmin)

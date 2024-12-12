@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0003_customer_total'),
-        ('product', '0006_order_orderproduct'),
+        ('inventory', '0006_order_orderproduct'),
     ]
 
     operations = [
@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
-                ('products', models.ManyToManyField(blank=True, related_name='CartProduct', to='product.product')),
+                ('products', models.ManyToManyField(blank=True, related_name='CartProduct', to='inventory.product')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.customer')),
             ],
             options={
@@ -31,8 +31,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField(default=1)),
-                ('cart', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.cart')),
-                ('productItem', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.productitem')),
+                ('cart', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.cart')),
+                ('productItem', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.productitem')),
             ],
         ),
     ]

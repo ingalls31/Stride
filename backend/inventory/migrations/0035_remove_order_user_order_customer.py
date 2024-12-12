@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('user', '0012_alter_user_options_alter_customer_table_and_more'),
-        ('product', '0034_order_payment_done'),
+        ('inventory', '0034_order_payment_done'),
     ]
 
     operations = [

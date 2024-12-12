@@ -53,7 +53,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True, null=True)),
                 ('category', models.CharField(choices=[('male', 'Male'), ('female', 'Female')], default='male', max_length=10)),
                 ('rating', models.FloatField(default=0)),
-                ('agency', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='product.agency')),
+                ('agency', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inventory.agency')),
             ],
             options={
                 'abstract': False,
