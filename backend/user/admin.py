@@ -7,7 +7,7 @@ from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.contrib.auth.models import Permission
 from django.contrib.auth.models import Group
 from social_django.models import Association, Nonce, UserSocialAuth
-from .models import Customer, NotificationContent, Statistical, User
+from .models import Customer, Notification, NotificationContent, Statistical, User
 
 admin.site.unregister((Group, Association, Nonce, UserSocialAuth))
 
@@ -211,62 +211,39 @@ class StatisticalAdmin(admin.ModelAdmin):
         return False
 
 
-class StatisticalAdmin(admin.ModelAdmin):
-    fieldsets = (
-        (
-            "Total",
-            {
-                "fields": (
-                    (
-                        "total",
-                        "buyed_total",
-                        "ship_total",
-                        "pending_total",
-                        "cancelled_total",
-                        "returned_total",
-                    ),
-                ),
-            },
-        ),
-        (
-            "Revenue",
-            {
-                "fields": (("revenue_total", "profit_total"),),
-            },
-        ),
-    )
-    readonly_fields = (
-        "total",
-        "buyed_total",
-        "ship_total",
-        "pending_total",
-        "cancelled_total",
-        "returned_total",
-        "revenue_total",
-        "profit_total",
-    )
-    list_display = (
-        "total",
-        "buyed_total",
-        "ship_total",
-        "pending_total",
-        "cancelled_total",
-        "returned_total",
-        "revenue_total",
-        "profit_total",
+class NotificationAdminForm(forms.ModelForm):
+    content_text = forms.CharField(
+        widget=forms.Textarea(attrs={"rows": 4}), required=False
     )
 
-    def has_add_permission(self, request):
-        return False
+    class Meta:
+        model = Notification
+        fields = ["customer", "is_seen"]
 
-    def has_change_permission(self, request, obj=None):
-        return False
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.instance and self.instance.content:
+            self.fields["content_text"].initial = self.instance.content.content
 
-    def has_delete_permission(self, request, obj=None):
-        return False
+    def save(self, commit=True):
+        notification = super().save(commit=False)
+        content_text = self.cleaned_data.get("content_text")
+
+        if content_text:
+            if notification.content:
+                notification.content.content = content_text
+                notification.content.save()
+            else:
+                content = NotificationContent.objects.create(content=content_text)
+                notification.content = content
+
+        if commit:
+            notification.save()
+        return notification
 
 
 class NotificationAdmin(admin.ModelAdmin):
+    form = NotificationAdminForm
     list_display = ("customer", "content_display", "is_seen", "created_at")
     list_filter = ("is_seen", "created_at")
     search_fields = (
@@ -291,34 +268,12 @@ class NotificationAdmin(admin.ModelAdmin):
         ("Timestamps", {"fields": (("created_at", "updated_at"),)}),
     )
 
-    def get_form(self, request, obj=None, **kwargs):
-        form = super().get_form(request, obj, **kwargs)
-        if obj and obj.content:
-            form.base_fields["content_text"].initial = obj.content.content
-        return form
-
-    def save_model(self, request, obj, form, change):
-        content_text = form.cleaned_data.get("content_text")
-        if content_text:
-            if obj.content:
-                obj.content.content = content_text
-                obj.content.save()
-            else:
-                content = NotificationContent.objects.create(content=content_text)
-                obj.content = content
-        super().save_model(request, obj, form, change)
-
     def content_display(self, obj):
         return obj.content.content if obj.content else "-"
 
     content_display.short_description = "Content"
 
-    def formfield_for_dbfield(self, db_field, **kwargs):
-        formfield = super().formfield_for_dbfield(db_field, **kwargs)
-        if db_field.name == "content_text":
-            formfield.widget = forms.Textarea(attrs={"rows": 4})
-        return formfield
-
 
 admin.site.register(User, UserAdmin)
 admin.site.register(Statistical, StatisticalAdmin)
+admin.site.register(Notification, NotificationAdmin)

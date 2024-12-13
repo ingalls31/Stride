@@ -169,6 +169,7 @@ class OrderViewSet(ModelViewSet):
             products = request.data.get("products")
             customer = request.customer
             receiver = request.user.first_name + " " + request.user.last_name
+            print("🚀 ~ receiver:", receiver)
             phone = customer.phone_number
             address = customer.address
             status_order = request.data.get("status")

@@ -7,7 +7,7 @@ from .order import OrderProduct
 from .base import ReviewInfo
 
 
-class Review(TimeBase, ReviewInfo):
+class Review(TimeBase):
     RATE_CHOICES = [
         (1, 1),
         (2, 2),

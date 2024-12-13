@@ -4,7 +4,7 @@ from user.models import TimeBase, Customer
 from .base import ShippingAddress, PaymentOrder
 from .product import ProductItem
 
-class Order(TimeBase, ShippingAddress):
+class Order(TimeBase):
     CREATING = "creating"
     PENDING = "pending"
     SHIP = "ship"
@@ -39,7 +39,10 @@ class Order(TimeBase, ShippingAddress):
     
     @property
     def shipping_info(self):
-        return ShippingAddress(self.receiver, self.phone, self.address)
+        receiver = self.receiver if self.receiver else ""
+        phone = self.phone if self.phone else ""
+        address = self.address if self.address else ""
+        return ShippingAddress(receiver, phone, address)
 
     def __str__(self):
         return f"{self.customer.user.first_name} {self.customer.user.last_name} ({self.address})"
