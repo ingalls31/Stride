@@ -20,7 +20,7 @@ class OrderProductInline(admin.TabularInline):
         ).first()
         return format_html(
             '<img src="{}" width="150" height="auto"/>',
-            f"{settings.HOST}{product_image.image.image.url}",
+            f"{product_image.image.image.url}",
         )
 
 class OrderAdmin(admin.ModelAdmin):

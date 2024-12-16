@@ -13,7 +13,7 @@ class ProductImageInline(admin.TabularInline):
         if obj.image:
             return format_html(
                 '<img src="{}" width="150" height="auto"/>',
-                f"{settings.HOST}{obj.image.image.url}",
+                f"{obj.image.image.url}",
             )
         return ""
 
@@ -124,5 +124,5 @@ class ProductAdmin(admin.ModelAdmin):
         product_image = ProductImage.objects.filter(product=obj, primary=True).first()
         return format_html(
             '<img src="{}" width="150" height="auto"/>',
-            f"{settings.HOST}{product_image.image.image.url}",
+            f"{product_image.image.image.url}",
         ) 

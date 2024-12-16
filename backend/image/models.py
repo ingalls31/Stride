@@ -18,7 +18,7 @@ class RenameImage(object):
 
 class Image(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    image = models.ImageField(upload_to=RenameImage("static/"), blank=False, null=False)
+    image = models.ImageField(upload_to=RenameImage(""), blank=False, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     
     def delete(self, *args, **kwargs):

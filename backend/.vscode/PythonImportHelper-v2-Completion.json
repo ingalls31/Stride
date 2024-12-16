@@ -2983,7 +2983,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "REDIS_HOST = os.environ.get(\"REDIS_HOST\")\nREDIS_PORT = os.environ.get(\"REDIS_PORT\")\nREDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "REDIS_HOST = os.environ.get(\"REDIS_HOST\")\nREDIS_PORT = os.environ.get(\"REDIS_PORT\")\nREDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -2992,7 +2992,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "REDIS_PORT = os.environ.get(\"REDIS_PORT\")\nREDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "REDIS_PORT = os.environ.get(\"REDIS_PORT\")\nREDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3001,7 +3001,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "REDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "REDIS_DB = os.environ.get(\"REDIS_DB\")\nCELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3010,7 +3010,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "CELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "CELERY_BROKER_URL = f\"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}\"\nCELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3019,7 +3019,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True\nCELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3028,7 +3028,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "CELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "CELERY_IMPORTS = (\"statistical.tasks\",)\nSTRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3037,7 +3037,70 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "STRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")",
+        "peekOfCode": "STRIPE_SECRET = os.environ.get(\"STRIPE_SECRET\")\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FILE_STORAGE",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nAWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_ACCESS_KEY_ID",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_ACCESS_KEY_ID = os.environ.get(\"AWS_ACCESS_KEY_ID\")\nAWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_SECRET_ACCESS_KEY",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_SECRET_ACCESS_KEY = os.environ.get(\"AWS_SECRET_ACCESS_KEY\")\nAWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_S3_ENDPOINT_URL",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_S3_ENDPOINT_URL = os.environ.get(\"AWS_S3_ENDPOINT_URL\")\nAWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_STORAGE_BUCKET_NAME",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_STORAGE_BUCKET_NAME = os.environ.get(\"AWS_STORAGE_BUCKET_NAME\")\nAWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_S3_REGION_NAME",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_S3_REGION_NAME = os.environ.get(\"AWS_S3_REGION_NAME\")\nAWS_S3_USE_SSL = False",
+        "detail": "ecommerce.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AWS_S3_USE_SSL",
+        "kind": 5,
+        "importPath": "ecommerce.settings",
+        "description": "ecommerce.settings",
+        "peekOfCode": "AWS_S3_USE_SSL = False",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3145,7 +3208,7 @@
         "kind": 6,
         "importPath": "image.models",
         "description": "image.models",
-        "peekOfCode": "class Image(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    image = models.ImageField(upload_to=RenameImage(\"static/\"), blank=False, null=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def delete(self, *args, **kwargs):\n        self.image.delete(save=False)\n        super().delete(*args, **kwargs)\n    class Meta:\n        db_table = \"image\"",
+        "peekOfCode": "class Image(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    image = models.ImageField(upload_to=RenameImage(\"\"), blank=False, null=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def delete(self, *args, **kwargs):\n        self.image.delete(save=False)\n        super().delete(*args, **kwargs)\n    class Meta:\n        db_table = \"image\"",
         "detail": "image.models",
         "documentation": {}
     },
@@ -3226,7 +3289,7 @@
         "kind": 6,
         "importPath": "inventory.admin.product_admin",
         "description": "inventory.admin.product_admin",
-        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
+        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{obj.image.image.url}\",",
         "detail": "inventory.admin.product_admin",
         "documentation": {}
     },
@@ -3865,7 +3928,7 @@
         "kind": 6,
         "importPath": "inventory.admin",
         "description": "inventory.admin",
-        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{settings.HOST}{obj.image.image.url}\",",
+        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{obj.image.image.url}\",",
         "detail": "inventory.admin",
         "documentation": {}
     },

@@ -46,7 +46,7 @@ class CartListSerializer(serializers.ModelSerializer):
     def get_product(self, obj):
         product = obj.productItem.product
         image_obj = ProductImage.objects.get(product=product, primary=True)
-        image = f"{settings.HOST}{image_obj.image.image.url}"
+        image = f"{image_obj.image.image.url}"
         return {
             "productItem": obj.productItem.id,
             "id": product.id,
@@ -84,7 +84,7 @@ class ProductListSerializer(serializers.ModelSerializer):
 
     def get_image_url(self, obj):
         primary_image = ProductImage.objects.get(product=obj, primary=True)
-        return f"{settings.HOST}{primary_image.image.image.url}"
+        return f"{primary_image.image.image.url}"
 
 
 class ProductDetailSerializer(serializers.ModelSerializer):
@@ -117,7 +117,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
         for image in images:
             image_list.append(
                 {
-                    "image": f"{settings.HOST}{image.image.image.url}",
+                    "image": f"{image.image.image.url}",
                     "primary": image.primary,
                 }
             )
@@ -175,7 +175,7 @@ class OrderDetailSerializer(serializers.ModelSerializer):
         for item in order_product_list:
             product = item.productItem.product
             image_obj = ProductImage.objects.get(product=product, primary=True)
-            image = f"{settings.HOST}{image_obj.image.image.url}"
+            image = f"{image_obj.image.image.url}"
             try:
                 review = Review.objects.get(order_product=item, customer=customer)
             except:
@@ -244,7 +244,7 @@ class ReviewListSerializer(serializers.ModelSerializer):
 
         customer = obj.customer
         avatar = (
-            f"{settings.HOST}{customer.avatar.image.url}"
+            f"{customer.avatar.image.url}"
             if customer.avatar is not None
             else None
         )

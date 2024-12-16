@@ -79,7 +79,7 @@ class CustomerInline(admin.StackedInline):
         if obj.avatar:
             return format_html(
                 '<img src="{}" width="150" height="auto"/>',
-                f"{settings.HOST}{obj.avatar.image.url}",
+                f"{obj.avatar.image.url}",
             )
         return ""
 
