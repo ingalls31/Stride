@@ -636,6 +636,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1437,6 +1453,22 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -1482,6 +1514,22 @@
         "isExtraImport": true,
         "importPath": "image.models",
         "description": "image.models",
+        "detail": "image.models",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "image.models",
+        "description": "image.models",
+        "isExtraImport": true,
+        "detail": "image.models",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "image.models",
+        "description": "image.models",
+        "isExtraImport": true,
         "detail": "image.models",
         "documentation": {}
     },
@@ -1920,6 +1968,22 @@
         "documentation": {}
     },
     {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
         "label": "Q",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -2272,7 +2336,7 @@
         "documentation": {}
     },
     {
-        "label": "forms",
+        "label": "db",
         "importPath": "django",
         "description": "django",
         "isExtraImport": true,
@@ -2281,6 +2345,22 @@
     },
     {
         "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
         "importPath": "django",
         "description": "django",
         "isExtraImport": true,
@@ -2345,6 +2425,22 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2603,15 +2699,55 @@
         "documentation": {}
     },
     {
-        "label": "FilteredSelectMultiple",
-        "importPath": "django.contrib.admin.widgets",
-        "description": "django.contrib.admin.widgets",
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
         "isExtraImport": true,
-        "detail": "django.contrib.admin.widgets",
+        "detail": "django.contrib.auth.base_user",
         "documentation": {}
     },
     {
-        "label": "Permission",
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
@@ -2619,7 +2755,15 @@
         "documentation": {}
     },
     {
-        "label": "Group",
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
@@ -2651,6 +2795,54 @@
         "documentation": {}
     },
     {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "FilteredSelectMultiple",
+        "importPath": "django.contrib.admin.widgets",
+        "description": "django.contrib.admin.widgets",
+        "isExtraImport": true,
+        "detail": "django.contrib.admin.widgets",
+        "documentation": {}
+    },
+    {
         "label": "Association",
         "importPath": "social_django.models",
         "description": "social_django.models",
@@ -2672,22 +2864,6 @@
         "description": "social_django.models",
         "isExtraImport": true,
         "detail": "social_django.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractBaseUser",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "BaseUserManager",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
         "documentation": {}
     },
     {
@@ -2749,16 +2925,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nHOST = os.environ.get(\"HOST\")\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-6j*2@_u%t46c+w$=#ivh%x8a@wzdb*d(f=rli653zr@b-ede#0\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCORS_ORIGIN_ALLOW_ALL = True",
-        "detail": "ecommerce.settings",
-        "documentation": {}
-    },
-    {
-        "label": "HOST",
-        "kind": 5,
-        "importPath": "ecommerce.settings",
-        "description": "ecommerce.settings",
-        "peekOfCode": "HOST = os.environ.get(\"HOST\")\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-6j*2@_u%t46c+w$=#ivh%x8a@wzdb*d(f=rli653zr@b-ede#0\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCORS_ORIGIN_ALLOW_ALL = True\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-6j*2@_u%t46c+w$=#ivh%x8a@wzdb*d(f=rli653zr@b-ede#0\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCORS_ORIGIN_ALLOW_ALL = True\n# Application definition",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3183,6 +3350,15 @@
         "description": "image.migrations.0004_alter_image_table",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('image', '0003_alter_image_image'),\n    ]\n    operations = [\n        migrations.AlterModelTable(\n            name='image',\n            table='image',\n        ),\n    ]",
         "detail": "image.migrations.0004_alter_image_table",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "image.migrations.0005_alter_image_image",
+        "description": "image.migrations.0005_alter_image_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('image', '0004_alter_image_table'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='image',\n            name='image',\n            field=models.ImageField(upload_to=image.models.RenameImage('')),\n        ),",
+        "detail": "image.migrations.0005_alter_image_image",
         "documentation": {}
     },
     {
@@ -4509,6 +4685,114 @@
         "documentation": {}
     },
     {
+        "label": "NotificationContent",
+        "kind": 6,
+        "importPath": "user.models.notification",
+        "description": "user.models.notification",
+        "peekOfCode": "class NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    content = models.TextField()\n    class Meta:\n        db_table = \"notification_content\"\nclass Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(",
+        "detail": "user.models.notification",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "kind": 6,
+        "importPath": "user.models.notification",
+        "description": "user.models.notification",
+        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:",
+        "detail": "user.models.notification",
+        "documentation": {}
+    },
+    {
+        "label": "TimeBase",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class TimeBase(models.Model):\n    updated_at = models.DateTimeField(auto_now=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        abstract = True\nclass StatisticComplete:\n    def __init__(self, buyed_total, cancelled_total, returned_total):\n        self.buyed_total = buyed_total\n        self.cancelled_total = cancelled_total\n        self.returned_total = returned_total",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticComplete",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class StatisticComplete:\n    def __init__(self, buyed_total, cancelled_total, returned_total):\n        self.buyed_total = buyed_total\n        self.cancelled_total = cancelled_total\n        self.returned_total = returned_total\n    def __str__(self):\n        return f\"{self.buyed_total}, {self.cancelled_total}, {self.returned_total}\"\n    def get_total(self):\n        return self.buyed_total + self.cancelled_total + self.returned_total\nclass StatisticNonComplete:",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticNonComplete",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class StatisticNonComplete:\n    def __init__(self, pending_total, ship_total):\n        self.pending_total = pending_total\n        self.ship_total = ship_total\n    def __str__(self):\n        return f\"{self.pending_total}, {self.ship_total}\"\n    def get_total(self):\n        return self.pending_total + self.ship_total\nclass StatisticMoney:\n    def __init__(self, revenue_total, profit_total):",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticMoney",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class StatisticMoney:\n    def __init__(self, revenue_total, profit_total):\n        self.revenue_total = revenue_total\n        self.profit_total = profit_total\n    def __str__(self):\n        return f\"{self.revenue_total}, {self.profit_total}\"\n    def get_total(self):\n        return self.revenue_total + self.profit_total\n    class Meta:\n        abstract = True",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "Statistics",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class Statistics(models.Model):\n    total = models.BigIntegerField(default=0)\n    buyed_total = models.BigIntegerField(default=0)\n    cancelled_total = models.BigIntegerField(default=0)\n    returned_total = models.BigIntegerField(default=0)\n    pending_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    revenue_total = models.BigIntegerField(default=0)\n    profit_total = models.BigIntegerField(default=0)\n    @property",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "Statistical",
+        "kind": 6,
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
+        "peekOfCode": "class Statistical(Statistics):\n    def update_total(self):\n        from inventory.models import Agency\n        agencies = Agency.objects.all().aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),\n            sum_ship_total=Sum(\"ship_total\"),\n            sum_pending_total=Sum(\"pending_total\"),\n            sum_cancelled_total=Sum(\"cancelled_total\"),\n            sum_returned_total=Sum(\"returned_total\"),",
+        "detail": "user.models.statistical",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerInfo",
+        "kind": 6,
+        "importPath": "user.models.user",
+        "description": "user.models.user",
+        "peekOfCode": "class CustomerInfo:\n    def __init__(self, phone_number, address, date_of_birth):\n        self.phone_number = phone_number\n        self.address = address\n        self.date_of_birth = date_of_birth\n    def __str__(self):\n        return f\"{self.phone_number}, {self.address}, {self.date_of_birth}\"\nclass UserManager(BaseUserManager):\n    \"\"\"Define a model manager for User model with no username field.\"\"\"\n    use_in_migrations = True",
+        "detail": "user.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "user.models.user",
+        "description": "user.models.user",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    \"\"\"Define a model manager for User model with no username field.\"\"\"\n    use_in_migrations = True\n    def _create_user(self, email, password, **extra_fields):\n        \"\"\"Create and save a User with the given email and password.\"\"\"\n        if not email:\n            raise ValueError(\"The given email must be set\")\n        email = self.normalize_email(email)\n        user = self.model(email=email, **extra_fields)\n        user.set_password(password)",
+        "detail": "user.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "user.models.user",
+        "description": "user.models.user",
+        "peekOfCode": "class User(AbstractUser, TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    username = None\n    # groups = None\n    email = models.EmailField(\"Email address\", unique=True)\n    USERNAME_FIELD = \"email\"\n    REQUIRED_FIELDS = []\n    objects = UserManager()\n    def __str__(self):\n        return f\"{self.email} {self.first_name} {self.last_name}\"",
+        "detail": "user.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "user.models.user",
+        "description": "user.models.user",
+        "peekOfCode": "class Customer(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"customer\")\n    avatar = models.ForeignKey(\n        Image, on_delete=models.SET_NULL, null=True, blank=True, related_name=\"avatar\"\n    )\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    @property",
+        "detail": "user.models.user",
+        "documentation": {}
+    },
+    {
         "label": "UserAdminForm",
         "kind": 6,
         "importPath": "user.admin",
@@ -4569,114 +4853,6 @@
         "description": "user.apps",
         "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
         "detail": "user.apps",
-        "documentation": {}
-    },
-    {
-        "label": "TimeBase",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class TimeBase(models.Model):\n    updated_at = models.DateTimeField(auto_now=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        abstract = True\nclass StatisticComplete:\n    def __init__(self, buyed_total, cancelled_total, returned_total):\n        self.buyed_total = buyed_total\n        self.cancelled_total = cancelled_total\n        self.returned_total = returned_total",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "StatisticComplete",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class StatisticComplete:\n    def __init__(self, buyed_total, cancelled_total, returned_total):\n        self.buyed_total = buyed_total\n        self.cancelled_total = cancelled_total\n        self.returned_total = returned_total\n    def __str__(self):\n        return f\"{self.buyed_total}, {self.cancelled_total}, {self.returned_total}\"\n    def get_total(self):\n        return self.buyed_total + self.cancelled_total + self.returned_total\nclass StatisticNonComplete:",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "StatisticNonComplete",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class StatisticNonComplete:\n    def __init__(self, pending_total, ship_total):\n        self.pending_total = pending_total\n        self.ship_total = ship_total\n    def __str__(self):\n        return f\"{self.pending_total}, {self.ship_total}\"\n    def get_total(self):\n        return self.pending_total + self.ship_total\nclass StatisticMoney:\n    def __init__(self, revenue_total, profit_total):",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "StatisticMoney",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class StatisticMoney:\n    def __init__(self, revenue_total, profit_total):\n        self.revenue_total = revenue_total\n        self.profit_total = profit_total\n    def __str__(self):\n        return f\"{self.revenue_total}, {self.profit_total}\"\n    def get_total(self):\n        return self.revenue_total + self.profit_total\n    class Meta:\n        abstract = True",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Statistics",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class Statistics(models.Model):\n    total = models.BigIntegerField(default=0)\n    buyed_total = models.BigIntegerField(default=0)\n    cancelled_total = models.BigIntegerField(default=0)\n    returned_total = models.BigIntegerField(default=0)\n    pending_total = models.BigIntegerField(default=0)\n    ship_total = models.BigIntegerField(default=0)\n    revenue_total = models.BigIntegerField(default=0)\n    profit_total = models.BigIntegerField(default=0)\n    @property",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Statistical",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class Statistical(Statistics):\n    def update_total(self):\n        from inventory.models import Agency\n        agencies = Agency.objects.all().aggregate(\n            sum_total=Sum(\"total\"),\n            sum_buyed_total=Sum(\"buyed_total\"),\n            sum_ship_total=Sum(\"ship_total\"),\n            sum_pending_total=Sum(\"pending_total\"),\n            sum_cancelled_total=Sum(\"cancelled_total\"),\n            sum_returned_total=Sum(\"returned_total\"),",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "CustomerInfo",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class CustomerInfo:\n    def __init__(self, phone_number, address, date_of_birth):\n        self.phone_number = phone_number\n        self.address = address\n        self.date_of_birth = date_of_birth\n    def __str__(self):\n        return f\"{self.phone_number}, {self.address}, {self.date_of_birth}\"\nclass UserManager(BaseUserManager):\n    \"\"\"Define a model manager for User model with no username field.\"\"\"\n    use_in_migrations = True",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "UserManager",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class UserManager(BaseUserManager):\n    \"\"\"Define a model manager for User model with no username field.\"\"\"\n    use_in_migrations = True\n    def _create_user(self, email, password, **extra_fields):\n        \"\"\"Create and save a User with the given email and password.\"\"\"\n        if not email:\n            raise ValueError(\"The given email must be set\")\n        email = self.normalize_email(email)\n        user = self.model(email=email, **extra_fields)\n        user.set_password(password)",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class User(AbstractUser, TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    username = None\n    # groups = None\n    email = models.EmailField(\"Email address\", unique=True)\n    USERNAME_FIELD = \"email\"\n    REQUIRED_FIELDS = []\n    objects = UserManager()\n    def __str__(self):\n        return f\"{self.email} {self.first_name} {self.last_name}\"",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Customer",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class Customer(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"customer\")\n    avatar = models.ForeignKey(\n        Image, on_delete=models.SET_NULL, null=True, blank=True, related_name=\"avatar\"\n    )\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    @property",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationContent",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    content = models.TextField()\n    class Meta:\n        db_table = \"notification_content\"\nclass Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(",
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Notification",
-        "kind": 6,
-        "importPath": "user.models",
-        "description": "user.models",
-        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:",
-        "detail": "user.models",
         "documentation": {}
     },
     {
