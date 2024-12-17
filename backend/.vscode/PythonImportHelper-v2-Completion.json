@@ -226,6 +226,22 @@
         "documentation": {}
     },
     {
+        "label": "Customer",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "user.models",
         "description": "user.models",
@@ -345,6 +361,22 @@
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -1824,6 +1856,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "ecommerce",
+        "description": "ecommerce",
+        "isExtraImport": true,
+        "detail": "ecommerce",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -2217,6 +2257,14 @@
         "documentation": {}
     },
     {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -2312,23 +2360,7 @@
         "documentation": {}
     },
     {
-        "label": "db",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "db",
+        "label": "forms",
         "importPath": "django",
         "description": "django",
         "isExtraImport": true,
@@ -2337,6 +2369,38 @@
     },
     {
         "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "db",
         "importPath": "django",
         "description": "django",
         "isExtraImport": true,
@@ -2587,147 +2651,43 @@
         "documentation": {}
     },
     {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Notification",
+        "importPath": "user.models.notification",
+        "description": "user.models.notification",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "user.models.notification",
         "documentation": {}
     },
     {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "NotificationContent",
+        "importPath": "user.models.notification",
+        "description": "user.models.notification",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "user.models.notification",
         "documentation": {}
     },
     {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "FilteredSelectMultiple",
+        "importPath": "django.contrib.admin.widgets",
+        "description": "django.contrib.admin.widgets",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "django.contrib.admin.widgets",
         "documentation": {}
     },
     {
-        "label": "AbstractBaseUser",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
+        "label": "FilteredSelectMultiple",
+        "importPath": "django.contrib.admin.widgets",
+        "description": "django.contrib.admin.widgets",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
+        "detail": "django.contrib.admin.widgets",
         "documentation": {}
     },
     {
-        "label": "BaseUserManager",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
+        "label": "Statistical",
+        "importPath": "user.models.statistical",
+        "description": "user.models.statistical",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractBaseUser",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "BaseUserManager",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractBaseUser",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "BaseUserManager",
-        "importPath": "django.contrib.auth.base_user",
-        "description": "django.contrib.auth.base_user",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.base_user",
-        "documentation": {}
-    },
-    {
-        "label": "PermissionsMixin",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Permission",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "PermissionsMixin",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Permission",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "PermissionsMixin",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Permission",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "user.models.statistical",
         "documentation": {}
     },
     {
@@ -2747,11 +2707,75 @@
         "documentation": {}
     },
     {
-        "label": "FilteredSelectMultiple",
-        "importPath": "django.contrib.admin.widgets",
-        "description": "django.contrib.admin.widgets",
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "django.contrib.admin.widgets",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -2776,6 +2800,78 @@
         "description": "social_django.models",
         "isExtraImport": true,
         "detail": "social_django.models",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
         "documentation": {}
     },
     {
@@ -4381,6 +4477,60 @@
         "documentation": {}
     },
     {
+        "label": "NotificationAdminForm",
+        "kind": 6,
+        "importPath": "user.admin.notification_admin",
+        "description": "user.admin.notification_admin",
+        "peekOfCode": "class NotificationAdminForm(forms.ModelForm):\n    content_text = forms.CharField(\n        widget=forms.Textarea(attrs={\"rows\": 4}), required=False\n    )\n    class Meta:\n        model = Notification\n        fields = [\"customer\", \"is_seen\"]\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        if self.instance and self.instance.content:",
+        "detail": "user.admin.notification_admin",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationAdmin",
+        "kind": 6,
+        "importPath": "user.admin.notification_admin",
+        "description": "user.admin.notification_admin",
+        "peekOfCode": "class NotificationAdmin(admin.ModelAdmin):\n    form = NotificationAdminForm\n    list_display = (\"customer\", \"content_display\", \"is_seen\", \"created_at\")\n    list_filter = (\"is_seen\", \"created_at\")\n    search_fields = (\n        \"customer__user__email\",\n        \"customer__user__first_name\",\n        \"customer__user__last_name\",\n        \"content__content\",\n    )",
+        "detail": "user.admin.notification_admin",
+        "documentation": {}
+    },
+    {
+        "label": "StatisticalAdmin",
+        "kind": 6,
+        "importPath": "user.admin.statistical_admin",
+        "description": "user.admin.statistical_admin",
+        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "user.admin.statistical_admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdminForm",
+        "kind": 6,
+        "importPath": "user.admin.user_admin",
+        "description": "user.admin.user_admin",
+        "peekOfCode": "class UserAdminForm(forms.ModelForm):\n    user_permissions = forms.ModelMultipleChoiceField(\n        queryset=Permission.objects.all(),\n        widget=FilteredSelectMultiple(\"Permissions\", is_stacked=False),\n        required=False,\n    )\n    class Meta:\n        model = User\n        fields = \"__all__\"\nclass CustomerInline(admin.StackedInline):",
+        "detail": "user.admin.user_admin",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerInline",
+        "kind": 6,
+        "importPath": "user.admin.user_admin",
+        "description": "user.admin.user_admin",
+        "peekOfCode": "class CustomerInline(admin.StackedInline):\n    model = Customer\n    can_delete = False\n    verbose_name_plural = \"customer\"\n    fk_name = \"user\"\n    list_display = (\"user\", \"phone_number\", \"address\", \"date_of_birth\")\n    fieldsets = (\n        (\n            \"Statistics\",\n            {",
+        "detail": "user.admin.user_admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "kind": 6,
+        "importPath": "user.admin.user_admin",
+        "description": "user.admin.user_admin",
+        "peekOfCode": "class UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]\n    list_display = (\n        \"email\",\n        \"first_name\",\n        \"last_name\",\n        \"is_staff\",",
+        "detail": "user.admin.user_admin",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "user.migrations.0001_initial",
@@ -4612,60 +4762,6 @@
         "description": "user.models.user",
         "peekOfCode": "class Customer(TimeBase, Statistics):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name=\"customer\")\n    avatar = models.ForeignKey(\n        Image, on_delete=models.SET_NULL, null=True, blank=True, related_name=\"avatar\"\n    )\n    phone_number = models.CharField(max_length=10)\n    address = models.TextField(null=True, blank=True)\n    date_of_birth = models.DateField(null=True, blank=True)\n    @property",
         "detail": "user.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserAdminForm",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class UserAdminForm(forms.ModelForm):\n    user_permissions = forms.ModelMultipleChoiceField(\n        queryset=Permission.objects.all(),\n        widget=FilteredSelectMultiple(\"Permissions\", is_stacked=False),\n        required=False,\n    )\n    class Meta:\n        model = User\n        fields = \"__all__\"\nclass CustomerInline(admin.StackedInline):",
-        "detail": "user.admin",
-        "documentation": {}
-    },
-    {
-        "label": "CustomerInline",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class CustomerInline(admin.StackedInline):\n    model = Customer\n    can_delete = False\n    verbose_name_plural = \"customer\"\n    fk_name = \"user\"\n    list_display = (\"user\", \"phone_number\", \"address\", \"date_of_birth\")\n    fieldsets = (\n        (\n            \"Statistics\",\n            {",
-        "detail": "user.admin",
-        "documentation": {}
-    },
-    {
-        "label": "UserAdmin",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]\n    list_display = (\n        \"email\",\n        \"first_name\",\n        \"last_name\",\n        \"is_staff\",",
-        "detail": "user.admin",
-        "documentation": {}
-    },
-    {
-        "label": "StatisticalAdmin",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
-        "detail": "user.admin",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationAdminForm",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class NotificationAdminForm(forms.ModelForm):\n    content_text = forms.CharField(\n        widget=forms.Textarea(attrs={\"rows\": 4}), required=False\n    )\n    class Meta:\n        model = Notification\n        fields = [\"customer\", \"is_seen\"]\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        if self.instance and self.instance.content:",
-        "detail": "user.admin",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationAdmin",
-        "kind": 6,
-        "importPath": "user.admin",
-        "description": "user.admin",
-        "peekOfCode": "class NotificationAdmin(admin.ModelAdmin):\n    form = NotificationAdminForm\n    list_display = (\"customer\", \"content_display\", \"is_seen\", \"created_at\")\n    list_filter = (\"is_seen\", \"created_at\")\n    search_fields = (\n        \"customer__user__email\",\n        \"customer__user__first_name\",\n        \"customer__user__last_name\",\n        \"content__content\",\n    )",
-        "detail": "user.admin",
         "documentation": {}
     },
     {
