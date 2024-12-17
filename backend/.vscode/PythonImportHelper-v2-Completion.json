@@ -420,14 +420,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
         "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -1832,14 +1824,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "ecommerce",
-        "description": "ecommerce",
-        "isExtraImport": true,
-        "detail": "ecommerce",
-        "documentation": {}
-    },
-    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -2233,14 +2217,6 @@
         "documentation": {}
     },
     {
-        "label": "format_html",
-        "importPath": "django.utils.html",
-        "description": "django.utils.html",
-        "isExtraImport": true,
-        "detail": "django.utils.html",
-        "documentation": {}
-    },
-    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -2421,94 +2397,6 @@
         "description": "inventory.models",
         "isExtraImport": true,
         "detail": "inventory.models",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "QuerySet",
-        "importPath": "django.db.models.query",
-        "description": "django.db.models.query",
-        "isExtraImport": true,
-        "detail": "django.db.models.query",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "AUTH_PASSWORD_VALIDATORS",
-        "importPath": "ecommerce.settings",
-        "description": "ecommerce.settings",
-        "isExtraImport": true,
-        "detail": "ecommerce.settings",
-        "documentation": {}
-    },
-    {
-        "label": "CrontabSchedule",
-        "importPath": "django_celery_beat.models",
-        "description": "django_celery_beat.models",
-        "isExtraImport": true,
-        "detail": "django_celery_beat.models",
-        "documentation": {}
-    },
-    {
-        "label": "IntervalSchedule",
-        "importPath": "django_celery_beat.models",
-        "description": "django_celery_beat.models",
-        "isExtraImport": true,
-        "detail": "django_celery_beat.models",
-        "documentation": {}
-    },
-    {
-        "label": "SolarSchedule",
-        "importPath": "django_celery_beat.models",
-        "description": "django_celery_beat.models",
-        "isExtraImport": true,
-        "detail": "django_celery_beat.models",
-        "documentation": {}
-    },
-    {
-        "label": "ClockedSchedule",
-        "importPath": "django_celery_beat.models",
-        "description": "django_celery_beat.models",
-        "isExtraImport": true,
-        "detail": "django_celery_beat.models",
         "documentation": {}
     },
     {
@@ -2696,6 +2584,30 @@
         "description": "inventory.models.agency",
         "isExtraImport": true,
         "detail": "inventory.models.agency",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -4097,96 +4009,6 @@
         "description": "inventory.models.warehouse",
         "peekOfCode": "class Warehouse(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=255)\n    address = models.ForeignKey(Address, on_delete=models.CASCADE)\n    class Meta:\n        db_table = \"warehouse\"",
         "detail": "inventory.models.warehouse",
-        "documentation": {}
-    },
-    {
-        "label": "ProductImageInline",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class ProductImageInline(admin.TabularInline):\n    model = ProductImage\n    fields = (\"image\", \"image_preview\", \"primary\")\n    readonly_fields = (\"image_preview\",)\n    extra = 1\n    def image_preview(self, obj):\n        if obj.image:\n            return format_html(\n                '<img src=\"{}\" width=\"150\" height=\"auto\"/>',\n                f\"{obj.image.image.url}\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "OrderProductInline",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model = OrderProduct\n    fields = (\n        \"productItem\",\n        \"image\",\n        \"quantity\",\n    )\n    readonly_fields = (\"image\",)\n    extra = 1\n    def image(self, obj):",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ProductItemInline",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class ProductItemInline(admin.TabularInline):\n    model = ProductItem\n    fields = (\n        \"product\",\n        \"size\",\n        \"total\",\n        \"buyed_total\",\n        \"ship_total\",\n        \"pending_total\",\n        \"cancelled_total\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ProductAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "AgencyAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class AgencyAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "OrderAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    inlines = [OrderProductInline]\n    fieldsets = (\n        (\"Order\", {\"fields\": (\"customer\", \"total_price\", \"status\", \"payment_done\")}),\n        (\"TimeBase\", {\"fields\": ((\"created_at\", \"updated_at\"),)}),\n    )\n    readonly_fields = (\"created_at\", \"updated_at\")\n    list_display = (\n        \"receiver\",\n        \"phone\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "WarehouseAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class WarehouseAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Warehouse Info\",\n            {\n                \"fields\": (\"name\", \"address\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "AddressAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class AddressAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Address Information\",\n            {\n                \"fields\": (\"city\", \"address\", \"region\", \"postal_code\"),\n            },\n        ),\n        (\n            \"TimeBase\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "CampaignAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class CampaignAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"buyed_total\",\n                        \"ship_total\",\n                        \"pending_total\",",
-        "detail": "inventory.admin",
-        "documentation": {}
-    },
-    {
-        "label": "PromotionAdmin",
-        "kind": 6,
-        "importPath": "inventory.admin",
-        "description": "inventory.admin",
-        "peekOfCode": "class PromotionAdmin(admin.ModelAdmin):\n    fields = (\"product\", \"quantity\", \"discount\")\n    fieldsets = (\n        (\n            \"Promotion Info\",\n            {\n                \"fields\": (\"product\", \"quantity\"),\n            },\n        ),\n        (",
-        "detail": "inventory.admin",
         "documentation": {}
     },
     {
