@@ -1,0 +1,264 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrahead %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            width: 75%;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            background: #1f1f1f;  /* Dark background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            color: #fff;  /* White text */
+        }
+        .chart-container h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .charts-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background: #121212;  /* Darker background for the wrapper */
+        }
+        /* Chỉ ẩn các phần tử khi ở trang Statistical */
+        body.app-statistical .breadcrumbs,
+        body.app-statistical .module h2,
+        body.app-statistical .module caption,
+        body.app-statistical .changelist-form-container h2,
+        body.app-statistical #changelist-search,
+        body.app-statistical #changelist-filter,
+        body.app-statistical .actions,
+        body.app-statistical .paginator,
+        body.app-statistical .results {
+            display: none !important;
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="charts-wrapper">
+        <!-- Order Status Chart -->
+        <div class="chart-container">
+            <h2>Order Status Distribution</h2>
+            <canvas id="orderStatusChart"></canvas>
+        </div>
+
+        <!-- Revenue and Profit Chart -->
+        <div class="chart-container">
+            <h2>Revenue vs Profit</h2>
+            <canvas id="revenueChart"></canvas>
+        </div>
+
+        <!-- Order Status Pie Chart -->
+        <!-- <div class="chart-container">
+            <h2>Order Status Percentage</h2>
+            <canvas id="orderPieChart"></canvas>
+        </div> -->
+
+        <!-- Revenue Trend -->
+        <!-- <div class="chart-container">
+            <h2>Revenue Analysis</h2>
+            <canvas id="revenueTrendChart"></canvas>
+        </div> -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set Chart.js default options for dark theme
+            Chart.defaults.color = '#fff';
+            Chart.defaults.borderColor = '#333';
+            Chart.defaults.scale.grid.color = '#333';
+
+            const chartData = JSON.parse('{{ chart_data|safe }}');
+
+            // Bar Chart - Order Status
+            new Chart(document.getElementById('orderStatusChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: chartData.order_status.labels,
+                    datasets: [{
+                        label: 'Number of Orders',
+                        data: chartData.order_status.data,
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 206, 86, 0.5)',
+                            'rgba(153, 102, 255, 0.5)',
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(255, 159, 64, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#333'
+                            },
+                            ticks: {
+                                color: '#fff'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: '#333'
+                            },
+                            ticks: {
+                                color: '#fff'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#fff'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Revenue vs Profit Chart
+            new Chart(document.getElementById('revenueChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: chartData.revenue.labels,
+                    datasets: [{
+                        label: 'Amount ($)',
+                        data: chartData.revenue.data,
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(255, 99, 132, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#333'
+                            },
+                            ticks: {
+                                color: '#fff'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: '#333'
+                            },
+                            ticks: {
+                                color: '#fff'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#fff'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Pie Chart with dark theme
+            // new Chart(document.getElementById('orderPieChart').getContext('2d'), {
+            //     type: 'pie',
+            //     data: {
+            //         labels: chartData.order_status.labels.slice(1),
+            //         datasets: [{
+            //             data: chartData.order_status.data.slice(1),
+            //             backgroundColor: [
+            //                 'rgba(75, 192, 192, 0.5)',
+            //                 'rgba(255, 206, 86, 0.5)',
+            //                 'rgba(153, 102, 255, 0.5)',
+            //                 'rgba(255, 99, 132, 0.5)',
+            //                 'rgba(255, 159, 64, 0.5)'
+            //             ],
+            //             borderColor: [
+            //                 'rgba(75, 192, 192, 1)',
+            //                 'rgba(255, 206, 86, 1)',
+            //                 'rgba(153, 102, 255, 1)',
+            //                 'rgba(255, 99, 132, 1)',
+            //                 'rgba(255, 159, 64, 1)'
+            //             ],
+            //             borderWidth: 1
+            //         }]
+            //     },
+            //     options: {
+            //         plugins: {
+            //             legend: {
+            //                 labels: {
+            //                     color: '#fff'
+            //                 }
+            //             }
+            //         }
+            //     }
+            // });
+
+            // Doughnut Chart with dark theme
+            // new Chart(document.getElementById('revenueTrendChart').getContext('2d'), {
+            //     type: 'doughnut',
+            //     data: {
+            //         labels: ['Revenue', 'Profit', 'Operating Costs'],
+            //         datasets: [{
+            //             data: [
+            //                 chartData.revenue.data[0],
+            //                 chartData.revenue.data[1],
+            //                 chartData.revenue.data[0] - chartData.revenue.data[1]
+            //             ],
+            //             backgroundColor: [
+            //                 'rgba(54, 162, 235, 0.5)',
+            //                 'rgba(75, 192, 192, 0.5)',
+            //                 'rgba(255, 99, 132, 0.5)'
+            //             ],
+            //             borderColor: [
+            //                 'rgba(54, 162, 235, 1)',
+            //                 'rgba(75, 192, 192, 1)',
+            //                 'rgba(255, 99, 132, 1)'
+            //             ],
+            //             borderWidth: 1
+            //         }]
+            //     },
+            //     options: {
+            //         plugins: {
+            //             legend: {
+            //                 labels: {
+            //                     color: '#fff'
+            //                 }
+            //             }
+            //         }
+            //     }
+            // });
+        });
+    </script>
+{% endblock %} 

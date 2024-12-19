@@ -52,3 +52,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(f'{URL_PREFIX}api/', include(api_patterns)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+admin.site.site_header = "Stride Administration"
+admin.site.site_title = "Stride Admin"
+admin.site.index_title = "Store Management"

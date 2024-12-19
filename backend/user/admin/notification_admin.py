@@ -1,7 +1,13 @@
 from django.contrib import admin
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.urls import path
+from django.contrib import messages
+from django.contrib.admin import helpers
 
 from django import forms
 from user.models.notification import Notification, NotificationContent
+from user.models import Customer
 
 class NotificationAdminForm(forms.ModelForm):
     content_text = forms.CharField(

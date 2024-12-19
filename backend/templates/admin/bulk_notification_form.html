@@ -1,0 +1,203 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls %}
+
+{% block content %}
+<div id="content-main">
+    <div class="module">
+        <h2>{{ title }}</h2>
+        
+        <!-- Hiển thị danh sách users đã chọn -->
+        <div class="selected-users">
+            <h3>Người dùng được chọn:</h3>
+            <ul>
+            {% for user in selected_users %}
+                <li>{{ user.email }} ({{ user.first_name }} {{ user.last_name }})</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="{{ action }}">
+            {% for user in selected_users %}
+                <input type="hidden" name="_selected_action" value="{{ user.pk }}">
+            {% endfor %}
+            
+            <div class="form-row">
+                <div class="field-content">
+                    {{ form.content.label_tag }}
+                    {{ form.content }}
+                    {% if form.content.errors %}
+                        <div class="errors">{{ form.content.errors }}</div>
+                    {% endif %}
+                </div>
+                <div class="submit-row">
+                    <input type="submit" name="apply" value="Gửi thông báo" class="default">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    :root {
+        --primary-bg: var(--body-bg, #fff);
+        --secondary-bg: var(--darkened-bg, #f8f8f8);
+        --border-color: var(--border-color, #ddd);
+        --text-color: var(--body-fg, #333);
+        --link-color: var(--link-fg, #447e9b);
+        --button-bg: var(--button-bg, #79aec8);
+        --button-hover-bg: var(--button-hover-bg, #609ab6);
+    }
+
+    /* Dark theme variables */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-bg: #1a1a1a;
+            --secondary-bg: #2d2d2d;
+            --border-color: #404040;
+            --text-color: #e0e0e0;
+            --link-color: #81b3d2;
+            --button-bg: #2b5d76;
+            --button-hover-bg: #3d7793;
+        }
+    }
+
+    .module {
+        margin: 20px;
+        padding: 20px;
+        background: var(--primary-bg);
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        color: var(--text-color);
+    }
+
+    .form-row {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .field-content {
+        margin-bottom: 20px;
+    }
+
+    .field-content label,
+    .field-customers h3 {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        background: var(--secondary-bg);
+        color: var(--text-color);
+    }
+
+    textarea:focus {
+        outline: none;
+        border-color: var(--link-color);
+        box-shadow: 0 0 5px rgba(69, 126, 155, 0.3);
+    }
+
+    .customers-list {
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid var(--border-color);
+        padding: 10px;
+        border-radius: 4px;
+        background: var(--secondary-bg);
+    }
+
+    .customers-list label {
+        display: block;
+        padding: 8px;
+        margin: 2px 0;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .customers-list label:hover {
+        background: var(--primary-bg);
+    }
+
+    .customers-list input[type="checkbox"] {
+        margin-right: 8px;
+    }
+
+    .submit-row {
+        padding: 12px 0;
+        margin-top: 15px;
+        text-align: right;
+    }
+
+    .submit-row input {
+        padding: 10px 20px;
+        background: var(--button-bg);
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.2s;
+    }
+
+    .submit-row input:hover {
+        background: var(--button-hover-bg);
+    }
+
+    /* Error styling */
+    .errors {
+        color: #ba2121;
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+
+    /* Scrollbar styling */
+    .customers-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .customers-list::-webkit-scrollbar-track {
+        background: var(--secondary-bg);
+        border-radius: 4px;
+    }
+
+    .customers-list::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 4px;
+    }
+
+    .customers-list::-webkit-scrollbar-thumb:hover {
+        background: var(--link-color);
+    }
+
+    /* Thêm style cho phần hiển thị users đã chọn */
+    .selected-users {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: var(--secondary-bg);
+        border-radius: 4px;
+    }
+    
+    .selected-users h3 {
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+    
+    .selected-users ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .selected-users li {
+        padding: 5px 0;
+        color: var(--text-color);
+    }
+</style>
+{% endblock %} 

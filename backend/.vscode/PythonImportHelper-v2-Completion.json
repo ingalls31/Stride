@@ -234,7 +234,31 @@
         "documentation": {}
     },
     {
+        "label": "Customer",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationContent",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
         "importPath": "user.models",
         "description": "user.models",
         "isExtraImport": true,
@@ -436,6 +460,14 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -445,6 +477,22 @@
     },
     {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -453,6 +501,22 @@
     },
     {
         "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -517,6 +581,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -1856,14 +1928,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "ecommerce",
-        "description": "ecommerce",
-        "isExtraImport": true,
-        "detail": "ecommerce",
-        "documentation": {}
-    },
-    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -2651,6 +2715,30 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "helpers",
+        "importPath": "django.contrib.admin",
+        "description": "django.contrib.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.admin",
+        "documentation": {}
+    },
+    {
         "label": "Notification",
         "importPath": "user.models.notification",
         "description": "user.models.notification",
@@ -2691,35 +2779,11 @@
         "documentation": {}
     },
     {
-        "label": "Permission",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
+        "label": "DjangoJSONEncoder",
+        "importPath": "django.core.serializers.json",
+        "description": "django.core.serializers.json",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Group",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "PermissionsMixin",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "django.core.serializers.json",
         "documentation": {}
     },
     {
@@ -2779,27 +2843,27 @@
         "documentation": {}
     },
     {
-        "label": "Association",
-        "importPath": "social_django.models",
-        "description": "social_django.models",
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "social_django.models",
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
-        "label": "Nonce",
-        "importPath": "social_django.models",
-        "description": "social_django.models",
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "social_django.models",
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
-        "label": "UserSocialAuth",
-        "importPath": "social_django.models",
-        "description": "social_django.models",
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "social_django.models",
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -2996,7 +3060,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "ROOT_URLCONF = \"ecommerce.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "peekOfCode": "ROOT_URLCONF = \"ecommerce.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [BASE_DIR / 'templates'],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3005,7 +3069,7 @@
         "kind": 5,
         "importPath": "ecommerce.settings",
         "description": "ecommerce.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [BASE_DIR / 'templates'],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
         "detail": "ecommerce.settings",
         "documentation": {}
     },
@@ -3311,7 +3375,34 @@
         "kind": 5,
         "importPath": "ecommerce.urls",
         "description": "ecommerce.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', RedirectView.as_view(url='admin/', permanent=True)),\n    path('admin/', admin.site.urls),\n    path(f'{URL_PREFIX}api/', include(api_patterns)),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('', RedirectView.as_view(url='admin/', permanent=True)),\n    path('admin/', admin.site.urls),\n    path(f'{URL_PREFIX}api/', include(api_patterns)),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nadmin.site.site_header = \"Stride Administration\"\nadmin.site.site_title = \"Stride Admin\"\nadmin.site.index_title = \"Store Management\"",
+        "detail": "ecommerce.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_header",
+        "kind": 5,
+        "importPath": "ecommerce.urls",
+        "description": "ecommerce.urls",
+        "peekOfCode": "admin.site.site_header = \"Stride Administration\"\nadmin.site.site_title = \"Stride Admin\"\nadmin.site.index_title = \"Store Management\"",
+        "detail": "ecommerce.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_title",
+        "kind": 5,
+        "importPath": "ecommerce.urls",
+        "description": "ecommerce.urls",
+        "peekOfCode": "admin.site.site_title = \"Stride Admin\"\nadmin.site.index_title = \"Store Management\"",
+        "detail": "ecommerce.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.index_title",
+        "kind": 5,
+        "importPath": "ecommerce.urls",
+        "description": "ecommerce.urls",
+        "peekOfCode": "admin.site.index_title = \"Store Management\"",
         "detail": "ecommerce.urls",
         "documentation": {}
     },
@@ -4495,11 +4586,20 @@
         "documentation": {}
     },
     {
+        "label": "OldAdmin",
+        "kind": 6,
+        "importPath": "user.admin.statistical_admin",
+        "description": "user.admin.statistical_admin",
+        "peekOfCode": "class OldAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "detail": "user.admin.statistical_admin",
+        "documentation": {}
+    },
+    {
         "label": "StatisticalAdmin",
         "kind": 6,
         "importPath": "user.admin.statistical_admin",
         "description": "user.admin.statistical_admin",
-        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    fieldsets = (\n        (\n            \"Total\",\n            {\n                \"fields\": (\n                    (\n                        \"total\",\n                        \"buyed_total\",\n                        \"ship_total\",",
+        "peekOfCode": "class StatisticalAdmin(admin.ModelAdmin):\n    change_list_template = 'admin/base_site.html'\n    def has_add_permission(self, request):\n        return False\n    def has_delete_permission(self, request, obj=None):\n        return False\n    def has_change_permission(self, request, obj=None):\n        return False\n    def changelist_view(self, request, extra_context=None):\n        try:",
         "detail": "user.admin.statistical_admin",
         "documentation": {}
     },
@@ -4522,11 +4622,20 @@
         "documentation": {}
     },
     {
+        "label": "BulkNotificationForm",
+        "kind": 6,
+        "importPath": "user.admin.user_admin",
+        "description": "user.admin.user_admin",
+        "peekOfCode": "class BulkNotificationForm(forms.Form):\n    content = forms.CharField(\n        widget=forms.Textarea(attrs={'rows': 4}), \n        label=\"Nội dung thông báo\"\n    )\nclass UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]",
+        "detail": "user.admin.user_admin",
+        "documentation": {}
+    },
+    {
         "label": "UserAdmin",
         "kind": 6,
         "importPath": "user.admin.user_admin",
         "description": "user.admin.user_admin",
-        "peekOfCode": "class UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]\n    list_display = (\n        \"email\",\n        \"first_name\",\n        \"last_name\",\n        \"is_staff\",",
+        "peekOfCode": "class UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]\n    list_per_page = 20\n    list_display = (\n        \"email\",\n        \"first_name\",\n        \"last_name\",",
         "detail": "user.admin.user_admin",
         "documentation": {}
     },
@@ -4670,7 +4779,7 @@
         "kind": 6,
         "importPath": "user.models.notification",
         "description": "user.models.notification",
-        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.user.first_name} {self.user.last_name}\"\n    class Meta:",
+        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.customer.user.first_name} {self.customer.user.last_name}\"\n    class Meta:",
         "detail": "user.models.notification",
         "documentation": {}
     },

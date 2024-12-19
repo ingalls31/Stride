@@ -30,7 +30,7 @@ class Notification(TimeBase):
     )
 
     def __str__(self) -> str:
-        return f"{self.user.first_name} {self.user.last_name}"
+        return f"{self.customer.user.first_name} {self.customer.user.last_name}"
 
     class Meta:
         db_table = "notification"
