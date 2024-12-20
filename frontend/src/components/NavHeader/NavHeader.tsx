@@ -67,8 +67,7 @@ export default function NavHeader() {
 
   const notificationContent = (
     <div className='w-[380px] max-h-[500px] rounded-lg shadow-lg'>
-      {/* Header */}
-      <div className='flex items-center justify-between p-4 border-b bg-gray-50 rounded-t-lg'>
+      <div className='flex items-center justify-between p-4 border-b bg-gray-50/80 rounded-t-lg'>
         <div className='flex items-center gap-2'>
           <Bell size={16} className='text-gray-600' />
           <Typography.Title level={5} className='m-0 text-gray-700'>
@@ -78,25 +77,24 @@ export default function NavHeader() {
         <Button
           type='link'
           onClick={handleMarkAllAsRead}
-          className='text-blue-600 hover:text-blue-700 text-sm font-medium'
+          className='text-orange hover:text-orange-600 text-sm font-medium'
         >
           Đánh dấu tất cả đã đọc
         </Button>
       </div>
 
-      {/* Notification List */}
       <List
         className='max-h-[400px] overflow-y-auto divide-y divide-gray-100'
         dataSource={notifications}
         renderItem={(item) => (
           <List.Item
-            className={`cursor-pointer transition-colors duration-200
-              ${!item.read ? 'bg-blue-50 hover:bg-blue-100' : 'hover:bg-gray-50'}`}
+            className={`cursor-pointer transition-all duration-200
+              ${!item.read ? 'bg-orange-50 hover:bg-orange-100/80' : 'hover:bg-gray-50'}`}
           >
             <div className='p-4 w-full'>
               <div className='flex justify-between items-start mb-1'>
                 <div className='flex items-center gap-2'>
-                  {!item.read && <span className='w-2 h-2 rounded-full bg-blue-600 mt-1.5'></span>}
+                  {!item.read && <span className='w-2 h-2 rounded-full bg-orange animate-pulse'></span>}
                   <Typography.Text strong className='text-gray-900'>
                     {item.title}
                   </Typography.Text>
@@ -111,9 +109,8 @@ export default function NavHeader() {
         )}
       />
 
-      {/* Footer */}
-      <div className='p-3 border-t bg-gray-50 rounded-b-lg'>
-        <Button type='link' className='w-full text-center text-gray-600 hover:text-blue-600'>
+      <div className='p-3 border-t bg-gray-50/80 rounded-b-lg'>
+        <Button type='link' className='w-full text-center text-gray-600 hover:text-orange'>
           Xem tất cả thông báo
         </Button>
       </div>
@@ -121,9 +118,9 @@ export default function NavHeader() {
   )
 
   return (
-    <div className='flex h-[2.125rem] items-center bg-orange'>
+    <div className='flex h-10 items-center bg-orange'>
       <nav className='container w-full'>
-        <ul className='flex items-center justify-end gap-4 text-[13px] text-white'>
+        <ul className='flex items-center justify-end gap-6 text-sm text-white'>
           <li className='items-center'>
             <AntPopover
               content={notificationContent}
@@ -131,38 +128,39 @@ export default function NavHeader() {
               placement='bottomRight'
               overlayClassName='notification-popover'
             >
-              <div className='cursor-pointer p-2 hover:text-white/80 transition-colors duration-200'>
+              <div className='cursor-pointer p-2 hover:text-white/90 transition-all duration-200'>
                 <Badge
                   count={notifications.filter((n) => !n.read).length}
                   offset={[-2, 2]}
                   className='animate-pulse'
                   size="small"
                 >
-                  <Bell size={19} className='text-white hover:scale-105 transition-transform duration-200' />
+                  <Bell size={18} className='text-white hover:scale-105 transition-transform' />
                 </Badge>
               </div>
             </AntPopover>
           </li>
+
           <li>
             <Popover
               renderPopover={
-                <div className='flex min-w-[200px] flex-col rounded-sm border border-t-0 bg-white text-left text-base text-black shadow-sm'>
+                <div className='flex min-w-[200px] flex-col rounded-lg border border-gray-100 bg-white text-left text-sm shadow-lg'>
                   <button
                     onClick={() => handleLanguage('en')}
-                    className='py-2 pl-4 pr-8 text-left hover:bg-slate-100 hover:text-orange'
+                    className='py-2.5 px-4 text-left text-gray-600 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('english')}
                   </button>
                   <button
                     onClick={() => handleLanguage('vi')}
-                    className='py-2 pl-4 pr-8 text-left hover:bg-slate-100 hover:text-orange'
+                    className='py-2.5 px-4 text-left text-gray-600 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('vietnamese')}
                   </button>
                 </div>
               }
               as={'li'}
-              className='flex items-center gap-1 py-4 hover:cursor-pointer hover:text-white/80'
+              className='flex items-center gap-1.5 py-4 hover:cursor-pointer hover:text-white/90 transition-colors'
             >
               <svg width={16} height={16} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
@@ -184,7 +182,7 @@ export default function NavHeader() {
                   strokeLinejoin='round'
                 />
               </svg>
-              <span>{currentLang}</span>
+              <span className='text-sm text-white'>{currentLang}</span>
               <svg viewBox='0 0 12 12' fill='none' width={12} height={12} color='currentColor'>
                 <path
                   fillRule='evenodd'
@@ -195,44 +193,50 @@ export default function NavHeader() {
               </svg>
             </Popover>
           </li>
+
           {!isAuthenticated && (
-            <li className='flex items-center'>
+            <li className='flex items-center text-sm'>
               <Link
                 title={t('sign up')}
-                className=' border-r border-r-white/50 px-2 hover:opacity-80'
+                className='border-r border-r-white/40 px-3 hover:text-white/90 transition-colors'
                 to={path.register}
               >
                 {t('sign up')}
               </Link>
-              <Link title={t('sign in')} className=' px-2 hover:opacity-80' to={path.login}>
+              <Link 
+                title={t('sign in')} 
+                className='px-3 hover:text-white/90 transition-colors' 
+                to={path.login}
+              >
                 {t('sign in')}
               </Link>
             </li>
           )}
+
           {isAuthenticated && (
             <Popover
               as={'li'}
-              className='flex cursor-pointer items-center gap-1 py-4 hover:text-white/80'
+              className='flex cursor-pointer items-center gap-2 py-4 hover:text-white/90 transition-colors'
               renderPopover={
-                <div className='flex min-w-[150px] flex-col rounded-sm border border-t-0 bg-white text-left text-base text-black shadow-sm'>
+                <div className='flex min-w-[200px] flex-col rounded-lg border border-gray-100 bg-white text-left text-sm shadow-lg'>
                   <Link
                     title={t('my profile')}
                     to={path.profile}
-                    className='py-2 pl-4 pr-8 hover:bg-slate-100 hover:text-cyan-400'
+                    className='py-2.5 px-4 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('my profile')}
                   </Link>
                   <Link
                     title={t('my cart')}
                     to={path.cart}
-                    className='py-2 pl-4 pr-8 hover:bg-slate-100 hover:text-cyan-400'
+                    className='py-2.5 px-4 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('my cart')}
                   </Link>
                   <button
                     title={t('logout')}
                     onClick={handleLogout}
-                    className='py-2 pl-4 pr-8 text-left hover:bg-slate-100 hover:text-cyan-400'
+                    className='py-2.5 px-4 text-left hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('logout')}
                   </button>
@@ -240,11 +244,11 @@ export default function NavHeader() {
               }
             >
               <img
-                className='h-[20px] w-[20px] rounded-full object-cover'
+                className='h-6 w-6 rounded-full object-cover ring-2 ring-white/50'
                 src={profile?.avatar_url}
                 alt='avatar'
               />
-              <span>{`${profile?.first_name} ${profile?.last_name}`}</span>
+              <span className='text-sm'>{`${profile?.first_name} ${profile?.last_name}`}</span>
             </Popover>
           )}
         </ul>
