@@ -1564,6 +1564,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1825,6 +1841,14 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -4572,7 +4596,7 @@
         "kind": 6,
         "importPath": "user.admin.notification_admin",
         "description": "user.admin.notification_admin",
-        "peekOfCode": "class NotificationAdminForm(forms.ModelForm):\n    content_text = forms.CharField(\n        widget=forms.Textarea(attrs={\"rows\": 4}), required=False\n    )\n    class Meta:\n        model = Notification\n        fields = [\"customer\", \"is_seen\"]\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        if self.instance and self.instance.content:",
+        "peekOfCode": "class NotificationAdminForm(forms.ModelForm):\n    content_text = forms.CharField(\n        widget=forms.Textarea(attrs={\"rows\": 4}), required=False\n    )\n    class Meta:\n        model = Notification\n        fields = [\"customer\", \"title\", \"is_seen\"]\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        if self.instance and self.instance.content:",
         "detail": "user.admin.notification_admin",
         "documentation": {}
     },
@@ -4581,7 +4605,7 @@
         "kind": 6,
         "importPath": "user.admin.notification_admin",
         "description": "user.admin.notification_admin",
-        "peekOfCode": "class NotificationAdmin(admin.ModelAdmin):\n    form = NotificationAdminForm\n    list_display = (\"customer\", \"content_display\", \"is_seen\", \"created_at\")\n    list_filter = (\"is_seen\", \"created_at\")\n    search_fields = (\n        \"customer__user__email\",\n        \"customer__user__first_name\",\n        \"customer__user__last_name\",\n        \"content__content\",\n    )",
+        "peekOfCode": "class NotificationAdmin(admin.ModelAdmin):\n    form = NotificationAdminForm\n    list_display = (\"customer\", \"title\", \"content_display\", \"is_seen\", \"created_at\")\n    list_filter = (\"is_seen\", \"created_at\")\n    search_fields = (\n        \"customer__user__email\",\n        \"customer__user__first_name\",\n        \"customer__user__last_name\",\n        \"content__content\",\n        \"title\",",
         "detail": "user.admin.notification_admin",
         "documentation": {}
     },
@@ -4626,7 +4650,7 @@
         "kind": 6,
         "importPath": "user.admin.user_admin",
         "description": "user.admin.user_admin",
-        "peekOfCode": "class BulkNotificationForm(forms.Form):\n    content = forms.CharField(\n        widget=forms.Textarea(attrs={'rows': 4}), \n        label=\"Nội dung thông báo\"\n    )\nclass UserAdmin(admin.ModelAdmin):\n    form = UserAdminForm\n    inlines = [\n        CustomerInline,\n    ]",
+        "peekOfCode": "class BulkNotificationForm(forms.Form):\n    title = forms.CharField(\n        max_length=255,\n        label=\"Title\"\n    )\n    content = forms.CharField(\n        widget=forms.Textarea(attrs={'rows': 4}), \n        label=\"Content\"\n    )\nclass UserAdmin(admin.ModelAdmin):",
         "detail": "user.admin.user_admin",
         "documentation": {}
     },
@@ -4766,11 +4790,20 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "user.migrations.0015_notification_title",
+        "description": "user.migrations.0015_notification_title",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0014_statistical'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='notification',\n            name='title',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "user.migrations.0015_notification_title",
+        "documentation": {}
+    },
+    {
         "label": "NotificationContent",
         "kind": 6,
         "importPath": "user.models.notification",
         "description": "user.models.notification",
-        "peekOfCode": "class NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    content = models.TextField()\n    class Meta:\n        db_table = \"notification_content\"\nclass Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(",
+        "peekOfCode": "class NotificationContent(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    content = models.TextField()\n    class Meta:\n        db_table = \"notification_content\"\nclass Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    title = models.CharField(max_length=255, null=True, blank=True)\n    is_seen = models.BooleanField(default=False)",
         "detail": "user.models.notification",
         "documentation": {}
     },
@@ -4779,7 +4812,7 @@
         "kind": 6,
         "importPath": "user.models.notification",
         "description": "user.models.notification",
-        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.customer.user.first_name} {self.customer.user.last_name}\"\n    class Meta:",
+        "peekOfCode": "class Notification(TimeBase):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)\n    title = models.CharField(max_length=255, null=True, blank=True)\n    is_seen = models.BooleanField(default=False)\n    content = models.ForeignKey(\n        NotificationContent, on_delete=models.SET_NULL, null=True, blank=True\n    )\n    def __str__(self) -> str:\n        return f\"{self.customer.user.first_name} {self.customer.user.last_name}\"",
         "detail": "user.models.notification",
         "documentation": {}
     },
@@ -4937,6 +4970,15 @@
         "documentation": {}
     },
     {
+        "label": "NotificationSerializer",
+        "kind": 6,
+        "importPath": "user.serializers",
+        "description": "user.serializers",
+        "peekOfCode": "class NotificationSerializer(serializers.ModelSerializer):\n    content = serializers.SerializerMethodField()\n    class Meta:\n        model = Notification\n        fields = ['id', 'title', 'content', 'is_seen', 'created_at']\n    def get_content(self, obj):\n        return obj.content.content if obj.content else None",
+        "detail": "user.serializers",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "user.urls",
@@ -4960,6 +5002,15 @@
         "importPath": "user.views",
         "description": "user.views",
         "peekOfCode": "class CustomerViewSet(ModelViewSet):\n    serializer_class = CustomerSerializer\n    pagination_class = StandardPageNumberPagination\n    filter_backends = [filters.SearchFilter]\n    search_fields = [\n        \"user__first_name\",\n        \"user__last_name\",\n        \"user__email\",\n        \"user__active\",\n    ]",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationViewSet",
+        "kind": 6,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "class NotificationViewSet(viewsets.ModelViewSet):\n    serializer_class = NotificationSerializer\n    permission_classes = [IsActiveUser]\n    def get_queryset(self):\n        return Notification.objects.filter(\n            customer__user=self.request.user\n        ).select_related('content').order_by('-created_at')\n    @action(detail=True, methods=['patch'])\n    def mark_as_read(self, request, pk=None):\n        notification = self.get_object()",
         "detail": "user.views",
         "documentation": {}
     },

@@ -24,6 +24,7 @@ class NotificationContent(models.Model):
 class Notification(TimeBase):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    title = models.CharField(max_length=255, null=True, blank=True)
     is_seen = models.BooleanField(default=False)
     content = models.ForeignKey(
         NotificationContent, on_delete=models.SET_NULL, null=True, blank=True

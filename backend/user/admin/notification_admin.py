@@ -16,7 +16,7 @@ class NotificationAdminForm(forms.ModelForm):
 
     class Meta:
         model = Notification
-        fields = ["customer", "is_seen"]
+        fields = ["customer", "title", "is_seen"]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -42,13 +42,14 @@ class NotificationAdminForm(forms.ModelForm):
 
 class NotificationAdmin(admin.ModelAdmin):
     form = NotificationAdminForm
-    list_display = ("customer", "content_display", "is_seen", "created_at")
+    list_display = ("customer", "title", "content_display", "is_seen", "created_at")
     list_filter = ("is_seen", "created_at")
     search_fields = (
         "customer__user__email",
         "customer__user__first_name",
         "customer__user__last_name",
         "content__content",
+        "title",
     )
     readonly_fields = ("created_at", "updated_at")
 
@@ -58,6 +59,7 @@ class NotificationAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "customer",
+                    "title",
                     "content_text",
                     "is_seen",
                 )

@@ -8,7 +8,7 @@
         
         <!-- Hiển thị danh sách users đã chọn -->
         <div class="selected-users">
-            <h3>Người dùng được chọn:</h3>
+            <h3>Selected Users:</h3>
             <ul>
             {% for user in selected_users %}
                 <li>{{ user.email }} ({{ user.first_name }} {{ user.last_name }})</li>
@@ -24,6 +24,13 @@
             {% endfor %}
             
             <div class="form-row">
+                <div class="field-title">
+                    {{ form.title.label_tag }}
+                    {{ form.title }}
+                    {% if form.title.errors %}
+                        <div class="errors">{{ form.title.errors }}</div>
+                    {% endif %}
+                </div>
                 <div class="field-content">
                     {{ form.content.label_tag }}
                     {{ form.content }}
@@ -32,7 +39,7 @@
                     {% endif %}
                 </div>
                 <div class="submit-row">
-                    <input type="submit" name="apply" value="Gửi thông báo" class="default">
+                    <input type="submit" name="apply" value="Send Notification" class="default">
                 </div>
             </div>
         </form>
@@ -197,6 +204,19 @@
     
     .selected-users li {
         padding: 5px 0;
+        color: var(--text-color);
+    }
+
+    .field-title {
+        margin-bottom: 20px;
+    }
+    
+    .field-title input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        background: var(--secondary-bg);
         color: var(--text-color);
     }
 </style>

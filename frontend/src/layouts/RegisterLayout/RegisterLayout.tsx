@@ -6,7 +6,7 @@ import RegisterHeader from '~/components/RegisterHeader'
 export default function RegisterLayout() {
   return (
     <>
-      <RegisterHeader />
+      {/* <RegisterHeader /> */}
       <Outlet />
       <Footer />
     </>

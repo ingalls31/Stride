@@ -17,3 +17,4 @@ celerybeat-schedule.dat
 celerybeat-schedule.dir
 *.rdb
 import
+.vscode

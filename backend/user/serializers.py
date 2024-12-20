@@ -8,7 +8,7 @@ from django.db import transaction
 from django.db.models.signals import post_save
 from rest_framework import serializers
 from rest_framework.exceptions import APIException
-from .models import Customer, User
+from .models import Customer, User, Notification, NotificationContent
 from ecommerce import settings
 
 class CustomerSerializer(serializers.ModelSerializer):
@@ -71,3 +71,13 @@ class CustomerSerializer(serializers.ModelSerializer):
         )
         
         return customer
+
+class NotificationSerializer(serializers.ModelSerializer):
+    content = serializers.SerializerMethodField()
+    
+    class Meta:
+        model = Notification
+        fields = ['id', 'title', 'content', 'is_seen', 'created_at']
+    
+    def get_content(self, obj):
+        return obj.content.content if obj.content else None

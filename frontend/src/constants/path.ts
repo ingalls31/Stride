@@ -23,6 +23,7 @@ export const api_path = {
   logout: '/logout',
   home: '/',
   products: '/products',
+  notifications: '/notifications',
   categories: '/agency',
   productDetail: ':nameId',
   cart: '/cart',

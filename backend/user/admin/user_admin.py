@@ -82,9 +82,13 @@ class CustomerInline(admin.StackedInline):
 
 
 class BulkNotificationForm(forms.Form):
+    title = forms.CharField(
+        max_length=255,
+        label="Title"
+    )
     content = forms.CharField(
         widget=forms.Textarea(attrs={'rows': 4}), 
-        label="Nội dung thông báo"
+        label="Content"
     )
 
 
@@ -168,6 +172,7 @@ class UserAdmin(admin.ModelAdmin):
             if form.is_valid():
                 try:
                     content_text = form.cleaned_data['content']
+                    title = form.cleaned_data['title']
                     selected_customers = Customer.objects.filter(user__in=queryset)
                     
                     if not selected_customers.exists():
@@ -185,6 +190,7 @@ class UserAdmin(admin.ModelAdmin):
                         notifications.append(
                             Notification(
                                 customer=customer,
+                                title=title,
                                 content=content,
                                 is_seen=False
                             )
@@ -208,7 +214,7 @@ class UserAdmin(admin.ModelAdmin):
         
         form = BulkNotificationForm()
         context = {
-            'title': 'Gửi thông báo hàng loạt',
+            'title': 'Send Bulk Notification',
             'form': form,
             'opts': self.model._meta,
             'media': self.media,
@@ -217,4 +223,4 @@ class UserAdmin(admin.ModelAdmin):
         }
         return render(request, 'admin/bulk_notification_form.html', context)
 
-    send_bulk_notification.short_description = "Gửi thông báo tới người dùng đã chọn"
+    send_bulk_notification.short_description = "Send notification to selected users"
