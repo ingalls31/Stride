@@ -12,7 +12,7 @@ export const sortBy = {
 
 export const queryParamsDefault = {
   page: '1',
-  limit: '32',
+  limit: '36',
   sort_by: 'view',
   order: 'asc'
 }

@@ -12,6 +12,8 @@ import { NoUndefinedField } from '~/types/utils.type'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { ObjectSchema } from 'yup'
 import { useTranslation } from 'react-i18next'
+import { Divider, Input, Button, Rate } from 'antd'
+import { Filter, Package, Tag, Star, Banknote } from 'lucide-react'
 
 interface Props {
   queryConfig: QueryConfig
@@ -39,9 +41,7 @@ export default function FilterPanel({ queryConfig }: Props) {
     queryKey: ['categories'],
     queryFn: () => productsApi.getCategories()
   })
-  console.log('data', data);
   const categoryList = data?.data.results
-  console.log('categoryList', categoryList);
 
   const onSubmit = handleSubmit((data) => {
     navigate({
@@ -61,232 +61,200 @@ export default function FilterPanel({ queryConfig }: Props) {
       search: createSearchParams(
         omit(
           {
-            ...queryConfig
+            ...queryConfig,
+            page: '1'
           },
-          ['average_rating', 'max_price', 'min_price']
+          ['agency', 'average_rating', 'max_price', 'min_price', 'name']
+        )
+      ).toString()
+    })
+  }
+
+  const handleAllCategories = () => {
+    navigate({
+      pathname: path.home,
+      search: createSearchParams(
+        omit(
+          {
+            ...queryConfig,
+            page: '1'
+          },
+          ['agency']
         )
       ).toString()
     })
   }
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col rounded-lg bg-white p-6 shadow-md'>
       <div>
-        <Link
-          title={t('all categories')}
-          to={{
-            pathname: path.home,
-            search: createSearchParams(
-              omit(
-                {
-                  ...queryConfig
-                },
-                ['category']
-              )
-            ).toString()
-          }}
-          className={classNames('flex items-center gap-2 border-b border-b-gray-200 py-4', {
-            'fill-black font-bold': !queryConfig.agency,
-            'fill-black/40 font-normal': queryConfig.agency
-          })}
+        <div className='flex items-center gap-2 border-b border-gray-200 pb-4'>
+          <h3 className='mb-1 text-lg font-bold text-gray-800 flex items-center gap-2'>
+            <Package className='h-5 w-5 text-gray-800' />
+            Thể loại
+          </h3>
+        </div>
+        <button
+          onClick={handleAllCategories}
+          className={classNames(
+            'flex w-full items-center gap-2 rounded-md py-3 px-3 transition-colors hover:bg-orange/5',
+            {
+              'bg-orange/10 font-medium text-orange': !queryConfig.agency,
+              'text-gray-600': queryConfig.agency
+            }
+          )}
         >
-          <svg viewBox='0 0 12 10' className='h-[16px] w-[12px]'>
-            <g fillRule='evenodd' stroke='none' strokeWidth={1}>
-              <g transform='translate(-373 -208)'>
-                <g transform='translate(155 191)'>
-                  <g transform='translate(218 17)'>
-                    <path d='m0 2h2v-2h-2zm4 0h7.1519633v-2h-7.1519633z' />
-                    <path d='m0 6h2v-2h-2zm4 0h7.1519633v-2h-7.1519633z' />
-                    <path d='m0 10h2v-2h-2zm4 0h7.1519633v-2h-7.1519633z' />
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
+          <Package
+            className={classNames('h-5 w-5', {
+              'text-orange': !queryConfig.agency,
+              'text-gray-600': queryConfig.agency
+            })}
+          />
           <span>{t('all categories')}</span>
-        </Link>
-        {categoryList &&
-          categoryList.map((category: any, index: number) => (
-            <Link
-              title={category.name}
-              key={index}
-              to={{
-                pathname: path.home,
-                search: createSearchParams({
-                  ...queryConfig,
-                  agency: category.name
-                }).toString()
-              }}
-              className={classNames('flex items-center gap-2 py-2 pl-3 pr-[10px] text-[14px]', {
-                'font-bold text-orange': queryConfig.agency === category._id
-              })}
-            >
-              {queryConfig.agency === category._id && (
-                <svg viewBox='0 0 4 7' className='h-[7px] w-[4px] fill-orange'>
-                  <polygon points='4 3.5 0 0 0 7' />
-                </svg>
-              )}
-              {category.name}
-            </Link>
-          ))}
-      </div>
-      <div>
-        <div className='mt-[30px] border-b border-b-gray-300/60'>
-          <div className='flex items-center gap-2 pb-[20px] font-bold'>
-            <svg
-              enableBackground='new 0 0 15 15'
-              viewBox='0 0 15 15'
-              x={0}
-              y={0}
-              className='h-3 w-3 stroke-black'
-            >
-              <g>
-                <polyline
-                  fill='none'
-                  points='5.5 13.2 5.5 5.8 1.5 1.2 13.5 1.2 9.5 5.8 9.5 10.2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeMiterlimit={10}
-                />
-              </g>
-            </svg>
-            <span>{t('filter search')}</span>
-          </div>
-        </div>
-        <div className='border-b border-b-gray-300/60 py-[20px]'>
-          <div className='mb-4 text-[14px]'>{t('price range')}</div>
-          <form noValidate onSubmit={onSubmit}>
-            <div className='flex items-center justify-between'>
-              <div className='grow'>
-                <Controller
-                  name='min_price'
-                  control={control}
-                  render={({ field }) => (
-                    <InputNumber
-                      {...field}
-                      onChange={(e) => {
-                        field.onChange(e)
-                        trigger('max_price')
-                      }}
-                      classNameError='hidden'
-                      type='text'
-                      placeholder={`₫ ${t('min')}`}
-                      classNameInput='w-full border border-gray-400 py-1 pl-[5px] text-[14px] shadow-inner outline-none'
-                    />
-                  )}
-                />
-              </div>
-              <div className='mx-2 h-[1px] w-2 bg-[#bdbdbd]'></div>
-              <div className='grow'>
-                <Controller
-                  name='max_price'
-                  control={control}
-                  render={({ field }) => (
-                    <InputNumber
-                      {...field}
-                      onChange={(e) => {
-                        field.onChange(e)
-                        trigger('min_price')
-                      }}
-                      type='text'
-                      classNameError='hidden'
-                      placeholder={`₫ ${t('max')}`}
-                      classNameInput='w-full border border-gray-400 py-1 pl-[5px] text-[14px] shadow-inner outline-none'
-                    />
-                  )}
-                />
-              </div>
-            </div>
-            <div className='min-h-[1.5rem] pl-1 pt-1 text-center text-sm text-[#ff424f]'>
-              {errors.min_price?.message}
-            </div>
-            <button
-              type='submit'
-              className='mt-2 w-full rounded-sm bg-orange px-8 py-1.5 text-sm uppercase text-white shadow-sm '
-            >
-              {t('apply')}
-            </button>
-          </form>
-        </div>
-      </div>
-      <div>
-        <div className='border-b border-b-gray-300/80 py-[20px]'>
-          <div className='mb-2 text-[14px]'>{t('rating')}</div>
-          {Array(5)
-            .fill(0)
-            .map((_, index) => (
+        </button>
+        <div className='my-2 space-y-1'>
+          {categoryList &&
+            categoryList.map((category: any, index: number) => (
               <Link
-                title={t('rating')}
+                title={category.name}
                 key={index}
                 to={{
                   pathname: path.home,
                   search: createSearchParams({
                     ...queryConfig,
-                    average_rating: (5 - index).toString()
+                    agency: category.name
                   }).toString()
                 }}
-                className='flex items-center gap-2 pl-2 pr-[10px] pt-2 text-[14px] text-black'
+                className={classNames(
+                  'flex items-center gap-2 rounded-md py-2 px-4 text-[15px] transition-colors hover:bg-orange/5',
+                  {
+                    'bg-orange/10 font-medium text-orange': queryConfig.agency === category.name,
+                    'text-gray-600': queryConfig.agency !== category.name
+                  }
+                )}
               >
-                <div className='flex items-center gap-[1px]'>
-                  {Array(5)
-                    .fill(0)
-                    .map((_, indexStar) => {
-                      if (index < 5 - indexStar) {
-                        return (
-                          <div key={indexStar}>
-                            <svg
-                              enableBackground='new 0 0 15 15'
-                              viewBox='0 0 15 15'
-                              x={0}
-                              y={0}
-                              width={14}
-                              height={14}
-                              fill='#ffce3d'
-                              stroke='#ffce3d'
-                            >
-                              <polygon
-                                points='7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeMiterlimit={10}
-                              />
-                            </svg>
-                          </div>
-                        )
-                      }
-                      return (
-                        <div key={indexStar}>
-                          <svg
-                            enableBackground='new 0 0 15 15'
-                            viewBox='0 0 15 15'
-                            x={0}
-                            y={0}
-                            width={14}
-                            height={14}
-                            fill='none'
-                            stroke='#ffce3d'
-                          >
-                            <polygon
-                              points='7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4'
-                              strokeLinecap='round'
-                              strokeLinejoin='round'
-                              strokeMiterlimit={10}
-                            />
-                          </svg>
-                        </div>
-                      )
-                    })}
-                </div>
-                {index !== 0 ? `& ${t('up')}` : ''}
+                <Tag
+                  className={classNames('h-4 w-4', {
+                    'text-orange': queryConfig.agency === category.name,
+                    'text-gray-600': queryConfig.agency !== category.name
+                  })}
+                />
+                <span>{category.name}</span>
               </Link>
             ))}
         </div>
-        <button
+      </div>
+
+      <div className='mt-8'>
+        <div className='flex items-center gap-2 border-b border-gray-200 pb-4'>
+          <h3 className='mb-1 text-lg font-bold text-gray-800 flex items-center gap-2'>
+            <Banknote className='h-5 w-5 text-gray-800' />
+            Giá
+          </h3>
+        </div>
+        <div className='py-4'>
+          <form noValidate onSubmit={onSubmit} className='space-y-4'>
+            <div className='flex items-center gap-3'>
+              <Controller
+                name='min_price'
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    onChange={(e) => {
+                      field.onChange(e)
+                      trigger('max_price')
+                    }}
+                    placeholder={`₫ ${t('min')}`}
+                    className='flex-1'
+                    size='large'
+                  />
+                )}
+              />
+              <div className='h-[1px] w-6 bg-gray-300'></div>
+              <Controller
+                name='max_price'
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    onChange={(e) => {
+                      field.onChange(e)
+                      trigger('min_price')
+                    }}
+                    placeholder={`₫ ${t('max')}`}
+                    className='flex-1'
+                    size='large'
+                  />
+                )}
+              />
+            </div>
+            <div className='min-h-[1.5rem] text-center text-sm text-red-500'>{errors.min_price?.message}</div>
+            <Button
+              type='primary'
+              htmlType='submit'
+              size='large'
+              className='w-full bg-orange hover:!bg-orange/90 hover:!border-orange/90'
+            >
+              {t('apply')}
+            </Button>
+          </form>
+        </div>
+
+        <Divider className='my-4' />
+
+        <div className='py-4'>
+          <div className='flex items-center gap-2 border-b border-gray-200 pb-4'>
+            <h3 className='mb-1 text-lg font-bold text-gray-800 flex items-center gap-2'>
+              <Star className='h-5 w-5 text-gray-800' />
+              Đánh giá
+            </h3>
+          </div>
+          <div className='space-y-3'>
+            {Array(5)
+              .fill(0)
+              .map((_, index) => (
+                <Link
+                  title={t('rating')}
+                  key={index}
+                  to={{
+                    pathname: path.home,
+                    search: createSearchParams({
+                      ...queryConfig,
+                      average_rating: (5 - index).toString()
+                    }).toString()
+                  }}
+                  className={classNames(
+                    'flex items-center gap-3 rounded-md py-2.5 px-3 transition-colors hover:bg-orange/5',
+                    {
+                      'bg-orange/10': queryConfig.average_rating === (5 - index).toString(),
+                      'text-gray-600': queryConfig.average_rating !== (5 - index).toString()
+                    }
+                  )}
+                >
+                  <Rate disabled defaultValue={5 - index} className='text-sm text-orange' />
+                  {index !== 0 && <span>{t('up')}</span>}
+                </Link>
+              ))}
+          </div>
+        </div>
+
+        <Divider className='my-4' />
+
+        <Button
           onClick={handleResetFilter}
-          className='mt-4 w-full rounded-sm bg-orange px-8 py-1.5 text-sm uppercase text-white shadow-sm '
+          danger
+          size='large'
+          className='mt-4 w-full font-medium hover:bg-red-50'
+          disabled={
+            !queryConfig.agency &&
+            !queryConfig.average_rating &&
+            !queryConfig.max_price &&
+            !queryConfig.min_price
+          }
         >
           {t('clear all')}
-        </button>
+        </Button>
       </div>
     </div>
   )
