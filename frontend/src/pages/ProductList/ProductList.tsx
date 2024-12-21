@@ -114,7 +114,7 @@ export default function ProductList() {
                       title={product.name}
                       key={product.id}
                       to={`${path.home}${product.id}`}
-                      className='group col-span-1 h-full overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-md'
+                      className='group col-span-1 h-full overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:translate-y-[-3px] hover:shadow-xl'
                     >
                       <div className='relative w-full pt-[100%]'>
                         <img

@@ -83,8 +83,11 @@ class ProductListSerializer(serializers.ModelSerializer):
         ]
 
     def get_image_url(self, obj):
-        primary_image = ProductImage.objects.get(product=obj, primary=True)
-        return f"{primary_image.image.image.url}"
+        try:
+            primary_image = ProductImage.objects.get(product=obj, primary=True)
+            return primary_image.image.image.url if primary_image.image else None
+        except ProductImage.DoesNotExist:
+            return None
 
 
 class ProductDetailSerializer(serializers.ModelSerializer):

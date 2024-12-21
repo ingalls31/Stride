@@ -222,21 +222,21 @@ export default function NavHeader() {
                   <Link
                     title={t('my profile')}
                     to={path.profile}
-                    className='py-2.5 px-4 hover:bg-gray-50 hover:text-orange transition-colors'
+                    className='py-2.5 px-4 text-gray-600 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('my profile')}
                   </Link>
                   <Link
                     title={t('my cart')}
                     to={path.cart}
-                    className='py-2.5 px-4 hover:bg-gray-50 hover:text-orange transition-colors'
+                    className='py-2.5 px-4 text-gray-600 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('my cart')}
                   </Link>
                   <button
                     title={t('logout')}
                     onClick={handleLogout}
-                    className='py-2.5 px-4 text-left hover:bg-gray-50 hover:text-orange transition-colors'
+                    className='py-2.5 px-4 text-left text-gray-600 hover:bg-gray-50 hover:text-orange transition-colors'
                   >
                     {t('logout')}
                   </button>

@@ -29,6 +29,9 @@ import { convert } from 'html-to-text'
 import { useTranslation } from 'react-i18next'
 import ratingApi from '~/apis/ratingApi'
 import { update } from 'lodash'
+import { Package } from 'lucide-react'
+import { Button as AntButton, Rate, Input, Divider, Card, Tag } from 'antd'
+import { ShoppingCart, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function ProductDetail() {
   const { t } = useTranslation('product')
@@ -43,7 +46,7 @@ export default function ProductDetail() {
       reply: '',
       created_at: '',
       updated_at: '',
-      rate_point: 0,
+      rate_point: 5,
       product: {
         avatar: '',
         name: '',
@@ -380,21 +383,13 @@ export default function ProductDetail() {
                 <button
                   onClick={handlePrev}
                   className={classNames(
-                    'absolute left-0 top-[50%] translate-y-[-50%] bg-[#0003] py-[10px] outline-none',
+                    'absolute left-0 top-[50%] translate-y-[-50%] bg-black/40 p-2 rounded-full hover:bg-black/60 transition-colors',
                     {
-                      'cursor-default': indexImg[0] <= 0
+                      'cursor-default opacity-50': indexImg[0] <= 0
                     }
                   )}
                 >
-                  <svg
-                    enableBackground='new 0 0 13 20'
-                    viewBox='0 0 13 20'
-                    x={0}
-                    y={0}
-                    className='h-5 w-5 fill-white'
-                  >
-                    <polygon points='4.2 10 12.1 2.1 10 -.1 1 8.9 -.1 10 1 11 10 20 12.1 17.9' />
-                  </svg>
+                  <ChevronLeft className="h-5 w-5 text-white" />
                 </button>
                 <button
                   onClick={handleNext}
@@ -422,7 +417,11 @@ export default function ProductDetail() {
               <div className='mt-4 flex flex-wrap items-center gap-y-3'>
                 <div className='flex items-center gap-[5px] border-r border-r-gray-300 pr-[15px]'>
                   <span className='border-b border-b-orange text-base text-orange'>{product?.rating}</span>
-                  <RatingStar rating={product?.average_rating} size={16} />
+                  <Rate
+                    disabled
+                    defaultValue={product?.average_rating === 0 ? 5 : product?.average_rating}
+                    className='text-orange'
+                  />
                 </div>
                 <div className='flex items-center gap-[5px] border-r border-r-gray-300 px-[15px]'>
                   <span className='border-b border-b-black text-base uppercase'>
@@ -520,24 +519,23 @@ export default function ProductDetail() {
                   </div>
                 </div>
               </div>
-              <div className='mt-6 flex items-center gap-16 pl-[20px] text-sm text-gray-500 '>
-                <span className='hidden lg:inline-block'>{t('size')}</span>
-                <div className='flex items-center gap-2'>
-                  {product.item.map((item: any) => {
-                    return (
-                      <button
-                        className={`gap-[10px] rounded-sm border border ${
-                          item.size == size.size ? 'bg-[#C6C5C5]' : 'bg'
-                        } px-[10px] py-[10px]`}
-                        aria-label={item.size}
-                        aria-disabled='false'
+              <div className='mt-6 flex items-center gap-4 pl-[20px] text-sm text-gray-500'>
+                <div className='flex items-center gap-16'>
+                  <span className='hidden lg:inline-block whitespace-nowrap'>{t('size')}</span>
+                  <div className='grid grid-cols-6 gap-2 max-w-[600px]'>
+                    {product.item.map((item: any) => (
+                      <AntButton
+                        key={item.id}
+                        type={item.size === size.size ? 'primary' : 'default'} 
                         onClick={() => setSize(item)}
+                        className={`min-w-[60px] hover:!text-orange hover:!border-orange ${
+                          item.size === size.size ? '!bg-orange !border-orange hover:!bg-orange/90' : ''
+                        }`}
                       >
-                        {' '}
                         {item.size}
-                      </button>
-                    )
-                  })}
+                      </AntButton>
+                    ))}
+                  </div>
                 </div>
               </div>
               <div className='mt-6 flex items-center gap-16 pl-[20px] text-sm text-gray-500'>
@@ -556,60 +554,25 @@ export default function ProductDetail() {
                 </div>
               </div>
 
-              <div className='mt-[30px] flex flex-wrap items-center gap-[15px] pl-[20px]'>
-                <button
+              <div className="mt-[30px] flex flex-wrap items-center gap-[15px] pl-[20px]">
+                <AntButton
                   onClick={addToCart}
-                  className='flex items-center justify-center gap-[10px] rounded-sm border border-orange bg-[#d1d9da] px-[20px] py-[11px] capitalize text-orange shadow-sm hover:opacity-80'
+                  size="large"
+                  icon={<ShoppingCart className="h-5 w-5" />}
+                  className="flex items-center gap-2 !border-orange !text-orange hover:!bg-orange/5 hover:!text-orange hover:!border-orange"
                 >
-                  <svg
-                    enableBackground='new 0 0 15 15'
-                    viewBox='0 0 15 15'
-                    x={0}
-                    y={0}
-                    className='h-[20px] w-[20px] fill-orange stroke-orange'
-                  >
-                    <g>
-                      <g>
-                        <polyline
-                          fill='none'
-                          points='.5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeMiterlimit={10}
-                        />
-                        <circle cx={6} cy='13.5' r={1} stroke='none' />
-                        <circle cx='11.5' cy='13.5' r={1} stroke='none' />
-                      </g>
-                      <line
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeMiterlimit={10}
-                        x1='7.5'
-                        x2='10.5'
-                        y1={7}
-                        y2={7}
-                      />
-                      <line
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeMiterlimit={10}
-                        x1={9}
-                        x2={9}
-                        y1='8.5'
-                        y2='5.5'
-                      />
-                    </g>
-                  </svg>
-                  <span>{t('add to cart')}</span>
-                </button>
-                <Button
+                  {t('add to cart')}
+                </AntButton>
+                
+                <AntButton
                   onClick={handleBuyNow}
-                  isLoading={addToCartMutation.isLoading}
-                  disabled={addToCartMutation.isLoading}
-                  className='rounded-sm bg-orange px-[20px] py-[12px] capitalize text-white shadow-sm'
+                  size="large" 
+                  type="primary"
+                  loading={addToCartMutation.isLoading}
+                  className="!bg-orange hover:!bg-orange/90"
                 >
                   {t('buy now')}
-                </Button>
+                </AntButton>
               </div>
               <div className='mt-8 hidden border-t border-t-gray-200 lg:block'>
                 <div className='flex items-center gap-[20px] px-[20px] py-9'>
@@ -702,12 +665,12 @@ export default function ProductDetail() {
                           >
                             <div className='col-span-12 lg:col-span-12'>
                               <div className='gap-12'>
-                                <textarea
-                                  className={`border flex items-center border-orange bg-[#d1d9da] py-[30px] w-full`}
-                                  style={{ paddingLeft: '31px', paddingRight: '31px' }}
+                                <Input.TextArea
+                                  className="mt-4 border-orange"
+                                  rows={4}
+                                  value={review.reply || ''}
                                   onChange={(e) => updateReview(review.id, e.target.value)}
-                                  value={review.reply ? review.reply : ''}
-                                ></textarea>
+                                />
                               </div>
                             </div>
                             <div className='col-span-12 flex items-center lg:col-span-6'>
@@ -719,18 +682,16 @@ export default function ProductDetail() {
                                   <div className='flex items-center overflow-hidden rounded-sm shadow-sm'></div>
                                 </div>
                                 <div className='col-span-2 text-center text-sm text-orange'>
-                                  <Button
-                                    className='mr-[2px] w-full rounded-sm bg-orange px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[180px]'
-                                    style={{ marginTop: '10px' }}
-                                    onClick={() =>
-                                      updateReply.mutate({
-                                        id: review.id,
-                                        reply: review.reply
-                                      })
-                                    }
+                                  <AntButton
+                                    type="primary"
+                                    className="mt-4 !bg-orange hover:!bg-orange/90"
+                                    onClick={() => updateReply.mutate({
+                                      id: review.id,
+                                      reply: review.reply
+                                    })}
                                   >
                                     Phản hồi
-                                  </Button>
+                                  </AntButton>
                                 </div>
                               </div>
                             </div>
@@ -745,40 +706,41 @@ export default function ProductDetail() {
           </div>
           <div className='container'>
             <div className='mt-9 text-base uppercase text-gray-500'>{t('you may also like')}</div>
-            <div className='mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
+            <div className='mt-5 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
               {dataByCategory?.data.results.map((product: any) => (
                 <Link
                   title={product.name}
                   key={product._id}
                   to={`${path.home}${product.id}`}
-                  className='col-span-1 h-full overflow-hidden rounded-sm bg-white shadow transition hover:translate-y-[-.0625rem] hover:shadow-[0_0.0625rem_20px_0_rgba(0,0,0,.05)]'
+                  className='group col-span-1 h-full overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:translate-y-[-3px] hover:shadow-xl'
                 >
                   <div className='relative w-full pt-[100%]'>
                     <img
-                      className='absolute left-0 top-0 h-full w-full object-cover'
+                      className='absolute left-0 top-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105'
                       src={product.image_url}
                       alt={product.name}
                     />
                   </div>
-                  <div className='p-2'>
-                    <div className='line-clamp-2 text-xs'>{product.name}</div>
-                    <div className='mt-2 flex flex-col items-center gap-1 sm:flex-row'>
+                  <div className='p-4'>
+                    <div className='line-clamp-2 min-h-[2.5rem] text-sm font-medium text-gray-800'>
+                      {product.name}
+                    </div>
+                    <div className='mt-2 flex flex-col items-start gap-1 sm:flex-row sm:items-center'>
                       <div className='flex items-end text-sm text-gray-400 line-through'>
                         <span>₫</span>
                         <span>{formatPriceNumber(product.old_price)}</span>
                       </div>
                       <div className='flex items-center text-orange'>
                         <span className='text-xs'>₫</span>
-                        <span className='text-base'>{formatPriceNumber(product.price)}</span>
+                        <span className='text-base font-bold'>{formatPriceNumber(product.price)}</span>
                       </div>
                     </div>
-                    <div className='mb-1 mt-3 flex items-center gap-2'>
-                      <div className='flex items-center gap-[1px]'>
-                        <RatingStar size={10} rating={product.average_rating} />
-                      </div>
-                      <span className='text-xs text-gray-500'>
+                    <div className='mt-3 flex items-center justify-between'>
+                      <RatingStar rating={product.average_rating} />
+                      <div className='flex items-center text-xs text-gray-500'>
+                        <Package className='mr-1 h-3 w-3' />
                         {formatSocialNumber(product.buyed_total)} {t('sold')}
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </Link>

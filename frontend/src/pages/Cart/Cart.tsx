@@ -9,9 +9,8 @@ import { Link, createSearchParams, useLocation, useNavigate } from 'react-router
 import { toast } from 'react-toastify'
 import productsApi from '~/apis/productApi'
 import purchaseApi, { purchaseBody } from '~/apis/purchaseApi'
-import Button from '~/components/Button'
-import QuantityController from '~/components/QuantityController'
-import RatingStar from '~/components/RatingStar'
+import { Checkbox, Button as AntButton, Empty, Tag } from 'antd'
+import { Trash2, ChevronRight, Star, Package, ShoppingCart, ShoppingBag, Sparkles } from 'lucide-react'
 import path from '~/constants/path'
 import { queryParamsDefault } from '~/constants/product'
 import { purchasesStatus } from '~/constants/purchase'
@@ -20,6 +19,8 @@ import { formatPriceNumber, formatSocialNumber, generateNameId } from '~/utils/u
 import useScrollTop from '~/hooks/useScrollTop'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
+import QuantityController from '~/components/QuantityController'
+import RatingStar from '~/components/RatingStar'
 
 export default function Cart() {
   const { t } = useTranslation('cart')
@@ -205,24 +206,15 @@ export default function Cart() {
         <title>{`${t('cart')} | Stride`}</title>
         <meta name='description' content='Page cart Stride' />
       </Helmet>
-      <div className='border-b-4 border-b-orange bg-[#f5f5f5] pb-[60px] pt-10'>
+      <div className='min-h-screen border-b-4 border-b-orange bg-gray-50 pb-[60px] pt-10'>
         <div className='container'>
           {extendedPurchases && extendedPurchases.length > 0 ? (
             <>
-              <div className='grid grid-cols-12 rounded-[3px] bg-white px-10 py-4 shadow-sm'>
+              <div className='grid grid-cols-12 rounded-lg bg-white px-6 py-4 shadow-sm'>
                 <div className='col-span-6 flex items-center'>
-                  <div className='flex items-center'>
-                    <input
-                      id='CheckedAllProduct'
-                      type='checkbox'
-                      className='h-[18px] w-[18px] accent-orange'
-                      checked={isAllChecked}
-                      onChange={handleCheckedAll}
-                    />
-                    <label htmlFor='CheckedAllProduct' className='cursor-pointer px-[20px] text-sm'>
-                      {t('product')}
-                    </label>
-                  </div>
+                  <Checkbox checked={isAllChecked} onChange={handleCheckedAll}>
+                    <span className='ml-2 text-sm font-medium'>{t('product')}</span>
+                  </Checkbox>
                 </div>
                 <div className='col-span-6 flex items-center'>
                   <div className='hidden flex-1 grid-cols-6 text-sm text-gray-500/90 lg:grid'>
@@ -233,200 +225,191 @@ export default function Cart() {
                   </div>
                 </div>
               </div>
-              {extendedPurchases &&
-                extendedPurchases.map((purchase: any, index) => (
-                  <div key={purchase._id} className='mt-[15px] rounded-[3px] bg-white px-5 py-4 shadow-sm'>
-                    <div className='grid grid-cols-12 gap-4 border px-5 py-[16px]'>
-                      <div className='col-span-12 flex items-center lg:col-span-6'>
-                        <div className='flex items-center gap-5'>
-                          <input
-                            id='CheckedAllProduct'
-                            type='checkbox'
-                            className='h-[18px] w-[18px] flex-shrink-0 accent-orange'
-                            checked={purchase.checked}
-                            onChange={handleChecked(index)}
-                          />
-                          <Link
-                            title={purchase.product.name}
-                            to={`${path.home}${purchase.product.id}`}
-                            className='flex items-start gap-[10px]'
-                          >
-                            <img
-                              className='h-20 w-20 object-cover'
-                              src={purchase.product.image}
-                              alt={purchase.product.name}
-                            />
-                            <span className='line-clamp-2 pt-[5px] text-sm text-black'>
-                              {purchase.product.name}, {purchase.product.size}
+              {extendedPurchases.map((purchase: any, index) => (
+                <div key={purchase._id} className='mt-4 rounded-lg bg-white px-6 py-4 shadow-sm'>
+                  <div className='grid grid-cols-12 gap-4 border px-5 py-4'>
+                    <div className='col-span-12 flex items-center lg:col-span-6'>
+                      <Checkbox
+                        checked={purchase.checked}
+                        onChange={handleChecked(index)}
+                        className='mr-4'
+                      />
+                      <Link
+                        to={`${path.home}${purchase.product.id}`}
+                        className='flex items-start gap-4'
+                      >
+                        <img
+                          className='h-20 w-20 rounded-md object-cover'
+                          src={purchase.product.image}
+                          alt={purchase.product.name}
+                        />
+                        <span className='line-clamp-2 pt-1 text-sm font-medium text-gray-800'>
+                          {purchase.product.name}, {purchase.product.size}
+                        </span>
+                      </Link>
+                    </div>
+                    <div className='col-span-12 flex items-center lg:col-span-6'>
+                      <div className='grid flex-1 grid-cols-2 gap-y-2 text-sm text-gray-500/90 sm:grid-cols-6'>
+                        <div className='col-span-2'>
+                          <div className='flex items-center justify-around gap-[10px] text-sm sm:justify-center'>
+                            <span className='text-gray-400 line-through'>
+                              ₫{formatPriceNumber(purchase.product.old_price)}
                             </span>
-                          </Link>
+                            <span className='text-black'>₫{formatPriceNumber(purchase.product.price)}</span>
+                          </div>
                         </div>
-                      </div>
-                      <div className='col-span-12 flex items-center lg:col-span-6'>
-                        <div className='grid flex-1 grid-cols-2 gap-y-2 text-sm text-gray-500/90 sm:grid-cols-6'>
-                          <div className='col-span-2'>
-                            <div className='flex items-center justify-around gap-[10px] text-sm sm:justify-center'>
-                              <span className='text-gray-400 line-through'>
-                                ₫{formatPriceNumber(purchase.product.old_price)}
-                              </span>
-                              <span className='text-black'>₫{formatPriceNumber(purchase.product.price)}</span>
-                            </div>
+                        <div className='col-span-2 flex justify-center'>
+                          <div className='flex items-center overflow-hidden rounded-sm shadow-sm'>
+                            <QuantityController
+                              value={purchase.quantity}
+                              max={purchase.product.total}
+                              onIncrease={(value) =>
+                                handleQuantity(index, value, value <= purchase.product.total)
+                              }
+                              onDecrease={(value) => handleQuantity(index, value, value >= 1)}
+                              onType={(value) => handleType(index, value)}
+                              onFocusOut={(value) =>
+                                handleOnFocusOut(index, value, value !== purchasesInCart[index].quantity)
+                              }
+                              disabled={purchase.disabled}
+                            />
                           </div>
-                          <div className='col-span-2 flex justify-center'>
-                            <div className='flex items-center overflow-hidden rounded-sm shadow-sm'>
-                              <QuantityController
-                                value={purchase.quantity}
-                                max={purchase.product.total}
-                                onIncrease={(value) =>
-                                  handleQuantity(index, value, value <= purchase.product.total)
-                                }
-                                onDecrease={(value) => handleQuantity(index, value, value >= 1)}
-                                onType={(value) => handleType(index, value)}
-                                onFocusOut={(value) =>
-                                  handleOnFocusOut(index, value, value !== purchasesInCart[index].quantity)
-                                }
-                                disabled={purchase.disabled}
-                              />
-                            </div>
-                          </div>
-                          <div className='col-span-1 text-center text-sm text-orange'>
-                            ₫{formatPriceNumber(purchase.product.price * purchase.quantity)}
-                          </div>
-                          <div className='col-span-1 text-center'>
-                            <button
-                              className='text-black outline-none hover:text-orange'
-                              onClick={handleDeletePurchase(index)}
-                            >
-                              {t('delete')}
-                            </button>
-                          </div>
+                        </div>
+                        <div className='col-span-1 text-center text-sm text-orange'>
+                          ₫{formatPriceNumber(purchase.product.price * purchase.quantity)}
+                        </div>
+                        <div className='col-span-1 text-center'>
+                          <button
+                            className='text-black outline-none hover:text-orange'
+                            onClick={handleDeletePurchase(index)}
+                          >
+                            {t('delete')}
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}
-              <div className='sticky bottom-0 mt-[15px] rounded-[3px] border bg-white px-5 py-1 shadow-sm sm:py-4'>
-                <div className='flex flex-col items-center justify-between gap-y-1 text-base md:flex-row'>
-                  <div className='flex flex-1 items-center'>
-                    <input
-                      id='selectAllProduct'
-                      type='checkbox'
-                      className='h-[18px] w-[18px] accent-orange'
-                      checked={isAllChecked}
-                      onChange={handleCheckedAll}
-                    />
-                    <label htmlFor='selectAllProduct' className='cursor-pointer px-[20px]'>
-                      {t('select all')} ({extendedPurchases?.length})
-                    </label>
-                    <button onClick={handleDeleteManyPurchase} className='px-1 outline-none'>
+                </div>
+              ))}
+              <div className='sticky bottom-0 mt-4 rounded-lg border bg-white px-6 py-4 shadow-sm'>
+                <div className='flex flex-col items-center justify-between gap-y-2 md:flex-row'>
+                  <div className='flex items-center'>
+                    <Checkbox checked={isAllChecked} onChange={handleCheckedAll}>
+                      <span className='ml-2'>
+                        {t('select all')} ({extendedPurchases?.length})
+                      </span>
+                    </Checkbox>
+                    <AntButton
+                      type='text'
+                      danger
+                      icon={<Trash2 size={16} />}
+                      onClick={handleDeleteManyPurchase}
+                      className='ml-4'
+                    >
                       {t('delete')} ({checkedPurchaseCount})
-                    </button>
+                    </AntButton>
                   </div>
                   <div className='flex w-full flex-1 flex-col items-center justify-end gap-[15px] gap-y-1 sm:w-auto sm:flex-row'>
-                    <div>
-                      <div className='flex items-center gap-[5px]'>
-                        <span>
+                    <div className='flex flex-col space-y-2'>
+                      <div className='flex items-center space-x-2'>
+                        <ShoppingCart size={18} className='text-gray-500' />
+                        <span className='text-gray-600'>
                           {t('total')} ({checkedPurchaseCount} {t('item')}):
                         </span>
-                        <span className='text-2xl leading-4 text-orange'>
+                        <span className='text-2xl font-semibold text-orange'>
                           ₫{formatPriceNumber(totalPricePurchase)}
                         </span>
                       </div>
-                      <div className='flex items-center justify-end gap-[24px] text-sm'>
-                        <span>{t('saved')}</span>
-                        <span className='text-orange'>₫{formatPriceNumber(totalSavingPricePurchase)}</span>
+                      <div className='flex items-center justify-end space-x-3 text-sm'>
+                        <Tag icon={<Sparkles size={14} />} color='success'>
+                          {t('saved')}: ₫{formatPriceNumber(totalSavingPricePurchase)}
+                        </Tag>
                       </div>
                     </div>
-                    <Button
+                    <AntButton
                       onClick={handleBuyPurchase}
                       disabled={buyPurchaseMutation.isLoading}
-                      isLoading={buyPurchaseMutation.isLoading}
-                      className='mr-[2px] w-full rounded-sm bg-orange px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
+                      loading={buyPurchaseMutation.isLoading}
+                      icon={<ShoppingBag size={16} />}
+                      className='mr-[2px] h-12 w-full rounded-lg bg-orange px-8 text-base font-medium capitalize text-white transition-all hover:bg-orange hover:shadow-lg disabled:bg-gray-300 sm:w-[220px]'
                     >
                       {t('check out')}
-                    </Button>
+                    </AntButton>
                   </div>
                 </div>
               </div>
-              <div className='mt-9 flex items-center justify-between'>
-                <div className='text-base uppercase text-gray-500'>{t('you may also like')}</div>
-                <Link
-                  title={t('see all')}
-                  to={{
-                    pathname: path.home,
-                    search: createSearchParams().toString()
-                  }}
-                  className='flex items-center gap-1 p-1 text-sm text-orange'
-                >
-                  <span>{t('see all')}</span>
-                  <svg
-                    enableBackground='new 0 0 11 11'
-                    viewBox='0 0 11 11'
-                    x={0}
-                    y={0}
-                    className='h-[10px] w-[10px] fill-orange'
+              <div className='mt-12'>
+                <div className='mb-6 flex items-center justify-between'>
+                  <h2 className='text-lg font-medium text-gray-700'>{t('you may also like')}</h2>
+                  <Link
+                    to={{
+                      pathname: path.home,
+                      search: createSearchParams().toString()
+                    }}
+                    className='flex items-center gap-1 text-orange hover:opacity-80'
                   >
-                    <path d='m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z' />
-                  </svg>
+                    <span>{t('see all')}</span>
+                    <ChevronRight size={16} />
+                  </Link>
+                </div>
+                <div className='mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
+                  {productCategory &&
+                    productCategory.map((product: any) => (
+                      <Link
+                  title={product.name}
+                  key={product._id}
+                  to={`${path.home}${product.id}`}
+                  className='group col-span-1 h-full overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:translate-y-[-3px] hover:shadow-xl'
+                >
+                  <div className='relative w-full pt-[100%]'>
+                    <img
+                      className='absolute left-0 top-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105'
+                      src={product.image_url}
+                      alt={product.name}
+                    />
+                  </div>
+                  <div className='p-4'>
+                    <div className='line-clamp-2 min-h-[2.5rem] text-sm font-medium text-gray-800'>
+                      {product.name}
+                    </div>
+                    <div className='mt-2 flex flex-col items-start gap-1 sm:flex-row sm:items-center'>
+                      <div className='flex items-end text-sm text-gray-400 line-through'>
+                        <span>₫</span>
+                        <span>{formatPriceNumber(product.old_price)}</span>
+                      </div>
+                      <div className='flex items-center text-orange'>
+                        <span className='text-xs'>₫</span>
+                        <span className='text-base font-bold'>{formatPriceNumber(product.price)}</span>
+                      </div>
+                    </div>
+                    <div className='mt-3 flex items-center justify-between'>
+                      <RatingStar rating={product.average_rating} />
+                      <div className='flex items-center text-xs text-gray-500'>
+                        <Package className='mr-1 h-3 w-3' />
+                        {formatSocialNumber(product.buyed_total)} {t('sold')}
+                      </div>
+                    </div>
+                  </div>
                 </Link>
-              </div>
-              <div className='mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
-                {productCategory &&
-                  productCategory.map((product: any) => (
-                    <Link
-                      title={product.name}
-                      key={product.id}
-                      to={`${path.home}${product.id}`}
-                      className='col-span-1 h-full overflow-hidden rounded-sm bg-white shadow transition hover:translate-y-[-.0625rem] hover:shadow-[0_0.0625rem_20px_0_rgba(0,0,0,.05)]'
-                    >
-                      <div className='relative w-full pt-[100%]'>
-                        <img
-                          className='absolute left-0 top-0 h-full w-full object-cover'
-                          src={product.image_url}
-                          alt={product.name}
-                        />
-                      </div>
-                      <div className='p-2'>
-                        <div className='line-clamp-2 text-xs'>{product.name}</div>
-                        <div className='mt-2 flex items-center gap-1'>
-                          <div className='flex items-end text-sm text-gray-400 line-through'>
-                            <span>₫</span>
-                            <span>{formatPriceNumber(product.old_price)}</span>
-                          </div>
-                          <div className='flex items-center text-orange'>
-                            <span className='text-xs'>₫</span>
-                            <span className='text-base'>{formatPriceNumber(product.price)}</span>
-                          </div>
-                        </div>
-                        <div className='mb-1 mt-3 flex items-center gap-1'>
-                          <div className='flex items-center gap-[1px]'>
-                            <RatingStar size={10} rating={product.average_rating} />
-                          </div>
-                          <span className='text-xs'>
-                            {formatSocialNumber(product.buyed_total)} {t('sold')}
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
+                    ))}
+                </div>
               </div>
             </>
           ) : (
-            <div className='my-20 flex flex-1 flex-col items-center text-lg text-[#0000008a]'>
-              <img
-                src='https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/a60759ad1dabe909c46a817ecbf71878.png'
-                className='h-[134px] w-[134px]'
-                alt='No purchase'
+            <div className='flex h-[60vh] items-center justify-center'>
+              <Empty
+                description={
+                  <div className='text-center'>
+                    <p className='text-gray-500'>{t('desc_err')}</p>
+                    <p className='mt-2 text-gray-500'>{t('or')}</p>
+                    <Link to={path.home}>
+                      <AntButton type='primary' className='mt-4 bg-orange hover:bg-orange/90'>
+                        {t('add some')}
+                      </AntButton>
+                    </Link>
+                  </div>
+                }
               />
-              <span>{t('desc_err')}</span>
-              <span className='mt-4'>{t('or')}</span>
-              <Link
-                title={t('add some')}
-                to={path.home}
-                className='mt-4 rounded-sm bg-orange px-8 py-[10px] text-lg capitalize text-white shadow-sm hover:bg-orange/90'
-              >
-                {t('add some')}
-              </Link>
             </div>
           )}
         </div>

@@ -24,6 +24,8 @@ import orderApi from '~/apis/orderApi'
 import RatingItem from '~/components/RatingItem/RatingItem'
 import ratingApi from '~/apis/ratingApi'
 import {loadStripe} from '@stripe/stripe-js';
+import { Card, Input, Button as AntButton, Divider, Tag, Typography } from 'antd'
+import { Package, Truck, CreditCard, Wallet, Star, ShoppingBag, X, ShoppingCart, Sparkles, User, Phone, MapPin } from 'lucide-react'
 
 export default function Order() {
   const { t } = useTranslation('cart')
@@ -231,43 +233,55 @@ export default function Order() {
         <div className='container'>
           <div className='grid rounded-[12x] bg-white px-10 shadow-sm'>
             <br />
-            <div className='text-[15px] font-medium text-orange'>
-              <strong>Thông tin Nhận Hàng</strong>
-            </div>
-            {
-              orders && (
-                <div className='text-[15px] font-medium'>
-                  <strong>Họ tên:</strong> 
-                  <input 
-                    className={`gap-[10px] rounded-sm border border-orange bg-[#d1d9da] px-[6px] py-[6px] `}
-                    style={{ marginLeft: '10px', marginBottom: '10px', marginRight: '40px' }}
-                    type='text'
-                    value={orders.receiver}
-                    onChange={(e) => setOrders({ ...orders, receiver: e.target.value })}
-                    disabled = {orders.status !== 'creating'}
-                  />
-                  <strong>SĐT:</strong>
-                  <input 
-                    className={`gap-[10px] rounded-sm border border-orange bg-[#d1d9da] px-[6px] py-[6px] `}
-                    style={{ marginLeft: '10px', marginBottom: '10px', marginRight: '40px' }}
-                    type='text'
-                    value={orders.phone}
-                    onChange={(e) => setOrders({ ...orders, phone: e.target.value })}
-                    disabled = {orders.status !== 'creating'}
-                  />
-                  <strong>Địa chỉ:</strong>
-                  <input 
-                    className={`gap-[10px] rounded-sm border border-orange bg-[#d1d9da] px-[20px] py-[6px] `}
-                    style={{ marginLeft: '10px', marginBottom: '10px' }}
-                    type='text'
-                    value={orders.address}
-                    onChange={(e) => setOrders({ ...orders, address: e.target.value })}
-                    disabled = {orders.status !== 'creating'}
-                  />
+            <Card className='shadow-sm hover:border-orange/60'>
+              <Typography.Title level={5} className='text-orange'>
+                <Package className='inline mr-2' size={20} />
+                Thông tin Nhận Hàng
+              </Typography.Title>
+              {orders && (
+                <div className='flex gap-4'>
+                  <div className='flex-1'>
+                    <Typography.Text strong>
+                      <User className='inline mr-1' size={16} />
+                      Họ tên:
+                    </Typography.Text>
+                    <Input
+                      className='ml-2 hover:border-orange focus:border-orange'
+                      value={orders.receiver}
+                      onChange={(e) => setOrders({ ...orders, receiver: e.target.value })}
+                      disabled={orders.status !== 'creating'}
+                      prefix={<User size={16} className='text-gray-400' />}
+                    />
+                  </div>
+                  <div className='flex-1'>
+                    <Typography.Text strong>
+                      <Phone className='inline mr-1' size={16} />
+                      SĐT:
+                    </Typography.Text>
+                    <Input
+                      className='ml-2 hover:border-orange focus:border-orange'
+                      value={orders.phone}
+                      onChange={(e) => setOrders({ ...orders, phone: e.target.value })}
+                      disabled={orders.status !== 'creating'}
+                      prefix={<Phone size={16} className='text-gray-400' />}
+                    />
+                  </div>
+                  <div className='flex-[2]'>
+                    <Typography.Text strong>
+                      <MapPin className='inline mr-1' size={16} />
+                      Địa chỉ:
+                    </Typography.Text>
+                    <Input
+                      className='ml-2 hover:border-orange focus:border-orange'
+                      value={orders.address}
+                      onChange={(e) => setOrders({ ...orders, address: e.target.value })}
+                      disabled={orders.status !== 'creating'}
+                      prefix={<MapPin size={16} className='text-gray-400' />}
+                    />
+                  </div>
                 </div>
-              )
-            }
-
+              )}
+            </Card>
             <br />
           </div>
         </div>
@@ -275,23 +289,23 @@ export default function Order() {
         <div className='container'>
           {orders && orders.products.length > 0 ? (
             <>
-              
-              <div className='grid grid-cols-12 rounded-[3px] bg-white px-10 py-4 shadow-sm'>
-                <div className='col-span-6 flex items-center'>
-                  <div className='flex items-center'>
-                    <label htmlFor='CheckedAllProduct' className='cursor-pointer px-[20px] text-sm'>
+              <Card>
+                <div className='grid grid-cols-12 items-center'>
+                  <div className='col-span-6'>
+                    <Typography.Text strong>
+                      <ShoppingBag className='inline mr-2' size={16} />
                       {t('product')}
-                    </label>
+                    </Typography.Text>
+                  </div>
+                  <div className='col-span-6'>
+                    <div className='hidden lg:grid grid-cols-6 text-gray-500'>
+                      <div className='col-span-2 text-center'>{t('unit price')}</div>
+                      <div className='col-span-2 text-center'>{t('quantity')}</div>
+                      <div className='col-span-2 text-center'>{t('total price')}</div>
+                    </div>
                   </div>
                 </div>
-                <div className='col-span-6 flex items-center'>
-                  <div className='hidden flex-1 grid-cols-6 text-sm text-gray-500/90 lg:grid'>
-                    <div className='col-span-2 text-center'>{t('unit price')}</div>
-                    <div className='col-span-2 text-center'>{t('quantity')}</div>
-                    <div className='col-span-2 text-center'>{t('total price')}</div>
-                  </div>
-                </div>
-              </div>
+              </Card>
               {
                 orders.products.map((order: any, index: number) => (
                   <div key={order.id} className='mt-[15px] rounded-[3px] bg-white px-5 py-4 shadow-sm'>
@@ -406,32 +420,47 @@ export default function Order() {
                             <span className='text-orange' style={{ marginRight: '60px' }}>
                                 <strong>Phương thức thanh toán:</strong> 
                             </span>
-                            <button
-                              className={`gap-[10px] rounded-sm border border-orange ${payment ? 'bg': 'bg-[#d1d9da]'} px-[10px] py-[10px] `}
-                              aria-disabled='false'
-                              style={{ marginRight: '15px' }}
-                              onClick={() => {
-                                if (orders.status === 'creating' || orders.status === 'cancel' || orders.status === 'return') {
-                                  setPayment(false)
-                                }
-                              }}
-                            >
-                              Thanh toán khi nhận hàng
-                            </button>
-                            <button
-                              className={`gap-[10px] rounded-sm border border-orange ${!payment ? 'bg': 'bg-[#d1d9da]'} px-[10px] py-[10px]`}
-                              aria-disabled='false'
-                              onClick={() => {
-                                if (orders.status === 'creating' || orders.status === 'cancel' || orders.status === 'return') {
-                                  setPayment(true)
-                                }
-                                else if (payment === false && orders.status !== 'complete') {
-                                  makePayment()
-                                }
-                              }}
-                            >
-                              Tài khoản ngân hàng {orders &&  orders.payment_done ? '(Đã thanh toán)' : '(Chưa thanh toán)'}
-                            </button>
+                            <Card className='mt-4'>
+                              <div className='flex items-center gap-4'>
+                                <Typography.Text strong className='text-orange'>
+                                  <CreditCard className='inline mr-2' size={16} />
+                                  Phương thức thanh toán:
+                                </Typography.Text>
+                                <AntButton
+                                  type={!payment ? 'primary' : 'default'}
+                                  icon={<Wallet size={16} />}
+                                  onClick={() => {
+                                    if (orders.status === 'creating' || orders.status === 'cancel' || orders.status === 'return') {
+                                      setPayment(false)
+                                    }
+                                  }}
+                                  disabled={!(orders.status === 'creating' || orders.status === 'cancel' || orders.status === 'return')}
+                                  className="h-10"
+                                  style={{ backgroundColor: payment ? '#fff' : '#4A9B9B', color: payment ? '#000' : '#fff' }}
+                                >
+                                  Thanh toán khi nhận hàng
+                                </AntButton>
+                                <AntButton
+                                  type={payment ? 'primary' : 'default'}
+                                  icon={<CreditCard size={16} />}
+                                  onClick={() => {
+                                    if (orders.status === 'creating' || orders.status === 'cancel' || orders.status === 'return') {
+                                      setPayment(true)
+                                    }
+                                    else if (payment === false && orders.status !== 'complete') {
+                                      makePayment()
+                                    }
+                                  }}
+                                  className="h-10"
+                                  style={{ backgroundColor: payment ? '#4A9B9B' : '#fff', color: payment ? '#fff' : '#000' }}
+                                >
+                                  Tài khoản ngân hàng {orders && orders.payment_done ? 
+                                    <Tag color="success">Đã thanh toán</Tag> : 
+                                    <Tag color="warning">Chưa thanh toán</Tag>
+                                  }
+                                </AntButton>
+                              </div>
+                            </Card>
                           </div>
                         </div>
                       </div>
@@ -440,100 +469,101 @@ export default function Order() {
                 </div>
                 <div className='flex flex-col items-center justify-between gap-y-1 text-base md:flex-row'>
                   <div className='flex w-full flex-1 flex-col items-center justify-end gap-[15px] gap-y-1 sm:w-auto sm:flex-row'>
-                    <div>
-                      <div className='flex items-center gap-[5px]'>
-                        <span>
+                    <div className='flex flex-col space-y-2'>
+                      <div className='flex items-center space-x-2'>
+                        <ShoppingCart size={18} className='text-gray-500' />
+                        <span className='text-gray-600'>
                           {t('total')} ({orders.products.length} {t('item')}):
                         </span>
-                        <span className='text-2xl leading-4 text-orange'>
+                        <span className='text-2xl font-semibold text-orange'>
                           ₫{formatPriceNumber(totalPrice)}
                         </span>
                       </div>
-                      <div className='flex items-center justify-end gap-[24px] text-sm'>
-                        <span>{t('saved')}</span>
-                        <span className='text-orange'>₫{formatPriceNumber(totalSavingPrice)}</span>
+                      <div className='flex items-center justify-end space-x-3 text-sm'>
+                        <Tag icon={<Sparkles size={14} />} color='success'>
+                          {t('saved')}: ₫{formatPriceNumber(totalSavingPrice)}
+                        </Tag>
                       </div>
                     </div>
-                    {
-                      orders.status !== 'ship' && (
-                        <Button
+                    <div className='flex gap-3 mt-4'>
+                      {orders.status !== 'ship' && (
+                        <AntButton
+                          type='primary'
+                          size='large'
+                          loading={updateOrderMutation.isLoading}
+                          disabled={(orders.status !== 'creating' && orders.status !== 'cancel' && orders.status !== 'return') || updateOrderMutation.isLoading}
                           onClick={async () => {
                             handleOrder()
                             if (payment) {
                               makePayment()
                             }
                           }}
-                          disabled={(orders.status !== 'creating' && orders.status !== 'cancel' && orders.status !== 'return') || updateOrderMutation.isLoading}
-                          isLoading={updateOrderMutation.isLoading}
-                          className='mr-[2px] w-full rounded-sm bg-orange px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
+                          className="h-12 min-w-[200px]"
+                          style={{ 
+                            backgroundColor: (orders.status !== 'creating' && orders.status !== 'cancel' && orders.status !== 'return') ? '#d9d9d9' : '#4A9B9B',
+                            color: (orders.status !== 'creating' && orders.status !== 'cancel' && orders.status !== 'return') ? 'rgba(0, 0, 0, 0.25)' : '#fff',
+                            cursor: (orders.status !== 'creating' && orders.status !== 'cancel' && orders.status !== 'return') ? 'not-allowed' : 'pointer'
+                          }}
                         >
                           {(orders.status === 'creating' || orders.status === 'cancel') && 'Đặt hàng'}
                           {orders.status === 'pending' && 'Chờ duyệt'}
                           {orders.status === 'ship' && 'Đang vận chuyển'}
                           {orders.status === 'complete' && 'Đã chuyển hàng thành công'}
                           {orders.status === 'return' && 'Đặt lại'}
-                        </Button>
-                      )
-                    }
-                    {
-                      (orders.status === 'ship') && 
-                      (
-                        <Button
+                        </AntButton>
+                      )}
+                      {(orders.status === 'ship') && 
+                        <AntButton
+                          type='primary'
+                          size='large'
+                          loading={updateOrderMutation.isLoading}
                           onClick={completeOrder}
                           disabled={updateOrderMutation.isLoading}
-                          isLoading={updateOrderMutation.isLoading}
-                          className='mr-[2px] w-full rounded-sm bg-orange px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
+                          className="h-12 min-w-[200px]"
+                          style={{ 
+                            backgroundColor: updateOrderMutation.isLoading ? '#d9d9d9' : '#4A9B9B',
+                            color: updateOrderMutation.isLoading ? 'rgba(0, 0, 0, 0.25)' : '#fff'
+                          }}
                         >
                           {orders.status === 'ship' && 'Xác nhận đã nhận được hàng'}
-                          {/* {t('check out')} */}
-                        </Button>
-                      )
-                    }
-                    {
-                      (orders.status === 'ship') && 
-                      (
-                        <Button
+                        </AntButton>
+                      }
+                      {(orders.status === 'ship') && 
+                        <AntButton
+                          type='primary'
+                          size='large'
+                          loading={updateOrderMutation.isLoading}
                           onClick={returnOrder}
                           disabled={updateOrderMutation.isLoading}
-                          isLoading={updateOrderMutation.isLoading}
-                          className='mr-[2px] w-full rounded-sm bg-orange px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
+                          className="h-12 min-w-[200px]"
+                          style={{ 
+                            backgroundColor: updateOrderMutation.isLoading ? '#d9d9d9' : '#4A9B9B',
+                            color: updateOrderMutation.isLoading ? 'rgba(0, 0, 0, 0.25)' : '#fff'
+                          }}
                         >
                           {orders.status === 'ship' && 'Xác nhận không nhận đơn hàng'}
-                          {/* {t('check out')} */}
-                        </Button>
-                      )
-                    }
-                    {
-                      (orders.status === 'pending' || orders.status === 'cancel' || orders.status === 'ship') && 
-                      (
-                        <Button
+                        </AntButton>
+                      }
+                      {(orders.status === 'pending' || orders.status === 'cancel' || orders.status === 'ship') && 
+                        <AntButton
+                          type='primary'
+                          size='large'
+                          loading={updateOrderMutation.isLoading}
                           onClick={cancelOrder}
                           disabled={(orders.status === 'cancel' || orders.status === 'ship') || updateOrderMutation.isLoading}
-                          isLoading={updateOrderMutation.isLoading}
-                          className='mr-[2px] w-full rounded-sm bg-[#9B3333] px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
+                          className="h-12 min-w-[200px]"
+                          style={{ 
+                            backgroundColor: (orders.status === 'cancel' || orders.status === 'ship' || updateOrderMutation.isLoading) ? '#d9d9d9' : '#4A9B9B',
+                            color: (orders.status === 'cancel' || orders.status === 'ship' || updateOrderMutation.isLoading) ? 'rgba(0, 0, 0, 0.25)' : '#fff',
+                            cursor: (orders.status === 'cancel' || orders.status === 'ship') ? 'not-allowed' : 'pointer'
+                          }}
                         >
                           {orders.status === 'cancel' && 'Đã Hủy Đơn'}
                           {orders.status === 'pending' && 'Hủy Đơn'}
                           {orders.status === 'ship' && 'Đơn hàng đang trên đường giao tới bạn'}
-                          {/* {t('check out')} */}
-                        </Button>
-                      )
-                    }
-                    {
-                      // (orders.status === 'complete') && 
-                      // (
-                      //   <Button
-                      //     onClick={returnOrder}
-                      //     disabled={updateOrderMutation.isLoading}
-                      //     isLoading={updateOrderMutation.isLoading}
-                      //     className='mr-[2px] w-full rounded-sm bg-[#9B3333] px-[36px] py-[10px] text-sm capitalize text-white  sm:w-[210px]'
-                      //   >
-                      //     {orders.status === 'complete' && 'Đổi Trả Hàng'}
-                      //     {/* {t('check out')} */}
-                      //   </Button>
-                      // )
-                    }
-    
+                        </AntButton>
+                      }
+                    </div>
                   </div>
                 </div>
               </div>

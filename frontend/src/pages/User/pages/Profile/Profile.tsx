@@ -1,29 +1,29 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import { useForm, Controller, FormProvider } from 'react-hook-form'
 import { useMutation, useQuery } from 'react-query'
 import userApi from '~/apis/userApi'
-import Button from '~/components/Button'
-import Input from '~/components/Input'
-import InputNumber from '~/components/InputNumber'
+import { Input as AntInput, Button as AntButton, DatePicker, Upload, ConfigProvider } from 'antd'
+import { UserCircle, Upload as UploadIcon, User, Phone, MapPin, Calendar } from 'lucide-react'
 import { UserSchema, userSchema } from '~/utils/rulesForm'
-import DateSelect from '../../Components/DateSelect'
 import { setProfileToLS } from '~/utils/auth'
 import { AppContext } from '~/Contexts/app.context'
 import { toast } from 'react-toastify'
-import { getAvatarUrl, isAxiosErrorUnprocessableEntity } from '~/utils/utils'
+import { isAxiosErrorUnprocessableEntity } from '~/utils/utils'
 import { errorResponse } from '~/types/utils.type'
-import InputFile from '~/components/InputFile'
 import useScrollTop from '~/hooks/useScrollTop'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
+import dayjs from 'dayjs'
 
 type FormData = Pick<
   UserSchema,
   'first_name' | 'last_name' | 'address' | 'phone_number' | 'date_of_birth' | 'avatar' | 'is_superuser'
 >
 type FormDataError = Omit<FormData, 'date_of_birth'> & {
-  date_of_birth?: string
+  date_of_birth?: Date | string
 }
 const profileSchema = userSchema.pick([
   'first_name',
@@ -45,7 +45,7 @@ export default function Profile() {
       last_name: '',
       phone_number: '',
       address: '',
-      date_of_birth: new Date(1990, 0, 1),
+      date_of_birth: dayjs().toDate(),
       avatar: ''
     },
     resolver: yupResolver(profileSchema)
@@ -72,21 +72,20 @@ export default function Profile() {
 
   useEffect(() => {
     if (profile) {
-      console.log('profile', profile);
-      setProfile(profile)
+      console.log('profile', profile)
       methods.setValue('first_name', profile.first_name)
       methods.setValue('last_name', profile.last_name)
       methods.setValue('phone_number', profile.phone_number)
       methods.setValue('address', profile.address)
-      methods.setValue('is_superuser', profile.is_superuser)
       methods.setValue(
         'date_of_birth',
-        profile.date_of_birth ? new Date(profile.date_of_birth) : new Date(1990, 0, 1)
+        profile.date_of_birth ? dayjs(profile.date_of_birth).toDate() : dayjs().toDate()
       )
     }
   }, [profile, methods])
 
   const onSubmit = methods.handleSubmit(async (data) => {
+    console.log('🚀 ~ onSubmit ~ data:', data)
     try {
       let avatarID = profile?.avatar
       if (fileImg) {
@@ -99,7 +98,7 @@ export default function Profile() {
       const res = await updateProfileMutation.mutateAsync({
         id: profile.id,
         ...data,
-        date_of_birth: data.date_of_birth?.toISOString().slice(0, 10),
+        date_of_birth: dayjs(data.date_of_birth).format('YYYY-MM-DD'),
         avatar: avatarID
       })
       setProfile(res.data)
@@ -130,127 +129,192 @@ export default function Profile() {
   }
 
   return (
-    <>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#f97316', // orange-500
+          borderRadius: 6
+        }
+      }}
+    >
       <Helmet>
         <title>{`${t('profile')} | Stride`}</title>
         <meta name='description' content='Page profile Stride' />
       </Helmet>
-      <div className='rounded-sm bg-white px-[30px] py-[18px] shadow'>
-        <div className='border-b border-b-gray-200 pb-[18px]'>
-          <h1 className='text-lg font-medium'>{t('my profile')}</h1>
-          <div className='text-sm'>{t('desc_profile')}</div>
+      <div className='rounded-lg bg-white px-8 py-6 shadow'>
+        <div className='border-b border-b-gray-200 pb-5'>
+          <h1 className='text-xl font-medium text-gray-800'>{t('my profile')}</h1>
+          <div className='text-sm text-gray-600'>{t('desc_profile')}</div>
         </div>
         <FormProvider {...methods}>
-          <form
-            onSubmit={onSubmit}
-            className='flex flex-col-reverse pt-[30px] text-sm lg:flex-row'
-            noValidate
-          >
-            <div className='flex-1 pr-0 sm:pr-[50px]'>
-              <div className='flex items-center gap-5 pb-[40px]'>
-                <span className='min-w-[20%] text-right text-gray-400'>Email</span>
-                <span>{profile?.email}</span>
+          <form onSubmit={onSubmit} className='flex flex-col-reverse pt-8 text-sm lg:flex-row' noValidate>
+            <div className='flex-1 pr-0 sm:pr-12'>
+              <div className='flex items-center gap-5 pb-8'>
+                <span className='min-w-[20%] text-right text-gray-500'>Email</span>
+                <span className='text-gray-700'>{profile?.email}</span>
               </div>
-              <div className='flex gap-5 pb-[20px]'>
-                <label htmlFor='name' className='mt-2 min-w-[20%] text-right text-gray-400'>
-                  {t('first_name')}
-                </label>
-                <Input
-                  id='first_name'
-                  classNameError='text-[#ff424f] min-h-[1.5rem] text-sm pt-1 pl-1'
-                  className='flex-1'
-                  classNameInput='w-full flex-1 border border-gray-200 p-[9px] shadow-inner outline-none focus:border-gray-400'
-                  name='first_name'
-                  register={methods.register}
-                  errorMessage={methods.formState.errors.first_name?.message}
-                />
-              </div>
-              <div className='flex gap-5 pb-[20px]'>
-                <label htmlFor='name' className='mt-2 min-w-[20%] text-right text-gray-400'>
-                  {t('last_name')}
-                </label>
-                <Input
-                  id='last_name'
-                  classNameError='text-[#ff424f] min-h-[1.5rem] text-sm pt-1 pl-1'
-                  className='flex-1'
-                  classNameInput='w-full flex-1 border border-gray-200 p-[9px] shadow-inner outline-none focus:border-gray-400'
-                  name='last_name'
-                  register={methods.register}
-                  errorMessage={methods.formState.errors.last_name?.message}
-                />
-              </div>
-              <div className='flex gap-5 pb-[20px]'>
-                <label htmlFor='phone' className='mt-2 min-w-[20%] text-right text-gray-400'>
-                  {t('phone')}
-                </label>
-                <Controller
-                  name='phone_number'
-                  control={methods.control}
-                  render={({ field }) => (
-                    <Input
-                      id='phone_number'
-                      classNameError='text-[#ff424f] min-h-[1.5rem] text-sm pt-1 pl-1'
-                      className='flex-1'
-                      classNameInput='w-full flex-1 border border-gray-200 p-[9px] shadow-inner outline-none focus:border-gray-400'
-                      errorMessage={methods.formState.errors.phone_number?.message}
-                      {...field}
-                      onChange={field.onChange}
-                    />
-                  )}
-                />
-              </div>
-              <div className='flex gap-5 pb-[20px]'>
-                <label htmlFor='address' className='mt-2 min-w-[20%] text-right text-gray-400'>
-                  {t('address')}
-                </label>
-                <Input
-                  id='address'
-                  classNameError='text-[#ff424f] min-h-[1.5rem] text-sm pt-1 pl-1'
-                  className='flex-1'
-                  classNameInput='w-full flex-1 border border-gray-200 p-[9px] shadow-inner outline-none focus:border-gray-400'
-                  name='address'
-                  register={methods.register}
-                  errorMessage={methods.formState.errors.address?.message}
-                />
-              </div>
-              <Controller
-                name='date_of_birth'
-                control={methods.control}
-                render={({ field }) => (
-                  <DateSelect
-                    errorMessage={methods.formState.errors.date_of_birth?.message}
-                    onChange={field.onChange}
-                    value={field.value}
+
+              <div className='flex gap-5 pb-5'>
+                <label className='mt-2 min-w-[20%] text-right text-gray-500'>{t('first_name')}</label>
+                <div className='flex-1'>
+                  <Controller
+                    name='first_name'
+                    control={methods.control}
+                    render={({ field }) => (
+                      <AntInput
+                        {...field}
+                        size='large'
+                        prefix={<User className='h-5 w-5 text-gray-400' />}
+                        status={methods.formState.errors.first_name ? 'error' : ''}
+                        className='w-full'
+                      />
+                    )}
                   />
-                )}
-              />
-              <div className='flex items-center gap-5 pb-[30px]'>
-                <div className='hidden min-w-[20%] sm:block'></div>
-                <Button
-                  type='submit'
-                  className='w-full rounded-sm bg-orange px-5 py-[10px] text-white hover:opacity-90 lg:w-auto'
-                >
-                  {t('save')}
-                </Button>
+                  {methods.formState.errors.first_name && (
+                    <p className='mt-1 text-sm text-red-500'>{methods.formState.errors.first_name.message}</p>
+                  )}
+                </div>
+              </div>
+
+              <div className='flex gap-5 pb-5'>
+                <label className='mt-2 min-w-[20%] text-right text-gray-500'>{t('last_name')}</label>
+                <div className='flex-1'>
+                  <Controller
+                    name='last_name'
+                    control={methods.control}
+                    render={({ field }) => (
+                      <AntInput
+                        {...field}
+                        size='large'
+                        prefix={<User className='h-5 w-5 text-gray-400' />}
+                        status={methods.formState.errors.last_name ? 'error' : ''}
+                        className='w-full'
+                      />
+                    )}
+                  />
+                  {methods.formState.errors.last_name && (
+                    <p className='mt-1 text-sm text-red-500'>{methods.formState.errors.last_name.message}</p>
+                  )}
+                </div>
+              </div>
+
+              <div className='flex gap-5 pb-5'>
+                <label className='mt-2 min-w-[20%] text-right text-gray-500'>{t('phone')}</label>
+                <div className='flex-1'>
+                  <Controller
+                    name='phone_number'
+                    control={methods.control}
+                    render={({ field }) => (
+                      <AntInput
+                        {...field}
+                        size='large'
+                        prefix={<Phone className='h-5 w-5 text-gray-400' />}
+                        status={methods.formState.errors.phone_number ? 'error' : ''}
+                        className='w-full'
+                      />
+                    )}
+                  />
+                  {methods.formState.errors.phone_number && (
+                    <p className='mt-1 text-sm text-red-500'>
+                      {methods.formState.errors.phone_number.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className='flex gap-5 pb-5'>
+                <label className='mt-2 min-w-[20%] text-right text-gray-500'>{t('address')}</label>
+                <div className='flex-1'>
+                  <Controller
+                    name='address'
+                    control={methods.control}
+                    render={({ field }) => (
+                      <AntInput
+                        {...field}
+                        size='large'
+                        prefix={<MapPin className='h-5 w-5 text-gray-400' />}
+                        status={methods.formState.errors.address ? 'error' : ''}
+                        className='w-full'
+                      />
+                    )}
+                  />
+                  {methods.formState.errors.address && (
+                    <p className='mt-1 text-sm text-red-500'>{methods.formState.errors.address.message}</p>
+                  )}
+                </div>
+              </div>
+
+              <div className='flex gap-5 pb-5'>
+                <label className='mt-2 min-w-[20%] text-right text-gray-500'>Ngày sinh</label>
+                <div className='flex-1'>
+                  <Controller
+                    name='date_of_birth'
+                    // control={methods.control}
+                    render={({ field }) => (
+                      <DatePicker
+                        className='w-full'
+                        size='large'
+                        prefix={<Calendar className='h-5 w-5 text-gray-400' />}
+                        value={dayjs(methods.getValues('date_of_birth'))}
+                        onChange={(date) => {
+                          field.onChange(date ? date.toDate() : null)
+                        }}
+                        status={methods.formState.errors.date_of_birth ? 'error' : ''}
+                      />
+                    )}
+                  />
+                </div>
               </div>
             </div>
-            <div className='mb-3 flex h-fit w-full justify-center border-l-gray-200 lg:mb-0 lg:w-[280px] lg:border-l'>
+
+            <div className='mb-3 flex h-fit w-full justify-center border-l-gray-200 lg:mb-0 lg:w-[280px] lg:border-l lg:pl-8'>
               <div className='flex flex-col items-center'>
-                <img
-                  className='my-5 h-[100px] w-[100px] rounded-full object-cover'
-                  src={previewAvatar || profile?.avatar_url}
-                  alt='avatar'
-                />
-                <InputFile onChange={handleChangeInputFile} />
-                <div className='mt-3 text-gray-400'>
+                <div className='relative'>
+                  {previewAvatar || profile?.avatar_url ? (
+                    <img
+                      className='my-5 h-24 w-24 rounded-full object-cover ring-2 ring-gray-200'
+                      src={previewAvatar || profile?.avatar_url}
+                      alt='avatar'
+                    />
+                  ) : (
+                    <UserCircle className='my-5 h-24 w-24 text-gray-400' />
+                  )}
+                </div>
+
+                <Upload
+                  accept='image/*'
+                  showUploadList={false}
+                  beforeUpload={(file) => {
+                    handleChangeInputFile(file)
+                    return false
+                  }}
+                >
+                  <AntButton size='large' icon={<UploadIcon className='h-4 w-4' />}>
+                    Upload
+                  </AntButton>
+                </Upload>
+
+                <div className='mt-3 text-center text-gray-500'>
                   <div>{t('file size')}</div>
                   <div>{t('file extension')}</div>
                 </div>
               </div>
             </div>
           </form>
+          <div className='mt-8 flex justify-end border-t border-gray-200 pt-6'>
+            <AntButton
+              size='large'
+              htmlType='submit'
+              loading={updateProfileMutation.isLoading}
+              type='primary'
+              className='!bg-orange hover:!bg-orange/90'
+              onClick={onSubmit}
+            >
+              {t('save')}
+            </AntButton>
+          </div>
         </FormProvider>
       </div>
-    </>
+    </ConfigProvider>
   )
 }

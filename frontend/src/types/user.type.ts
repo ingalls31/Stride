@@ -9,7 +9,7 @@ export type User = {
   last_name?: string
   address?: string
   phone_number?: string
-  date_of_birth?: string
+  date_of_birth?: Date | string
   avatar?: string,
   avatar_url?: string
 }

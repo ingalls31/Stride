@@ -29,7 +29,7 @@ export default function Header() {
     enabled: isAuthenticated
   })
 
-  console.log('data', data);
+  console.log('data', data)
   const purchaseInCartData = data?.data.results
 
   return (
@@ -37,9 +37,9 @@ export default function Header() {
       <NavHeader />
       <div className='w-full bg-orange'>
         <div className='container flex h-[5.3125rem] items-center justify-between py-4'>
-          <Link 
-            title={t('home')} 
-            to='/' 
+          <Link
+            title={t('home')}
+            to='/'
             className='-mt-3 flex items-end gap-3 pr-2 md:pr-10 hover:opacity-90 transition-opacity'
           >
             <svg viewBox='0 0 51 65' className='h-[50px] w-auto fill-white'>
@@ -54,12 +54,7 @@ export default function Header() {
             noValidate
             onSubmit={onSubmit}
           >
-            <Input
-              placeholder={t('searching')}
-              bordered={false}
-              className='flex-1'
-              {...register('name')}
-            />
+            <Input placeholder={t('searching')} bordered={false} className='flex-1' {...register('name')} />
             <button
               type='submit'
               className='flex items-center justify-center rounded-md bg-orange px-6 py-2 hover:bg-orange-600 transition-colors'
@@ -77,14 +72,22 @@ export default function Header() {
                         {t('recently added products')}
                       </span>
                       {purchaseInCartData.slice(0, MAX_PURCHASE).map((purchase: any) => (
-                        <div key={purchase._id} className='flex items-start gap-3 p-3 hover:bg-gray-50 transition-colors'>
+                        <div
+                          key={purchase._id}
+                          className='flex items-start gap-3 p-3 hover:bg-gray-50 transition-colors'
+                        >
                           <img
                             className='h-[42px] w-[42px] flex-shrink-0 object-cover rounded-md'
                             src={purchase.product.image}
                             alt={purchase.product.name}
                           />
-                          <div className='line-clamp-1 flex-1 font-medium'>{purchase.product.name}</div>
-                          <div className='text-orange font-semibold'>₫{formatPriceNumber(purchase.product.price)}</div>
+                          <div className='flex-1'>
+                            <div className='line-clamp-1 font-medium'>{purchase.product.name}</div>
+                            <div className='text-gray-500 text-sm'>Size: {purchase.product.size}</div>
+                          </div>
+                          <div className='text-orange font-semibold'>
+                            ₫{formatPriceNumber(purchase.product.price)}
+                          </div>
                         </div>
                       ))}
                       <div className='flex items-center justify-between p-3 border-t'>
